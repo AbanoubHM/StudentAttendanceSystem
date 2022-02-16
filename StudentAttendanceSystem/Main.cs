@@ -24,7 +24,7 @@ namespace StudentAttendanceSystem
 
         private void Close_btn_Click(object sender, EventArgs e)
         {
-           // this.Close();
+            this.Close();
         }
 
         private void Main_Load(object sender, EventArgs e)
