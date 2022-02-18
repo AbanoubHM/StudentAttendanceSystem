@@ -15,6 +15,15 @@ namespace StudentAttendanceSystem
         public Main()
         {
             InitializeComponent();
+            string[] Quarters = new string[] { "Quarter1", "Quarter2", "Quarter3", "Quarter4" };
+            ITIQuarter_Combo.Items.AddRange(Quarters);
+            string[] TrackGroup = new string[] { "Group1", "Group2" };
+            TrackGroupCombo.Items.AddRange(TrackGroup);
+            string[] Tracks = new string[] { " FullStack.Net", "CyperSecurity", "FendoumentalSoftWare", "FullStackUsing | Paython" };
+            Track_Combo.Items.AddRange(Tracks);
+
+
+
         }
 
         private void TrackQuarterCombo_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,6 +47,19 @@ namespace StudentAttendanceSystem
             this.Hide();
             g1.ShowDialog();
             this.Show();
+        }
+
+        private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+           
+          
+
+        }
+
+        private void Track_Combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //if()
         }
     }
 }
