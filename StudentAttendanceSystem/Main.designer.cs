@@ -33,8 +33,8 @@ namespace StudentAttendanceSystem
             this.ITIQuarter_Combo = new System.Windows.Forms.ComboBox();
             this.Track = new System.Windows.Forms.Label();
             this.Track_Combo = new System.Windows.Forms.ComboBox();
-            this.TrackQuarter = new System.Windows.Forms.Label();
-            this.TrackQuarterCombo = new System.Windows.Forms.ComboBox();
+            this.TrackGroup = new System.Windows.Forms.Label();
+            this.TrackGroupCombo = new System.Windows.Forms.ComboBox();
             this.Open_btn = new System.Windows.Forms.Button();
             this.Close_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -91,30 +91,30 @@ namespace StudentAttendanceSystem
             this.Track_Combo.Size = new System.Drawing.Size(352, 21);
             this.Track_Combo.TabIndex = 4;
             // 
-            // TrackQuarter
+            // TrackGroup
             // 
-            this.TrackQuarter.AutoSize = true;
-            this.TrackQuarter.BackColor = System.Drawing.Color.Transparent;
-            this.TrackQuarter.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TrackQuarter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TrackQuarter.Location = new System.Drawing.Point(23, 204);
-            this.TrackQuarter.Name = "TrackQuarter";
-            this.TrackQuarter.Size = new System.Drawing.Size(200, 33);
-            this.TrackQuarter.TabIndex = 5;
-            this.TrackQuarter.Text = "TrackQuarter";
-            this.TrackQuarter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TrackGroup.AutoSize = true;
+            this.TrackGroup.BackColor = System.Drawing.Color.Transparent;
+            this.TrackGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrackGroup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TrackGroup.Location = new System.Drawing.Point(23, 204);
+            this.TrackGroup.Name = "TrackGroup";
+            this.TrackGroup.Size = new System.Drawing.Size(180, 33);
+            this.TrackGroup.TabIndex = 5;
+            this.TrackGroup.Text = "TrackGroup";
+            this.TrackGroup.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // TrackQuarterCombo
+            // TrackGroupCombo
             // 
-            this.TrackQuarterCombo.FormattingEnabled = true;
-            this.TrackQuarterCombo.Items.AddRange(new object[] {
-            "Quarter1",
-            "Quarter2"});
-            this.TrackQuarterCombo.Location = new System.Drawing.Point(269, 216);
-            this.TrackQuarterCombo.Name = "TrackQuarterCombo";
-            this.TrackQuarterCombo.Size = new System.Drawing.Size(352, 21);
-            this.TrackQuarterCombo.TabIndex = 6;
-            this.TrackQuarterCombo.SelectedIndexChanged += new System.EventHandler(this.TrackQuarterCombo_SelectedIndexChanged);
+            this.TrackGroupCombo.FormattingEnabled = true;
+            this.TrackGroupCombo.Items.AddRange(new object[] {
+            "Group1",
+            "Group2"});
+            this.TrackGroupCombo.Location = new System.Drawing.Point(269, 216);
+            this.TrackGroupCombo.Name = "TrackGroupCombo";
+            this.TrackGroupCombo.Size = new System.Drawing.Size(352, 21);
+            this.TrackGroupCombo.TabIndex = 6;
+            this.TrackGroupCombo.SelectedIndexChanged += new System.EventHandler(this.TrackQuarterCombo_SelectedIndexChanged);
             // 
             // Open_btn
             // 
@@ -144,8 +144,8 @@ namespace StudentAttendanceSystem
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Close_btn);
             this.Controls.Add(this.Open_btn);
-            this.Controls.Add(this.TrackQuarterCombo);
-            this.Controls.Add(this.TrackQuarter);
+            this.Controls.Add(this.TrackGroupCombo);
+            this.Controls.Add(this.TrackGroup);
             this.Controls.Add(this.Track_Combo);
             this.Controls.Add(this.Track);
             this.Controls.Add(this.ITIQuarter_Combo);
@@ -164,8 +164,8 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.ComboBox ITIQuarter_Combo;
         private System.Windows.Forms.Label Track;
         private System.Windows.Forms.ComboBox Track_Combo;
-        private System.Windows.Forms.Label TrackQuarter;
-        private System.Windows.Forms.ComboBox TrackQuarterCombo;
+        private System.Windows.Forms.Label TrackGroup;
+        private System.Windows.Forms.ComboBox TrackGroupCombo;
         private System.Windows.Forms.Button Open_btn;
         private System.Windows.Forms.Button Close_btn;
     }
