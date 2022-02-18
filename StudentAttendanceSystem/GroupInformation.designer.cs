@@ -1,10 +1,8 @@
 ﻿
 using System;
 
-namespace StudentAttendanceSystem
-{
-    partial class GroupInformation
-    {
+namespace StudentAttendanceSystem {
+    partial class GroupInformation {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -14,10 +12,8 @@ namespace StudentAttendanceSystem
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -29,14 +25,13 @@ namespace StudentAttendanceSystem
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.EditStudentData = new System.Windows.Forms.Button();
             this.Attended = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,7 +58,7 @@ namespace StudentAttendanceSystem
             // 
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.EditStudentData);
             this.panel1.Controls.Add(this.Attended);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 24);
@@ -89,14 +84,14 @@ namespace StudentAttendanceSystem
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // EditStudentData
             // 
-            this.button2.Location = new System.Drawing.Point(3, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.EditStudentData.Location = new System.Drawing.Point(3, 55);
+            this.EditStudentData.Name = "EditStudentData";
+            this.EditStudentData.Size = new System.Drawing.Size(217, 40);
+            this.EditStudentData.TabIndex = 1;
+            this.EditStudentData.Text = "Edit Student Data";
+            this.EditStudentData.UseVisualStyleBackColor = true;
             // 
             // Attended
             // 
@@ -129,8 +124,7 @@ namespace StudentAttendanceSystem
 
         }
 
-        private void GroupInformation_Load(object sender, EventArgs e)
-        {
+        private void GroupInformation_Load(object sender, EventArgs e) {
 
         }
 
@@ -140,7 +134,7 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button EditStudentData;
         private System.Windows.Forms.Button Attended;
     }
 }
