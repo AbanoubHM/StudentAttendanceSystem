@@ -43,11 +43,11 @@ namespace StudentAttendanceSystem
             // 
             this.ITI_Quarter.AutoSize = true;
             this.ITI_Quarter.BackColor = System.Drawing.Color.Transparent;
-            this.ITI_Quarter.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ITI_Quarter.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ITI_Quarter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ITI_Quarter.Location = new System.Drawing.Point(23, 69);
+            this.ITI_Quarter.Location = new System.Drawing.Point(12, 32);
             this.ITI_Quarter.Name = "ITI_Quarter";
-            this.ITI_Quarter.Size = new System.Drawing.Size(175, 33);
+            this.ITI_Quarter.Size = new System.Drawing.Size(157, 36);
             this.ITI_Quarter.TabIndex = 1;
             this.ITI_Quarter.Text = "ITI_Quarter";
             this.ITI_Quarter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -55,25 +55,21 @@ namespace StudentAttendanceSystem
             // ITIQuarter_Combo
             // 
             this.ITIQuarter_Combo.FormattingEnabled = true;
-            this.ITIQuarter_Combo.Items.AddRange(new object[] {
-            "Quarter1",
-            "Quarter2",
-            "Quarter3",
-            "Quarter4"});
-            this.ITIQuarter_Combo.Location = new System.Drawing.Point(269, 81);
+            this.ITIQuarter_Combo.Location = new System.Drawing.Point(169, 46);
             this.ITIQuarter_Combo.Name = "ITIQuarter_Combo";
             this.ITIQuarter_Combo.Size = new System.Drawing.Size(352, 21);
             this.ITIQuarter_Combo.TabIndex = 2;
+            this.ITIQuarter_Combo.SelectedIndexChanged += new System.EventHandler(this.ITIQuarter_Combo_SelectedIndexChanged);
             // 
             // Track
             // 
             this.Track.AutoSize = true;
             this.Track.BackColor = System.Drawing.Color.Transparent;
-            this.Track.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Track.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Track.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Track.Location = new System.Drawing.Point(23, 139);
+            this.Track.Location = new System.Drawing.Point(12, 102);
             this.Track.Name = "Track";
-            this.Track.Size = new System.Drawing.Size(94, 33);
+            this.Track.Size = new System.Drawing.Size(79, 36);
             this.Track.TabIndex = 3;
             this.Track.Text = "Track";
             this.Track.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -81,25 +77,21 @@ namespace StudentAttendanceSystem
             // Track_Combo
             // 
             this.Track_Combo.FormattingEnabled = true;
-            this.Track_Combo.Items.AddRange(new object[] {
-            "FullStack.Net",
-            "CyperSecurity",
-            "FendoumentalSoftWare",
-            "FullStackUsing|Paython"});
-            this.Track_Combo.Location = new System.Drawing.Point(269, 152);
+            this.Track_Combo.Location = new System.Drawing.Point(169, 117);
             this.Track_Combo.Name = "Track_Combo";
             this.Track_Combo.Size = new System.Drawing.Size(352, 21);
             this.Track_Combo.TabIndex = 4;
+            this.Track_Combo.SelectedIndexChanged += new System.EventHandler(this.Track_Combo_SelectedIndexChanged);
             // 
             // TrackGroup
             // 
             this.TrackGroup.AutoSize = true;
             this.TrackGroup.BackColor = System.Drawing.Color.Transparent;
-            this.TrackGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrackGroup.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TrackGroup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TrackGroup.Location = new System.Drawing.Point(23, 204);
+            this.TrackGroup.Location = new System.Drawing.Point(12, 167);
             this.TrackGroup.Name = "TrackGroup";
-            this.TrackGroup.Size = new System.Drawing.Size(180, 33);
+            this.TrackGroup.Size = new System.Drawing.Size(149, 36);
             this.TrackGroup.TabIndex = 5;
             this.TrackGroup.Text = "TrackGroup";
             this.TrackGroup.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -107,10 +99,7 @@ namespace StudentAttendanceSystem
             // TrackGroupCombo
             // 
             this.TrackGroupCombo.FormattingEnabled = true;
-            this.TrackGroupCombo.Items.AddRange(new object[] {
-            "Group1",
-            "Group2"});
-            this.TrackGroupCombo.Location = new System.Drawing.Point(269, 216);
+            this.TrackGroupCombo.Location = new System.Drawing.Point(169, 181);
             this.TrackGroupCombo.Name = "TrackGroupCombo";
             this.TrackGroupCombo.Size = new System.Drawing.Size(352, 21);
             this.TrackGroupCombo.TabIndex = 6;
@@ -118,7 +107,8 @@ namespace StudentAttendanceSystem
             // 
             // Open_btn
             // 
-            this.Open_btn.Location = new System.Drawing.Point(125, 301);
+            this.Open_btn.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Open_btn.Location = new System.Drawing.Point(115, 221);
             this.Open_btn.Name = "Open_btn";
             this.Open_btn.Size = new System.Drawing.Size(186, 42);
             this.Open_btn.TabIndex = 7;
@@ -128,9 +118,11 @@ namespace StudentAttendanceSystem
             // 
             // Close_btn
             // 
-            this.Close_btn.Location = new System.Drawing.Point(457, 301);
+            this.Close_btn.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close_btn.ForeColor = System.Drawing.Color.Red;
+            this.Close_btn.Location = new System.Drawing.Point(413, 225);
             this.Close_btn.Name = "Close_btn";
-            this.Close_btn.Size = new System.Drawing.Size(198, 42);
+            this.Close_btn.Size = new System.Drawing.Size(120, 42);
             this.Close_btn.TabIndex = 8;
             this.Close_btn.Text = "Close";
             this.Close_btn.UseVisualStyleBackColor = true;
@@ -140,8 +132,11 @@ namespace StudentAttendanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.hand_painted_watercolor_background_with_sky_clouds_shape;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(536, 275);
+            this.ControlBox = false;
             this.Controls.Add(this.Close_btn);
             this.Controls.Add(this.Open_btn);
             this.Controls.Add(this.TrackGroupCombo);
@@ -150,6 +145,8 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.Track);
             this.Controls.Add(this.ITIQuarter_Combo);
             this.Controls.Add(this.ITI_Quarter);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
