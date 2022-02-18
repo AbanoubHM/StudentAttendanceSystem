@@ -22,31 +22,17 @@ namespace StudentAttendanceSystem
 
         }
 
-        private void questionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void examToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-     
-        private void attendedToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-            Attended A = new Attended();
-            A.Show();
-         //   A.MdiParent = this;
-            
-        }
-
-        private void studentInformationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         
+
+       
+     
+
+        private void Attended_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Attended a = new Attended();
+            a.ShowDialog();
+            this.Show();
+        }
     }
 }

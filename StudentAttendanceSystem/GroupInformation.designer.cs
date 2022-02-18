@@ -37,7 +37,7 @@ namespace StudentAttendanceSystem
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Attended = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@ namespace StudentAttendanceSystem
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.Attended);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
@@ -98,14 +98,15 @@ namespace StudentAttendanceSystem
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Attended
             // 
-            this.button1.Location = new System.Drawing.Point(3, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Attended.Location = new System.Drawing.Point(3, 18);
+            this.Attended.Name = "Attended";
+            this.Attended.Size = new System.Drawing.Size(217, 40);
+            this.Attended.TabIndex = 0;
+            this.Attended.Text = "Attended";
+            this.Attended.UseVisualStyleBackColor = true;
+            this.Attended.Click += new System.EventHandler(this.Attended_Click);
             // 
             // GroupInformation
             // 
@@ -140,6 +141,6 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Attended;
     }
 }

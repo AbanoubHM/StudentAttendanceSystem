@@ -47,17 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attended.cs">
+    <Compile Include="..\..\..\..\..\OneDrive\سطح المكتب\Attended.cs">
       <SubType>Form</SubType>
+      <Link>Attended.cs</Link>
     </Compile>
-    <Compile Include="Attended.designer.cs">
+    <Compile Include="..\..\..\..\..\OneDrive\سطح المكتب\Attended.designer.cs">
       <DependentUpon>Attended.cs</DependentUpon>
+      <Link>Attended.designer.cs</Link>
     </Compile>
-    <Compile Include="GroupInformation.cs">
+    <Compile Include="..\..\..\..\..\OneDrive\سطح المكتب\GroupInformation.cs">
       <SubType>Form</SubType>
+      <Link>GroupInformation.cs</Link>
     </Compile>
-    <Compile Include="GroupInformation.designer.cs">
+    <Compile Include="..\..\..\..\..\OneDrive\سطح المكتب\GroupInformation.designer.cs">
       <DependentUpon>GroupInformation.cs</DependentUpon>
+      <Link>GroupInformation.designer.cs</Link>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -67,11 +71,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Attended.resx">
+    <EmbeddedResource Include="..\..\..\..\..\OneDrive\سطح المكتب\Attended.resx">
       <DependentUpon>Attended.cs</DependentUpon>
+      <Link>Attended.resx</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="GroupInformation.resx">
+    <EmbeddedResource Include="..\..\..\..\..\OneDrive\سطح المكتب\GroupInformation.resx">
       <DependentUpon>GroupInformation.cs</DependentUpon>
+      <Link>GroupInformation.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
