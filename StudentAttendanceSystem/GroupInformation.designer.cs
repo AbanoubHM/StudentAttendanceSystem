@@ -34,10 +34,10 @@ namespace StudentAttendanceSystem
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,9 +52,8 @@ namespace StudentAttendanceSystem
             // 
             // dataGridView
             // 
-            this.dataGridView.BackgroundColor = System.Drawing.Color.Aquamarine;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 24);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(873, 621);
@@ -72,23 +71,14 @@ namespace StudentAttendanceSystem
             this.panel1.Size = new System.Drawing.Size(220, 621);
             this.panel1.TabIndex = 8;
             // 
-            // button1
+            // button4
             // 
-            this.button1.Location = new System.Drawing.Point(3, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(3, 128);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(217, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -99,14 +89,23 @@ namespace StudentAttendanceSystem
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.Location = new System.Drawing.Point(3, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(3, 55);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 40);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(217, 40);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // GroupInformation
             // 
@@ -116,6 +115,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GroupInformation";
