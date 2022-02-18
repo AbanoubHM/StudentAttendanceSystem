@@ -11,6 +11,55 @@ namespace StudentAttendanceSystem {
         /// </summary>
         [STAThread]
         static void Main() {
+            #region CodeFirst Database Creation
+            DateTime x = DateTime.Now;
+            DataContext context = new DataContext();
+            TrackInfo trackInfo = new TrackInfo()
+            {
+                Branch = "aa",
+                ID = 1,
+                Quarter = "A",
+                Track = "s"
+            };
+
+            Student student = new Student()
+            {
+                Address = "aa",
+                Gender = 'm',
+                City = "aa",
+                Email = "Ali@dd",
+                Faculty = "SS",
+                Grade = "One",
+                GradYear = x,
+                MaterialState = "w",
+                MilitaryState = "ss",
+                Moblie = "00202",
+                Name = "Ale",
+                NameAR = "aa",
+                NID = 379,
+                Notes = "22",
+                Phone = "1111",
+                StudentID = 1,
+                Specialization = "s",
+                University = "ss"
+            };
+            Attendance attendance = new Attendance()
+            {
+                ADate = x,
+                Excuse = "aa",
+                Presence = true
+
+            };
+
+            context.Students.Add(student);
+
+            context.SaveChanges();
+            #endregion
+
+
+
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
