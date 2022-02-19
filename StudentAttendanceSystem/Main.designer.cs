@@ -79,7 +79,7 @@ namespace StudentAttendanceSystem
             this.Track_Combo.FormattingEnabled = true;
             this.Track_Combo.Location = new System.Drawing.Point(169, 117);
             this.Track_Combo.Name = "Track_Combo";
-            this.Track_Combo.Size = new System.Drawing.Size(352, 21);
+            this.Track_Combo.Size = new System.Drawing.Size(258, 21);
             this.Track_Combo.TabIndex = 4;
             this.Track_Combo.SelectedIndexChanged += new System.EventHandler(this.Track_Combo_SelectedIndexChanged);
             // 

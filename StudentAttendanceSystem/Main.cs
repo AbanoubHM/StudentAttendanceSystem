@@ -12,6 +12,8 @@ namespace StudentAttendanceSystem
 {
     public partial class Main : Form
     {
+    
+
         public Main()
         {
             InitializeComponent();
@@ -21,26 +23,33 @@ namespace StudentAttendanceSystem
             TrackGroupCombo.Items.AddRange(TrackGroup);
             string[] Tracks = new string[] { " FullStack.Net", "CyperSecurity", "FendoumentalSoftWare", "FullStackUsing | Paython" };
             Track_Combo.Items.AddRange(Tracks);
+           
 
 
 
         }
-
+        
         private void TrackQuarterCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            string x= TrackGroup.Text;
+            if(x== "Group1")
+            {
+                if (TrackGroupCombo.SelectedItem == x)
+                {
 
+                }
+            }
+            
         }
-
         private void Close_btn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void Main_Load(object sender, EventArgs e)
         {
 
         }
-
         private void Open_btn_Click(object sender, EventArgs e)
         {
             GroupInformation g1 = new GroupInformation();
@@ -48,7 +57,6 @@ namespace StudentAttendanceSystem
             g1.ShowDialog();
            
         }
-
         private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e)
         {
           
@@ -56,7 +64,6 @@ namespace StudentAttendanceSystem
           
 
         }
-
         private void Track_Combo_SelectedIndexChanged(object sender, EventArgs e)
         {
             //if()

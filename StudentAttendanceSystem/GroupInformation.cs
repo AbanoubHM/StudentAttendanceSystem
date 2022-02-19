@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
     public partial class GroupInformation : Form {
+       
         public GroupInformation() {
             InitializeComponent();
+            
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) {
@@ -28,6 +30,22 @@ namespace StudentAttendanceSystem {
             Attended a = new Attended();
             a.ShowDialog();
             this.Show();
+        }
+
+        private void dataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            Main m = new Main();
+            
+        }
+
+        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
