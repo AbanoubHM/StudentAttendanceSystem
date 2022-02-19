@@ -25,9 +25,9 @@ namespace StudentAttendanceSystem {
 
         private void Next_Click(object sender, EventArgs e)
         {
-           
-            Attend_Student s = new Attend_Student();
             this.Hide();
+            Attend_Student s = new Attend_Student();
+            
             s.Show();
             this.Show();
             

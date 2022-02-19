@@ -27,6 +27,7 @@ namespace StudentAttendanceSystem
             this.Hide();
             GroupInformation g = new GroupInformation();
             g.Show();
+            this.Show();
         }
     }
 }
