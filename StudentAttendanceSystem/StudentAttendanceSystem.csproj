@@ -67,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Attended.resx">
+      <DependentUpon>Attended.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GroupInformation.resx">
       <DependentUpon>GroupInformation.cs</DependentUpon>
     </EmbeddedResource>

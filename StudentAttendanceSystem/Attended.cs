@@ -22,7 +22,7 @@ namespace StudentAttendanceSystem {
             dataGridView1.Columns[2].HeaderText = "Date";
         }
         private void Add_Click(object sender, EventArgs e) {
-            string[] arr = { textBox1.Text, checkedListBox1.CheckedItems.ToString(), dateTimePicker1.Text };
+            string[] arr = { textBox1.Text,  dateTimePicker1.Text };
             dataGridView1.Rows.Add(arr);
             textBox1.Text = "";
 
