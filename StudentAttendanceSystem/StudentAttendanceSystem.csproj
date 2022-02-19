@@ -53,6 +53,12 @@
     <Compile Include="Attended.Designer.cs">
       <DependentUpon>Attended.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attend_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attend_Student.Designer.cs">
+      <DependentUpon>Attend_Student.cs</DependentUpon>
+    </Compile>
     <Compile Include="GroupInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,8 +73,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Attended.resx">
       <DependentUpon>Attended.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attend_Student.resx">
+      <DependentUpon>Attend_Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GroupInformation.resx">
       <DependentUpon>GroupInformation.cs</DependentUpon>
@@ -86,6 +101,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
