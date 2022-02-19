@@ -2,7 +2,7 @@
 using System;
 
 namespace StudentAttendanceSystem {
-    partial class GroupInformation {
+   public partial class GroupInformation {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -44,6 +44,7 @@ namespace StudentAttendanceSystem {
             this.menuStrip1.Size = new System.Drawing.Size(873, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // dataGridView
             // 
@@ -53,6 +54,8 @@ namespace StudentAttendanceSystem {
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(873, 621);
             this.dataGridView.TabIndex = 6;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick_1);
+            this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             // 
             // panel1
             // 
@@ -125,7 +128,7 @@ namespace StudentAttendanceSystem {
         }
 
         private void GroupInformation_Load(object sender, EventArgs e) {
-
+           
         }
 
         #endregion
