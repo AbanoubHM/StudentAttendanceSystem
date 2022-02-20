@@ -44,9 +44,9 @@ namespace StudentAttendanceSystem
         private void Open_btn_Click(object sender, EventArgs e)
         {
             GroupInformation g1 = new GroupInformation();
-            this.Hide();
+            
             g1.ShowDialog();
-            this.Show();
+            
         }
 
         private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e)

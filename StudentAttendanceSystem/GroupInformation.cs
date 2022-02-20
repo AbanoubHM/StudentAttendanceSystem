@@ -24,10 +24,10 @@ namespace StudentAttendanceSystem {
 
 
         private void Attended_Click(object sender, EventArgs e) {
-            this.Hide();
+            
             Attended a = new Attended();
             a.ShowDialog();
-            this.Show();
+            
         }
     }
 }
