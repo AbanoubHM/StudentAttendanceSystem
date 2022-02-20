@@ -123,5 +123,8 @@
   <ItemGroup>
     <None Include="Resources\top-view-desk-calendar-contrasted-coloured-background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-abstract-textured-background-design.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
