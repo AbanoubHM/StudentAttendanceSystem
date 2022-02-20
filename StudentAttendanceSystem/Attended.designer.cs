@@ -32,7 +32,7 @@ namespace StudentAttendanceSystem {
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(146, 37);
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 26);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(285, 24);
             this.dateTimePicker1.TabIndex = 24;
@@ -40,8 +40,9 @@ namespace StudentAttendanceSystem {
             // Date
             // 
             this.Date.AutoSize = true;
+            this.Date.BackColor = System.Drawing.Color.Transparent;
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(36, 41);
+            this.Date.Location = new System.Drawing.Point(12, 26);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(104, 20);
             this.Date.TabIndex = 23;
@@ -49,10 +50,10 @@ namespace StudentAttendanceSystem {
             // 
             // Next
             // 
-            this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next.Location = new System.Drawing.Point(71, 96);
+            this.Next.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Next.Location = new System.Drawing.Point(69, 70);
             this.Next.Name = "Next";
-            this.Next.Size = new System.Drawing.Size(273, 59);
+            this.Next.Size = new System.Drawing.Size(273, 36);
             this.Next.TabIndex = 25;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = true;
@@ -62,10 +63,13 @@ namespace StudentAttendanceSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 450);
+            this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.colorful_abstract_textured_background_design;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(417, 114);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Date);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Attended";
             this.Text = "Attended";
             this.Load += new System.EventHandler(this.Attended_Load);

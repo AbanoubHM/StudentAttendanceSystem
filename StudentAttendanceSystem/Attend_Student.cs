@@ -26,5 +26,12 @@ namespace StudentAttendanceSystem
         {
             this.Close();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+           var x= DateTime.UtcNow;
+            dateTimePicker1.Value = x;
+
+        }
     }
 }
