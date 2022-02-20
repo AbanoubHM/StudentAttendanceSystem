@@ -57,18 +57,22 @@ namespace StudentAttendanceSystem {
 
         }
 
-      
-
-        private void Enrollment_Btn_Click(object sender, EventArgs e)
+        private void EditStudentData_Click(object sender, EventArgs e)
         {
-            position(Enrollment_Btn);
-            Active(Enrollment_Btn);
+            position(EditStudentData);
+            Active(EditStudentData);
         }
 
-        private void Reports_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            position(Reports);
-            Active(Reports);
+            position(button3);
+            Active(button3);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            position(button4);
+            Active(button4);
         }
         private void Active (Button b)
         {
@@ -98,18 +102,6 @@ namespace StudentAttendanceSystem {
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void EditStudent_Btn_Click(object sender, EventArgs e)
-        {
-            position(EditStudent_Btn);
-            Active(EditStudent_Btn);
-        }
-
-        private void EditStudent_Btn_Click_1(object sender, EventArgs e)
-        {
-            position(EditStudent_Btn);
-            Active(EditStudent_Btn);
         }
     }
 }
