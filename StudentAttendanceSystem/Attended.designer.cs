@@ -63,7 +63,7 @@ namespace StudentAttendanceSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.colorful_abstract_textured_background_design;
+            //this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.colorful_abstract_textured_background_design;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(417, 114);
             this.Controls.Add(this.Next);

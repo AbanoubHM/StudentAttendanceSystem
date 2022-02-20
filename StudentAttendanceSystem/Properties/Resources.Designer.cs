@@ -63,16 +63,6 @@ namespace StudentAttendanceSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap colorful_abstract_textured_background_design {
-            get {
-                object obj = ResourceManager.GetObject("colorful-abstract-textured-background-design", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap hand_painted_watercolor_background_with_sky_clouds_shape {
             get {
                 object obj = ResourceManager.GetObject("hand-painted-watercolor-background-with-sky-clouds-shape", resourceCulture);
