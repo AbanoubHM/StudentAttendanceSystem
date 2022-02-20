@@ -53,7 +53,6 @@ namespace StudentAttendanceSystem
         private void Open_btn_Click(object sender, EventArgs e)
         {
             GroupInformation g1 = new GroupInformation();
-            
             g1.ShowDialog();
            
         }
