@@ -16,5 +16,30 @@ namespace StudentAttendanceSystem
         {
             InitializeComponent();
         }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator3_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorAddNewItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorDeleteItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
