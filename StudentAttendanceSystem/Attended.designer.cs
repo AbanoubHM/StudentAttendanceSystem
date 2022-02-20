@@ -32,16 +32,16 @@ namespace StudentAttendanceSystem {
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(171, 102);
+            this.dateTimePicker1.Location = new System.Drawing.Point(146, 37);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(209, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(285, 24);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // Date
             // 
             this.Date.AutoSize = true;
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(45, 106);
+            this.Date.Location = new System.Drawing.Point(36, 41);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(104, 20);
             this.Date.TabIndex = 23;
@@ -50,7 +50,7 @@ namespace StudentAttendanceSystem {
             // Next
             // 
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next.Location = new System.Drawing.Point(107, 236);
+            this.Next.Location = new System.Drawing.Point(71, 96);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(273, 59);
             this.Next.TabIndex = 25;
@@ -62,7 +62,7 @@ namespace StudentAttendanceSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(475, 450);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Date);
