@@ -16,7 +16,7 @@ namespace StudentAttendanceSystem {
             DataContext context = new DataContext();
             TrackInfo trackInfo = new TrackInfo()
             {
-                Branch = "aa",
+                Branch = "aaa",
                 ID = 1,
                 Quarter = "A",
                 Track = "s"
@@ -24,7 +24,7 @@ namespace StudentAttendanceSystem {
 
             Student student = new Student()
             {
-                Address = "aa",
+                Address = "aaaa",
                 Gender = 'm',
                 City = "aa",
                 Email = "Ali@dd",
