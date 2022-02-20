@@ -29,6 +29,11 @@ namespace StudentAttendanceSystem {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.EditStudentData = new System.Windows.Forms.Button();
+            this.Attended = new System.Windows.Forms.Button();
             this.acceptButtonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoScrollDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.autoSizeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -83,15 +88,10 @@ namespace StudentAttendanceSystem {
             this.paddingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imeModeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.attendedBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.EditStudentData = new System.Windows.Forms.Button();
-            this.Attended = new System.Windows.Forms.Button();
             this.mainBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.attendedBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attendedBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,12 +164,61 @@ namespace StudentAttendanceSystem {
             this.paddingDataGridViewTextBoxColumn,
             this.imeModeDataGridViewTextBoxColumn});
             this.dataGridView.DataSource = this.attendedBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(0, 24);
+            this.dataGridView.Location = new System.Drawing.Point(21, 0);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(873, 621);
             this.dataGridView.TabIndex = 6;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick_1);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.EditStudentData);
+            this.panel1.Controls.Add(this.Attended);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(220, 621);
+            this.panel1.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(3, 128);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(217, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 91);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(217, 40);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // EditStudentData
+            // 
+            this.EditStudentData.Location = new System.Drawing.Point(3, 55);
+            this.EditStudentData.Name = "EditStudentData";
+            this.EditStudentData.Size = new System.Drawing.Size(217, 40);
+            this.EditStudentData.TabIndex = 1;
+            this.EditStudentData.Text = "Edit Student Data";
+            this.EditStudentData.UseVisualStyleBackColor = true;
+            // 
+            // Attended
+            // 
+            this.Attended.Location = new System.Drawing.Point(3, 18);
+            this.Attended.Name = "Attended";
+            this.Attended.Size = new System.Drawing.Size(217, 40);
+            this.Attended.TabIndex = 0;
+            this.Attended.Text = "Attended";
+            this.Attended.UseVisualStyleBackColor = true;
+            this.Attended.Click += new System.EventHandler(this.Attended_Click);
             // 
             // acceptButtonDataGridViewTextBoxColumn
             // 
@@ -494,55 +543,6 @@ namespace StudentAttendanceSystem {
             // 
             this.attendedBindingSource.DataSource = typeof(StudentAttendanceSystem.Attended);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.EditStudentData);
-            this.panel1.Controls.Add(this.Attended);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 621);
-            this.panel1.TabIndex = 8;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 91);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(217, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // EditStudentData
-            // 
-            this.EditStudentData.Location = new System.Drawing.Point(3, 55);
-            this.EditStudentData.Name = "EditStudentData";
-            this.EditStudentData.Size = new System.Drawing.Size(217, 40);
-            this.EditStudentData.TabIndex = 1;
-            this.EditStudentData.Text = "Edit Student Data";
-            this.EditStudentData.UseVisualStyleBackColor = true;
-            // 
-            // Attended
-            // 
-            this.Attended.Location = new System.Drawing.Point(3, 18);
-            this.Attended.Name = "Attended";
-            this.Attended.Size = new System.Drawing.Size(217, 40);
-            this.Attended.TabIndex = 0;
-            this.Attended.Text = "Attended";
-            this.Attended.UseVisualStyleBackColor = true;
-            this.Attended.Click += new System.EventHandler(this.Attended_Click);
-            // 
             // mainBindingSource
             // 
             this.mainBindingSource.DataSource = typeof(StudentAttendanceSystem.Main);
@@ -562,8 +562,8 @@ namespace StudentAttendanceSystem {
             this.Text = "GroupInformation";
             this.Load += new System.EventHandler(this.GroupInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.attendedBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.attendedBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
