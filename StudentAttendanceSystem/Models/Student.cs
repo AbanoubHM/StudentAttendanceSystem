@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAttendanceSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace StudentAttendanceSystem
 {
     public class Student
     {
-        public int StudentID { get; set; }
+        public int ID { get; set; }
         //Main Student Data
         public string Name { get; set; }
         public string NameAR { get; set; }
@@ -31,7 +32,7 @@ namespace StudentAttendanceSystem
         //Overall Notes
         public string Notes { get; set; }
 
-        public ICollection<Attendance> Attendances { get; set; }
-        public TrackInfo TrackInfo { get; set; }
+        public ICollection<Attend> Attends { get; set; }
+        public Enrollment Enrollment { get; set; }
     }
 }

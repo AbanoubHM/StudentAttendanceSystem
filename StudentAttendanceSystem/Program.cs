@@ -14,13 +14,7 @@ namespace StudentAttendanceSystem {
             #region CodeFirst Database Creation
             DateTime x = DateTime.Now;
             DataContext context = new DataContext();
-            TrackInfo trackInfo = new TrackInfo()
-            {
-                Branch = "aaa",
-                ID = 1,
-                Quarter = "A",
-                Track = "s"
-            };
+
 
             Student student = new Student()
             {
@@ -39,17 +33,11 @@ namespace StudentAttendanceSystem {
                 NID = 379,
                 Notes = "22",
                 Phone = "1111",
-                StudentID = 1,
+                ID = 1,
                 Specialization = "s",
                 University = "ss"
             };
-            Attendance attendance = new Attendance()
-            {
-                ADate = x,
-                Excuse = "aa",
-                Presence = true
 
-            };
 
             context.Students.Add(student);
 

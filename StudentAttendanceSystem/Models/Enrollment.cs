@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentAttendanceSystem
 {
-    public class TrackInfo
+    public class Enrollment
     {
         public int ID { get; set; }
         public string Track { get; set; }

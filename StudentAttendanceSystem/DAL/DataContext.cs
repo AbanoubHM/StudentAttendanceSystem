@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAttendanceSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace StudentAttendanceSystem
         }
 
         public DbSet<Student> Students { get; set; }
-        public DbSet<TrackInfo> TrackInfos { get; set; }
-        public DbSet<Attendance> attendances { get; set; }
+        public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<DailyAttend> DailyAttends { get; set; }
+        public DbSet<Attend> Attends { get; set; }
     }
 }
