@@ -7,20 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
 
 namespace StudentAttendanceSystem
 {
     public partial class Main : Form
     {
+        DataContext DB = new DataContext();
+
         public Main()
         {
+           
             InitializeComponent();
-            string[] Quarters = new string[] { "Quarter1", "Quarter2", "Quarter3", "Quarter4" };
-            ITIQuarter_Combo.Items.AddRange(Quarters);
-            string[] TrackGroup = new string[] { "Group1", "Group2" };
-            TrackGroupCombo.Items.AddRange(TrackGroup);
-            string[] Tracks = new string[] { " FullStack.Net", "CyperSecurity", "FendoumentalSoftWare", "FullStackUsing | Paython" };
-            Track_Combo.Items.AddRange(Tracks);
+           // var Quarters = DB.Enrollments;
+            ITIQuarter_Combo.DataSource= DB.Enrollments.Select(e=>e.Quarter).Distinct().ToList();
+           
 
 
 
@@ -51,10 +52,11 @@ namespace StudentAttendanceSystem
 
         private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
-           
-          
 
+            ComboBox comboBox = (ComboBox)sender ;
+            string search=  comboBox.SelectedItem.ToString();
+            var Trackes = DB.Enrollments.Where(a=>a.Quarter== search).Select(a => a.Track).ToList();
+            Track_Combo.DataSource = Trackes;
         }
 
         private void Track_Combo_SelectedIndexChanged(object sender, EventArgs e)
