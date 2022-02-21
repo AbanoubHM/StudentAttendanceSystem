@@ -57,9 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202202210535303_InitialCreate.cs" />
-    <Compile Include="Migrations\202202210535303_InitialCreate.designer.cs">
-      <DependentUpon>202202210535303_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202202210606464_InitialCreate.cs" />
+    <Compile Include="Migrations\202202210606464_InitialCreate.designer.cs">
+      <DependentUpon>202202210606464_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attend.cs" />
@@ -91,8 +91,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202210535303_InitialCreate.resx">
-      <DependentUpon>202202210535303_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202210606464_InitialCreate.resx">
+      <DependentUpon>202202210606464_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
