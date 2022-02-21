@@ -39,7 +39,7 @@
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         NameAR = c.String(),
-                        NID = c.Int(nullable: false),
+                        NID = c.Long(nullable: false),
                         City = c.String(),
                         Address = c.String(),
                         Moblie = c.String(),

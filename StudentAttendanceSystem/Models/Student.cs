@@ -14,7 +14,7 @@ namespace StudentAttendanceSystem
         public string Name { get; set; }
         public string NameAR { get; set; }
         public char Gender { get; set; }
-        public int NID { get; set; }
+        public long NID { get; set; }
         public string City { get; set; }
         public string Address { get; set; }
         public string Moblie { get; set; }
