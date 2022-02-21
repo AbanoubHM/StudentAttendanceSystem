@@ -69,5 +69,15 @@ namespace StudentAttendanceSystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_view_desk_calendar_contrasted_coloured_background {
+            get {
+                object obj = ResourceManager.GetObject("top-view-desk-calendar-contrasted-coloured-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
