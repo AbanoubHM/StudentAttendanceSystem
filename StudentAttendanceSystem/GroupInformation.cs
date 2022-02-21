@@ -88,10 +88,18 @@ namespace StudentAttendanceSystem {
             Active(EditStudent_Btn);
         }
 
+
         private void EditStudent_Btn_Click_1(object sender, EventArgs e)
         {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
+}
+        private void Attended_Click(object sender, EventArgs e) {
+            
+            Attended a = new Attended();
+            a.ShowDialog();
+            
+
         }
 
         
