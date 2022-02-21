@@ -48,7 +48,7 @@
                         University = c.String(),
                         Faculty = c.String(),
                         Specialization = c.String(),
-                        GradYear = c.DateTime(nullable: false),
+                        GradYear = c.DateTime(),
                         Grade = c.String(),
                         MilitaryState = c.String(),
                         MaterialState = c.String(),
@@ -70,16 +70,31 @@
                     })
                 .PrimaryKey(t => t.ID);
             
+            CreateTable(
+                "dbo.EnrollmentGroups",
+                c => new
+                    {
+                        EnrollmentGroupID = c.Int(nullable: false, identity: true),
+                        GNumber = c.Int(nullable: false),
+                        Enrollment_ID = c.Int(),
+                    })
+                .PrimaryKey(t => t.EnrollmentGroupID)
+                .ForeignKey("dbo.Enrollments", t => t.Enrollment_ID)
+                .Index(t => t.Enrollment_ID);
+            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.Students", "Enrollment_ID", "dbo.Enrollments");
+            DropForeignKey("dbo.EnrollmentGroups", "Enrollment_ID", "dbo.Enrollments");
             DropForeignKey("dbo.Attends", "Student_ID", "dbo.Students");
             DropForeignKey("dbo.Attends", "DailyAttend_ID", "dbo.DailyAttends");
+            DropIndex("dbo.EnrollmentGroups", new[] { "Enrollment_ID" });
             DropIndex("dbo.Students", new[] { "Enrollment_ID" });
             DropIndex("dbo.Attends", new[] { "Student_ID" });
             DropIndex("dbo.Attends", new[] { "DailyAttend_ID" });
+            DropTable("dbo.EnrollmentGroups");
             DropTable("dbo.Enrollments");
             DropTable("dbo.Students");
             DropTable("dbo.DailyAttends");

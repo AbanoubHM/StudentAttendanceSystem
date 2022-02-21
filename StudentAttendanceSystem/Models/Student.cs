@@ -24,7 +24,7 @@ namespace StudentAttendanceSystem
         public string University { get; set; }
         public string Faculty { get; set; }
         public string Specialization { get; set; }
-        public DateTime GradYear { get; set; }
+        public DateTime? GradYear { get; set; }
         public string Grade { get; set; }
         //Status
         public string MilitaryState { get; set; }
