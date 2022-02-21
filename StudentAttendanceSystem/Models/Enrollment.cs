@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAttendanceSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,6 @@ namespace StudentAttendanceSystem
 
 
 
-        public List<Student> Students { get; set; }
+        public ICollection<Student> Students { get; set; }
     }
 }

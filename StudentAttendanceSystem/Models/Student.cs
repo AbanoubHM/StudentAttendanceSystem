@@ -14,7 +14,7 @@ namespace StudentAttendanceSystem
         public string Name { get; set; }
         public string NameAR { get; set; }
         public char Gender { get; set; }
-        public int NID { get; set; }
+        public long NID { get; set; }
         public string City { get; set; }
         public string Address { get; set; }
         public string Moblie { get; set; }
@@ -24,7 +24,7 @@ namespace StudentAttendanceSystem
         public string University { get; set; }
         public string Faculty { get; set; }
         public string Specialization { get; set; }
-        public DateTime GradYear { get; set; }
+        public DateTime? GradYear { get; set; }
         public string Grade { get; set; }
         //Status
         public string MilitaryState { get; set; }
