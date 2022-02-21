@@ -66,5 +66,10 @@ namespace StudentAttendanceSystem {
             FirstMain firstMain = new FirstMain();
             firstMain.ShowDialog();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

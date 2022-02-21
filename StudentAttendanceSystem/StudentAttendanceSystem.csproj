@@ -57,9 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202202210838531_Migration1.cs" />
-    <Compile Include="Migrations\202202210838531_Migration1.designer.cs">
-      <DependentUpon>202202210838531_Migration1.cs</DependentUpon>
+    <Compile Include="Migrations\202202212346591_test.cs" />
+    <Compile Include="Migrations\202202212346591_test.designer.cs">
+      <DependentUpon>202202212346591_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attend.cs" />
@@ -70,7 +70,6 @@
     <Compile Include="Attended.Designer.cs">
       <DependentUpon>Attended.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Attend_Student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,9 +82,7 @@
     <Compile Include="FirstMain.Designer.cs">
       <DependentUpon>FirstMain.cs</DependentUpon>
     </Compile>
-
     <Compile Include="DAL\DataContext.cs" />
-
     <Compile Include="GroupInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,7 +97,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,15 +115,13 @@
     <EmbeddedResource Include="GroupInformation.resx">
       <DependentUpon>GroupInformation.cs</DependentUpon>
     </EmbeddedResource>
-
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Enrollment.cs" />
-
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202210838531_Migration1.resx">
-      <DependentUpon>202202210838531_Migration1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202212346591_test.resx">
+      <DependentUpon>202202212346591_test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,13 +133,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-
     <None Include="packages.config" />
-
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
