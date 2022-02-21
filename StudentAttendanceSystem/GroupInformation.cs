@@ -16,9 +16,7 @@ namespace StudentAttendanceSystem {
             
         }
 
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) {
-
-        }
+       
 
 
         private void GroupInformation_Load(object sender, EventArgs e)
@@ -41,23 +39,7 @@ namespace StudentAttendanceSystem {
             Active(Attended);
         }
 
-        private void dataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
-        }
-
-        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-      
+       
 
         private void Enrollment_Btn_Click(object sender, EventArgs e)
         {
@@ -111,5 +93,7 @@ namespace StudentAttendanceSystem {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
         }
+
+        
     }
 }

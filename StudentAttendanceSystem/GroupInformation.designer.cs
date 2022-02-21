@@ -46,19 +46,17 @@ namespace StudentAttendanceSystem {
             // 
             // dataGridView
             // 
-            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridView.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(873, 645);
             this.dataGridView.TabIndex = 6;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick_1);
-            this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.EditStudent_Btn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.p1);
@@ -73,7 +71,7 @@ namespace StudentAttendanceSystem {
             // 
             // EditStudent_Btn
             // 
-            this.EditStudent_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.EditStudent_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.EditStudent_Btn.FlatAppearance.BorderSize = 0;
             this.EditStudent_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditStudent_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,7 +104,7 @@ namespace StudentAttendanceSystem {
             // 
             // Reports
             // 
-            this.Reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Reports.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.Reports.FlatAppearance.BorderSize = 0;
             this.Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reports.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,7 +119,7 @@ namespace StudentAttendanceSystem {
             // 
             // Enrollment_Btn
             // 
-            this.Enrollment_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Enrollment_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.Enrollment_Btn.FlatAppearance.BorderSize = 0;
             this.Enrollment_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enrollment_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +134,7 @@ namespace StudentAttendanceSystem {
             // 
             // Attended
             // 
-            this.Attended.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Attended.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.Attended.FlatAppearance.BorderSize = 0;
             this.Attended.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attended.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +149,7 @@ namespace StudentAttendanceSystem {
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
