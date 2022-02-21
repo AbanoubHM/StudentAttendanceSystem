@@ -26,7 +26,6 @@
             enrollments.ForEach(s => context.Enrollments.Add(s));
             context.SaveChanges();
 
-
             var students = new List<Student>
                 {
                 new Student{Name = "Azza Dawoud",NameAR = "عزة داود",Address = "Shalaby",Gender = 'F',City = "Mnoufia",Email = "Azza.Dawoud@gmail.com",Faculty = "CS",Grade = "Good",GradYear=DateTime.Parse("2005-09-01") ,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376529,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"},
@@ -37,6 +36,8 @@
                 };
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
+
+          
         }
     }
 }

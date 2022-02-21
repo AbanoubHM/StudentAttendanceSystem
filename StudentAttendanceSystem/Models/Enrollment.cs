@@ -17,6 +17,5 @@ namespace StudentAttendanceSystem
 
 
         public ICollection<Student> Students { get; set; }
-        public ICollection<EnrollmentGroup> EnrollmentGroups { get; set; }
     }
 }
