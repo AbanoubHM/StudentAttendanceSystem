@@ -92,7 +92,7 @@ namespace StudentAttendanceSystem {
         {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
-            StudentData s1 = new StudentData();
+            Name s1 = new Name();
             s1.ShowDialog();
         }
 
