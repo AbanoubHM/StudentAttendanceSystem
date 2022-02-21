@@ -10,11 +10,8 @@ namespace StudentAttendanceSystem
 {
     public class DailyAttend
     {
-        public int ID { get; set; }
+        public int DailyAttendID { get; set; }
         public DateTime ADate { get; set; }
-        public bool Presence { get; set; }
-        public string Excuse { get; set; }
-
         public ICollection<Attend> Attends { get; set; }
     }
 }

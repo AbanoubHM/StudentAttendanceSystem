@@ -14,8 +14,6 @@ namespace StudentAttendanceSystem {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
-            //Hello Fady
-            //Hello Bebo
         }
 
 
