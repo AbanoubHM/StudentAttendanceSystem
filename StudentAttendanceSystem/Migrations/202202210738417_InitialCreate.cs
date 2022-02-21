@@ -48,7 +48,7 @@
                         University = c.String(),
                         Faculty = c.String(),
                         Specialization = c.String(),
-                        GradYear = c.DateTime(),
+                        GradYear = c.Int(nullable: false),
                         Grade = c.String(),
                         MilitaryState = c.String(),
                         MaterialState = c.String(),
