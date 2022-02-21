@@ -17,7 +17,11 @@
         {
             var students = new List<Student>
                 {
-                new Student{Name = "Azza Dawoud",NameAR = "عزة داود",Address = "Shalaby",Gender = 'F',City = "Mnoufia",Email = "Ali@dd",Faculty = "SS",Grade = "One",MaterialState = "w",MilitaryState = "ss",Moblie = "00202",NID = 379,Notes = "22",Phone = "1111",ID = 1,Specialization = "s",University = "ss"},
+                new Student{Name = "Azza Dawoud",NameAR = "عزة داود",Address = "Shalaby",Gender = 'F',City = "Mnoufia",Email = "Azza.Dawoud@gmail.com",Faculty = "CS",Grade = "Good",MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376529,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"},
+                new Student{Name = "Ahmed Shalaby",NameAR = "احمد شلبى",Address = "Shalaby",Gender = 'M',City = "Mnoufia",Email = "Ahmed.Shalaby@gmail.com",Faculty = "CS",Grade = "Very Good",MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376527,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"},
+                new Student{Name = "Abanoub Harby",NameAR = "ابانوب حربى",Address = "Mataria",Gender = 'M',City = "Assuit",Email = "Abanoub.harby@gmail.com",Faculty = "CS",Grade = "Good",MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376526,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"},
+                new Student{Name = "ElHussien Mohammed",NameAR = "الحسين محمد",Address = "Brket El-Sabaa",Gender = 'M',City = "Mnoufia",Email = "Elhussien@gmail.com",Faculty = "CS",Grade = "Good",MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376525,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"},
+                new Student{Name = "Fady Shafeek",NameAR = "فادى شفيق",Address = "Shobra",Gender = 'M',City = "Cairo",Email = "Fady.Shafeek.com",Faculty = "CS",Grade = "Good",MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928376524,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia"}
                 };
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
