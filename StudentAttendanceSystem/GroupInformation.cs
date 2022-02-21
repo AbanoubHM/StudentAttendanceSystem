@@ -80,7 +80,7 @@ namespace StudentAttendanceSystem {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
         }
-        
+
 
 
     }
