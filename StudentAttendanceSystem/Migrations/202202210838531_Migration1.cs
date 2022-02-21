@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class Migration1 : DbMigration
     {
         public override void Up()
         {
@@ -11,34 +11,35 @@
                 "dbo.Attends",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
-                        DailyAttend_ID = c.Int(),
-                        Student_ID = c.Int(),
+                        AttendID = c.Int(nullable: false, identity: true),
+                        StudentID = c.Int(nullable: false),
+                        DailyAttendID = c.Int(nullable: false),
+                        Presence = c.Boolean(nullable: false),
+                        Excuse = c.String(),
                     })
-                .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.DailyAttends", t => t.DailyAttend_ID)
-                .ForeignKey("dbo.Students", t => t.Student_ID)
-                .Index(t => t.DailyAttend_ID)
-                .Index(t => t.Student_ID);
+                .PrimaryKey(t => t.AttendID)
+                .ForeignKey("dbo.DailyAttends", t => t.DailyAttendID, cascadeDelete: true)
+                .ForeignKey("dbo.Students", t => t.StudentID, cascadeDelete: true)
+                .Index(t => t.StudentID)
+                .Index(t => t.DailyAttendID);
             
             CreateTable(
                 "dbo.DailyAttends",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
+                        DailyAttendID = c.Int(nullable: false, identity: true),
                         ADate = c.DateTime(nullable: false),
-                        Presence = c.Boolean(nullable: false),
-                        Excuse = c.String(),
                     })
-                .PrimaryKey(t => t.ID);
+                .PrimaryKey(t => t.DailyAttendID);
             
             CreateTable(
                 "dbo.Students",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
+                        StudentID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         NameAR = c.String(),
+                        EnrollmentID = c.Int(nullable: false),
                         NID = c.Long(nullable: false),
                         City = c.String(),
                         Address = c.String(),
@@ -53,33 +54,32 @@
                         MilitaryState = c.String(),
                         MaterialState = c.String(),
                         Notes = c.String(),
-                        Enrollment_ID = c.Int(),
                     })
-                .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Enrollments", t => t.Enrollment_ID)
-                .Index(t => t.Enrollment_ID);
+                .PrimaryKey(t => t.StudentID)
+                .ForeignKey("dbo.Enrollments", t => t.EnrollmentID, cascadeDelete: true)
+                .Index(t => t.EnrollmentID);
             
             CreateTable(
                 "dbo.Enrollments",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
-                        Track = c.String(),
-                        Quarter = c.String(),
+                        EnrollmentID = c.Int(nullable: false, identity: true),
                         Branch = c.String(),
+                        Quarter = c.String(),
+                        Track = c.String(),
                     })
-                .PrimaryKey(t => t.ID);
+                .PrimaryKey(t => t.EnrollmentID);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Students", "Enrollment_ID", "dbo.Enrollments");
-            DropForeignKey("dbo.Attends", "Student_ID", "dbo.Students");
-            DropForeignKey("dbo.Attends", "DailyAttend_ID", "dbo.DailyAttends");
-            DropIndex("dbo.Students", new[] { "Enrollment_ID" });
-            DropIndex("dbo.Attends", new[] { "Student_ID" });
-            DropIndex("dbo.Attends", new[] { "DailyAttend_ID" });
+            DropForeignKey("dbo.Attends", "StudentID", "dbo.Students");
+            DropForeignKey("dbo.Students", "EnrollmentID", "dbo.Enrollments");
+            DropForeignKey("dbo.Attends", "DailyAttendID", "dbo.DailyAttends");
+            DropIndex("dbo.Students", new[] { "EnrollmentID" });
+            DropIndex("dbo.Attends", new[] { "DailyAttendID" });
+            DropIndex("dbo.Attends", new[] { "StudentID" });
             DropTable("dbo.Enrollments");
             DropTable("dbo.Students");
             DropTable("dbo.DailyAttends");

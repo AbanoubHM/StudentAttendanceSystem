@@ -9,13 +9,10 @@ namespace StudentAttendanceSystem
 {
     public class Enrollment
     {
-        public int ID { get; set; }
-        public string Track { get; set; }
-        public string Quarter { get; set; }
+        public int EnrollmentID { get; set; }
         public string Branch { get; set; }
-
-
-
+        public string Quarter { get; set; }
+        public string Track { get; set; }
         public ICollection<Student> Students { get; set; }
     }
 }

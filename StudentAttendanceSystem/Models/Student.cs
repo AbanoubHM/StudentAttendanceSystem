@@ -1,6 +1,7 @@
 ﻿using StudentAttendanceSystem.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,12 @@ namespace StudentAttendanceSystem
 {
     public class Student
     {
-        public int ID { get; set; }
+        public int StudentID { get; set; } 
         //Main Student Data
         public string Name { get; set; }
-        public string NameAR { get; set; }
+        public string NameAR { get; set; }        
+        [ForeignKey("Enrollment")]
+        public int EnrollmentID { get; set; }
         public char Gender { get; set; }
         public long NID { get; set; }
         public string City { get; set; }
