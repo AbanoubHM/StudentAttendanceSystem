@@ -16,5 +16,26 @@ namespace StudentAttendanceSystem
         {
             InitializeComponent();
         }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            //yearLbl.Text = dateTimePicker1.Value.AddYears(1).ToString();
+            yearLbl.Text = "-  "+(dateTimePicker1.Value.Year+1).ToString();
+        }
+
+        private void FirstMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
