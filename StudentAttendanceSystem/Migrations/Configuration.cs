@@ -18,7 +18,7 @@
         {
             var enrollments = new List<Enrollment>
             {
-                new Enrollment {Track="Full Stack Using .Net", Branch="Minya", Quarter= "Q2 2021 2022"},
+                new Enrollment {Track="Fullstack Web Development Using .Net", Branch="Minya", Quarter= "Q2 2021 2022"},
                 new Enrollment { Track = "Full Stack Using MEARN", Branch = "Minya", Quarter = "Q2 2021 2022"},
                 new Enrollment { Track = "GIS", Branch = "Minya", Quarter = "Q3 2021 2022" },
                 new Enrollment { Track = "Cyber Security", Branch = "Minya", Quarter = "Q1 2021 2022" }

@@ -42,12 +42,13 @@ namespace StudentAttendanceSystem
             // AddTrackBtn
             // 
             this.AddTrackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddTrackBtn.Location = new System.Drawing.Point(86, 199);
+            this.AddTrackBtn.Location = new System.Drawing.Point(85, 212);
             this.AddTrackBtn.Name = "AddTrackBtn";
             this.AddTrackBtn.Size = new System.Drawing.Size(401, 33);
             this.AddTrackBtn.TabIndex = 2;
             this.AddTrackBtn.Text = "Add";
             this.AddTrackBtn.UseVisualStyleBackColor = true;
+            this.AddTrackBtn.Click += new System.EventHandler(this.AddTrackBtn_Click);
             // 
             // label1
             // 
@@ -82,6 +83,7 @@ namespace StudentAttendanceSystem
             this.QTxtBox.Name = "QTxtBox";
             this.QTxtBox.Size = new System.Drawing.Size(390, 32);
             this.QTxtBox.TabIndex = 5;
+            this.QTxtBox.SelectedIndexChanged += new System.EventHandler(this.QTxtBox_SelectedIndexChanged);
             // 
             // TrackTxtBox
             // 
@@ -145,7 +147,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddTrackBtn);
             this.Name = "FirstMain";
-            this.Text = "FirstMain";
+            this.Text = "Add Enrollment";
             this.Load += new System.EventHandler(this.FirstMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
