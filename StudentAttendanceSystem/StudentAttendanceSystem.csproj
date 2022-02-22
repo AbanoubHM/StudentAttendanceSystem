@@ -115,6 +115,12 @@
     <Compile Include="Report_Details.Designer.cs">
       <DependentUpon>Report_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report_Student_Data_save.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Student_Data_save.Designer.cs">
+      <DependentUpon>Report_Student_Data_save.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report_Details.resx">
       <DependentUpon>Report_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Student_Data_save.resx">
+      <DependentUpon>Report_Student_Data_save.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentData.resx">
       <DependentUpon>StudentData.cs</DependentUpon>
