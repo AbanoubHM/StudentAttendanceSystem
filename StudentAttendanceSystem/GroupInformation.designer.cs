@@ -84,7 +84,7 @@ namespace StudentAttendanceSystem {
             this.Report_Btn.TabIndex = 7;
             this.Report_Btn.Text = "Report";
             this.Report_Btn.UseVisualStyleBackColor = false;
-            this.Report_Btn.Click += new System.EventHandler(this.Report_Btn_Click);
+            this.Report_Btn.Click += new System.EventHandler(this.Reports_Click);
             // 
             // EditStudent_Btn
             // 
@@ -121,18 +121,18 @@ namespace StudentAttendanceSystem {
             // 
             // Reports
             // 
-            this.Reports.BackColor = System.Drawing.Color.Goldenrod;
-            this.Reports.FlatAppearance.BorderSize = 0;
-            this.Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reports.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reports.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Reports.Location = new System.Drawing.Point(3, 387);
-            this.Reports.Name = "Reports";
-            this.Reports.Size = new System.Drawing.Size(214, 65);
-            this.Reports.TabIndex = 3;
-            this.Reports.Text = "Report";
-            this.Reports.UseVisualStyleBackColor = false;
-            this.Reports.Click += new System.EventHandler(this.Reports_Click);
+            this.Report_Btn.BackColor = System.Drawing.Color.Goldenrod;
+            this.Report_Btn.FlatAppearance.BorderSize = 0;
+            this.Report_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Report_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Report_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Report_Btn.Location = new System.Drawing.Point(3, 387);
+            this.Report_Btn.Name = "Reports";
+            this.Report_Btn.Size = new System.Drawing.Size(214, 65);
+            this.Report_Btn.TabIndex = 3;
+            this.Report_Btn.Text = "Report";
+            this.Report_Btn.UseVisualStyleBackColor = false;
+            this.Report_Btn.Click += new System.EventHandler(this.Reports_Click);
             // 
             // Enrollment_Btn
             // 
@@ -214,7 +214,6 @@ namespace StudentAttendanceSystem {
             this.AddStudent_Btn.TabIndex = 8;
             this.AddStudent_Btn.Text = "Add Student";
             this.AddStudent_Btn.UseVisualStyleBackColor = true;
-            this.AddStudent_Btn.Click += new System.EventHandler(this.AddStudent_Btn_Click_1);
             // 
             // GroupInformation
             // 

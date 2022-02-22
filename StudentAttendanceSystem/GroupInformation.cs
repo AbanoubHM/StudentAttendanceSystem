@@ -49,8 +49,8 @@ namespace StudentAttendanceSystem {
         }
         private void Reports_Click(object sender, EventArgs e)
         {
-            position(Reports);
-            Active(Reports);
+            position(Report_Btn);
+            Active(Report_Btn);
         }
         private void Active(Button b) {
             foreach (Control ctr in panel1.Controls) {
