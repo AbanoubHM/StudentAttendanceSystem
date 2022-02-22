@@ -18,10 +18,10 @@
         {
             var enrollments = new List<Enrollment>
             {
-                new Enrollment {Track="Full Stack Using .Net", Branch="Minya", Quarter= "Q2 2021 2022"},
-                new Enrollment { Track = "Full Stack Using MEARN", Branch = "Minya", Quarter = "Q2 2021 2022"},
-                new Enrollment { Track = "GIS", Branch = "Minya", Quarter = "Q3 2021 2022" },
-                new Enrollment { Track = "Cyber Security", Branch = "Minya", Quarter = "Q1 2021 2022" }
+                new Enrollment {Track="Fullstack Web Development Using .Net", Branch="Minya", Quarter= "2021 2022 Q2"},
+                new Enrollment { Track = "Fullstack Web Development Using MEARN", Branch = "Minya", Quarter = "2021 2022 Q2"},
+                new Enrollment { Track = "GIS", Branch = "Minya", Quarter = "2021 2022 Q3" },
+                new Enrollment { Track = "Cyber Security", Branch = "Minya", Quarter = "2021 2022 Q1" }
             };
             enrollments.ForEach(s => context.Enrollments.Add(s));
             context.SaveChanges();
