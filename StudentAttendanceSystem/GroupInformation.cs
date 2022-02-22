@@ -83,9 +83,13 @@ namespace StudentAttendanceSystem {
         }
 
 
-        private void EditStudent_Btn_Click_1(object sender, EventArgs e) {
+        private void EditStudent_Btn_Click_1(object sender, EventArgs e)
+        {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
+            Name s1 = new Name();
+            s1.ShowDialog();
+
         }
 
 
