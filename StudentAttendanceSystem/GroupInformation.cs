@@ -49,6 +49,9 @@ namespace StudentAttendanceSystem {
         private void Enrollment_Btn_Click(object sender, EventArgs e) {
             position(Enrollment_Btn);
             Active(Enrollment_Btn);
+            FirstMain firstMain = new FirstMain();
+            firstMain.ShowDialog();
+           
         }
 
         private void Reports_Click(object sender, EventArgs e) {
