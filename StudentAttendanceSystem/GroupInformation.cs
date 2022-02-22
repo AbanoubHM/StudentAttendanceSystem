@@ -54,6 +54,19 @@ namespace StudentAttendanceSystem {
            
         }
 
+
+       
+       
+
+
+
+
+
+
+
+
+
+
         private void Reports_Click(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
@@ -96,14 +109,7 @@ namespace StudentAttendanceSystem {
             s1.ShowDialog();
 
         }
-        private void AddStudent_Btn_Click(object sender, EventArgs e)
-        {
-            position(AddStudent_Btn);
-            Active(AddStudent_Btn);
-    
-          
-
-        }
+       
 
         private void Report_Btn_Click(object sender, EventArgs e)
         {
@@ -111,6 +117,14 @@ namespace StudentAttendanceSystem {
             Active(Report_Btn);
             Report_Details r4 = new Report_Details();
             r4.ShowDialog();
+        }
+
+        private void AddStudent_Btn_Click_1(object sender, EventArgs e)
+        {
+            position(AddStudent_Btn);
+            Active(AddStudent_Btn);
+            Add_Students a4 = new Add_Students();
+            a4.Show();
         }
     }
 }
