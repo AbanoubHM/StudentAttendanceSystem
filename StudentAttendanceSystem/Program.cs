@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace StudentAttendanceSystem {
     internal static class Program {
         /// <summary>
@@ -14,8 +15,6 @@ namespace StudentAttendanceSystem {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
-            //Hello Fady
-            //Hello Bebo
         }
 
 

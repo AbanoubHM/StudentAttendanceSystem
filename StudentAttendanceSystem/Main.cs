@@ -7,59 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
 
-namespace StudentAttendanceSystem
-{
-    public partial class Main : Form
-    {
-    
+namespace StudentAttendanceSystem {
+    public partial class Main : Form {
 
-        public Main()
-        {
+        DataContext DB = new DataContext();
+
+
+        public Main() {
+
             InitializeComponent();
-            string[] Quarters = new string[] { "Quarter1", "Quarter2", "Quarter3", "Quarter4" };
-            ITIQuarter_Combo.Items.AddRange(Quarters);
-            string[] TrackGroup = new string[] { "Group1", "Group2" };
-            //TrackGroupCombo.Items.AddRange(TrackGroup);
-            string[] Tracks = new string[] { " FullStack.Net", "CyperSecurity", "FendoumentalSoftWare", "FullStackUsing | Paython" };
-            Track_Combo.Items.AddRange(Tracks);
-           
 
+            ITIQuarter_Combo.DataSource = DB.Enrollments.Select(e => e.Quarter).Distinct().ToList();
 
 
         }
-        
-      
-        private void Close_btn_Click(object sender, EventArgs e)
-        {
+
+
+        private void Close_btn_Click(object sender, EventArgs e) {
             this.Close();
         }
-       
-        private void Open_btn_Click(object sender, EventArgs e)
-        {
-            GroupInformation g1 = new GroupInformation();
+
+        private void Open_btn_Click(object sender, EventArgs e) {
+
+
+
+            var ee = from Enrollment in DB.Enrollments
+                     where (Enrollment.Quarter == ITIQuarter_Combo.SelectedItem.ToString()) &&
+                     (Enrollment.Track == Track_Combo.SelectedItem.ToString())
+                     select Enrollment;
 
             
+            GroupInformation g1 = new GroupInformation(ee.ToList()[0] as Enrollment);
+
+
             g1.ShowDialog();
-            
+
         }
 
-        private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
+        private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e) {
 
-           
-        }
-       
-        private void Track_Combo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if()
+            Track_Combo.DataSource = DB.Enrollments.Where(a => a.Quarter == ITIQuarter_Combo.SelectedItem.ToString()).Select(a => a.Track).ToList();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        
+        private void button1_Click(object sender, EventArgs e) {
             FirstMain firstMain = new FirstMain();
             firstMain.ShowDialog();
+            ITIQuarter_Combo.DataSource = DB.Enrollments.Select(h => h.Quarter).Distinct().ToList();
+
         }
     }
 }
