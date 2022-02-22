@@ -32,7 +32,6 @@ namespace StudentAttendanceSystem
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            //yearLbl.Text = dateTimePicker1.Value.AddYears(1).ToString();
             yearLbl.Text = "-  "+(dateTimePicker1.Value.Year+1).ToString();
         }
 
@@ -48,7 +47,7 @@ namespace StudentAttendanceSystem
 
         private void AddTrackBtn_Click(object sender, EventArgs e)
         {
-            Enrollment enrollment = new Enrollment() { Quarter = QTxtBox.SelectedItem.ToString()+" "+ (dateTimePicker1.Value.Year).ToString() +" "+ (dateTimePicker1.Value.Year + 1).ToString(),
+            Enrollment enrollment = new Enrollment() { Quarter = (dateTimePicker1.Value.Year).ToString() +" "+ (dateTimePicker1.Value.Year + 1).ToString()+" "+QTxtBox.SelectedItem.ToString(),
                  Track = TrackTxtBox.SelectedItem.ToString(), Branch= "Minya"
             };
             DB.Enrollments.Add(enrollment);

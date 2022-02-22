@@ -15,18 +15,11 @@ namespace StudentAttendanceSystem {
         DataContext DB = new DataContext();
 
 
-
-
         public Main() {
 
             InitializeComponent();
 
-            // var Quarters = DB.Enrollments;
             ITIQuarter_Combo.DataSource = DB.Enrollments.Select(e => e.Quarter).Distinct().ToList();
-
-
-
-
 
 
         }
@@ -46,29 +39,15 @@ namespace StudentAttendanceSystem {
 
         private void ITIQuarter_Combo_SelectedIndexChanged(object sender, EventArgs e) {
 
-
-            ComboBox comboBox = (ComboBox)sender;
-            string search = comboBox.SelectedItem.ToString();
-            var Trackes = DB.Enrollments.Where(a => a.Quarter == search).Select(a => a.Track).ToList();
-            Track_Combo.DataSource = Trackes;
-
-
-
-
+            Track_Combo.DataSource = DB.Enrollments.Where(a => a.Quarter == ITIQuarter_Combo.SelectedItem.ToString()).Select(a => a.Track).ToList();
 
         }
 
-        private void Track_Combo_SelectedIndexChanged(object sender, EventArgs e) {
-            //if()
-        }
-
+        
         private void button1_Click(object sender, EventArgs e) {
             FirstMain firstMain = new FirstMain();
             firstMain.ShowDialog();
-        }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
+            ITIQuarter_Combo.DataSource = DB.Enrollments.Select(h => h.Quarter).Distinct().ToList();
 
         }
     }
