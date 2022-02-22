@@ -71,7 +71,7 @@ namespace StudentAttendanceSystem {
             // 
             // EditStudent_Btn
             // 
-            this.EditStudent_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.EditStudent_Btn.BackColor = System.Drawing.Color.Goldenrod;
             this.EditStudent_Btn.FlatAppearance.BorderSize = 0;
             this.EditStudent_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditStudent_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +104,7 @@ namespace StudentAttendanceSystem {
             // 
             // Reports
             // 
-            this.Reports.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.Reports.BackColor = System.Drawing.Color.Goldenrod;
             this.Reports.FlatAppearance.BorderSize = 0;
             this.Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reports.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,7 +119,7 @@ namespace StudentAttendanceSystem {
             // 
             // Enrollment_Btn
             // 
-            this.Enrollment_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.Enrollment_Btn.BackColor = System.Drawing.Color.Goldenrod;
             this.Enrollment_Btn.FlatAppearance.BorderSize = 0;
             this.Enrollment_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enrollment_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,7 +134,7 @@ namespace StudentAttendanceSystem {
             // 
             // Attended
             // 
-            this.Attended.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.Attended.BackColor = System.Drawing.Color.Goldenrod;
             this.Attended.FlatAppearance.BorderSize = 0;
             this.Attended.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attended.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -46,5 +46,15 @@ namespace StudentAttendanceSystem
             //gridData[rowIndex].BirthDate = dateTimePicker1.Value;
             //dataGridView1.Invalidate();
         }
+
+        private void CityLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NotesLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

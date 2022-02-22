@@ -58,7 +58,6 @@ namespace StudentAttendanceSystem
             this.ITIQuarter_Combo.Name = "ITIQuarter_Combo";
             this.ITIQuarter_Combo.Size = new System.Drawing.Size(352, 21);
             this.ITIQuarter_Combo.TabIndex = 2;
-  
             // 
             // Track
             // 
@@ -110,9 +109,9 @@ namespace StudentAttendanceSystem
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(449, 32);
+            this.button1.Location = new System.Drawing.Point(221, 25);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 51);
+            this.button1.Size = new System.Drawing.Size(291, 51);
             this.button1.TabIndex = 9;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = false;
@@ -134,12 +133,10 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.Track);
             this.Controls.Add(this.ITIQuarter_Combo);
             this.Controls.Add(this.ITI_Quarter);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
-            //this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
