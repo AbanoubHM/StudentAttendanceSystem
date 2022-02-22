@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,9 +12,13 @@ using System.Windows.Forms;
 namespace StudentAttendanceSystem {
     public partial class GroupInformation : Form {
 
-        public GroupInformation() {
-            InitializeComponent();
+        Enrollment enrollment;
+        DataContext db=new DataContext();
 
+        public GroupInformation(Enrollment e1) {
+            InitializeComponent();
+            enrollment = e1;
+            
         }
 
 
@@ -23,6 +28,8 @@ namespace StudentAttendanceSystem {
             position(Attended);
             p1.Height = Attended.Height;
             Active(Attended);
+
+            dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
         }
 
         private void position(Button b) {
