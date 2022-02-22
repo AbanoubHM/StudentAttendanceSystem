@@ -58,6 +58,7 @@ namespace StudentAttendanceSystem
             this.ITIQuarter_Combo.Name = "ITIQuarter_Combo";
             this.ITIQuarter_Combo.Size = new System.Drawing.Size(352, 21);
             this.ITIQuarter_Combo.TabIndex = 2;
+            this.ITIQuarter_Combo.SelectedIndexChanged += new System.EventHandler(this.ITIQuarter_Combo_SelectedIndexChanged);
             // 
             // Track
             // 
