@@ -30,7 +30,7 @@ namespace StudentAttendanceSystem
         private void InitializeComponent()
         {
             this.Back_Btn = new System.Windows.Forms.Button();
-            this.Save_Btn = new System.Windows.Forms.Button();
+            this.Add_Btn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NotesLbl = new System.Windows.Forms.Label();
             this.MaterialStatetextBox = new System.Windows.Forms.TextBox();
@@ -71,21 +71,21 @@ namespace StudentAttendanceSystem
             // 
             // Back_Btn
             // 
-            this.Back_Btn.Location = new System.Drawing.Point(151, 709);
+            this.Back_Btn.Location = new System.Drawing.Point(167, 709);
             this.Back_Btn.Name = "Back_Btn";
             this.Back_Btn.Size = new System.Drawing.Size(141, 40);
             this.Back_Btn.TabIndex = 74;
             this.Back_Btn.Text = "Back";
             this.Back_Btn.UseVisualStyleBackColor = true;
             // 
-            // Save_Btn
+            // Add_Btn
             // 
-            this.Save_Btn.Location = new System.Drawing.Point(21, 709);
-            this.Save_Btn.Name = "Save_Btn";
-            this.Save_Btn.Size = new System.Drawing.Size(99, 40);
-            this.Save_Btn.TabIndex = 73;
-            this.Save_Btn.Text = "Save";
-            this.Save_Btn.UseVisualStyleBackColor = true;
+            this.Add_Btn.Location = new System.Drawing.Point(21, 709);
+            this.Add_Btn.Name = "Add_Btn";
+            this.Add_Btn.Size = new System.Drawing.Size(99, 40);
+            this.Add_Btn.TabIndex = 73;
+            this.Add_Btn.Text = "Add";
+            this.Add_Btn.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -476,7 +476,7 @@ namespace StudentAttendanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 749);
             this.Controls.Add(this.Back_Btn);
-            this.Controls.Add(this.Save_Btn);
+            this.Controls.Add(this.Add_Btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.NotesLbl);
             this.Controls.Add(this.MaterialStatetextBox);
@@ -523,7 +523,7 @@ namespace StudentAttendanceSystem
         #endregion
 
         private System.Windows.Forms.Button Back_Btn;
-        private System.Windows.Forms.Button Save_Btn;
+        private System.Windows.Forms.Button Add_Btn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label NotesLbl;
         private System.Windows.Forms.TextBox MaterialStatetextBox;
