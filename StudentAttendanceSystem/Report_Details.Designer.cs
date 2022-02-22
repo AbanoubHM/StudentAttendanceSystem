@@ -42,6 +42,7 @@ namespace StudentAttendanceSystem
             this.Attendance_Btn.TabIndex = 1;
             this.Attendance_Btn.Text = "Attendance For Students";
             this.Attendance_Btn.UseVisualStyleBackColor = true;
+            this.Attendance_Btn.Click += new System.EventHandler(this.Attendance_Btn_Click);
             // 
             // Student_Data_Btn
             // 
@@ -51,6 +52,7 @@ namespace StudentAttendanceSystem
             this.Student_Data_Btn.TabIndex = 2;
             this.Student_Data_Btn.Text = "Student Data";
             this.Student_Data_Btn.UseVisualStyleBackColor = true;
+            this.Student_Data_Btn.Click += new System.EventHandler(this.Student_Data_Btn_Click);
             // 
             // Advice_LBL
             // 

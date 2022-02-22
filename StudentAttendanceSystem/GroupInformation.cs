@@ -57,6 +57,8 @@ namespace StudentAttendanceSystem {
         private void Reports_Click(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
+            Report_Details r4 = new Report_Details();
+            r4.ShowDialog();
         }
         private void Active(Button b) {
             foreach (Control ctr in panel1.Controls) {
@@ -107,6 +109,8 @@ namespace StudentAttendanceSystem {
         {
             position(Report_Btn);
             Active(Report_Btn);
+            Report_Details r4 = new Report_Details();
+            r4.ShowDialog();
         }
     }
 }
