@@ -30,7 +30,16 @@ namespace StudentAttendanceSystem {
         }
 
         private void Open_btn_Click(object sender, EventArgs e) {
-            GroupInformation g1 = new GroupInformation();
+
+
+
+            var ee = from Enrollment in DB.Enrollments
+                     where (Enrollment.Quarter == ITIQuarter_Combo.SelectedItem.ToString()) &&
+                     (Enrollment.Track == Track_Combo.SelectedItem.ToString())
+                     select Enrollment;
+
+            
+            GroupInformation g1 = new GroupInformation(ee.ToList()[0] as Enrollment);
 
 
             g1.ShowDialog();
