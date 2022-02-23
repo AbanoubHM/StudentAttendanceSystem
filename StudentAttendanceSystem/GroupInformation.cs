@@ -126,7 +126,7 @@ namespace StudentAttendanceSystem {
         private void AddStudent_Btn_Click_1(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
-            Add_Students a4 = new Add_Students();
+            Add_Students a4 = new Add_Students(enrollment);
             a4.Show();
         }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
 
 namespace StudentAttendanceSystem
 {
@@ -45,6 +46,11 @@ namespace StudentAttendanceSystem
         {
             dateTimePicker1.Value = AttendDate;
             
+            
+            
+            //if (db.DailyAttends.Find(AttendDate) != null){
+            //    MessageBox.Show("Founddddd");
+            //}
             
             
             

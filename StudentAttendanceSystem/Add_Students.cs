@@ -12,9 +12,11 @@ namespace StudentAttendanceSystem
 {
     public partial class Add_Students : Form
     {
-        public Add_Students()
+        public Enrollment enrollment { get; set; }
+        public Add_Students(Enrollment e1)
         {
             InitializeComponent();
+            enrollment = e1;
         }
 
         private void Back_Btn_Click(object sender, EventArgs e)
