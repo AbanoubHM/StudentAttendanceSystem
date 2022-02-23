@@ -38,7 +38,7 @@ namespace StudentAttendanceSystem
             // 
             this.Attendance_Btn.BackColor = System.Drawing.SystemColors.Highlight;
             this.Attendance_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Attendance_Btn.Location = new System.Drawing.Point(34, 100);
+            this.Attendance_Btn.Location = new System.Drawing.Point(30, 80);
             this.Attendance_Btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Attendance_Btn.Name = "Attendance_Btn";
             this.Attendance_Btn.Size = new System.Drawing.Size(246, 34);
@@ -51,7 +51,7 @@ namespace StudentAttendanceSystem
             // 
             this.Student_Data_Btn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Student_Data_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Student_Data_Btn.Location = new System.Drawing.Point(336, 100);
+            this.Student_Data_Btn.Location = new System.Drawing.Point(301, 80);
             this.Student_Data_Btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Student_Data_Btn.Name = "Student_Data_Btn";
             this.Student_Data_Btn.Size = new System.Drawing.Size(246, 34);
@@ -64,7 +64,7 @@ namespace StudentAttendanceSystem
             // 
             this.Advice_LBL.AutoSize = true;
             this.Advice_LBL.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Advice_LBL.Location = new System.Drawing.Point(253, 10);
+            this.Advice_LBL.Location = new System.Drawing.Point(230, 9);
             this.Advice_LBL.Name = "Advice_LBL";
             this.Advice_LBL.Size = new System.Drawing.Size(111, 36);
             this.Advice_LBL.TabIndex = 3;
@@ -74,7 +74,7 @@ namespace StudentAttendanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 146);
+            this.ClientSize = new System.Drawing.Size(552, 122);
             this.Controls.Add(this.Advice_LBL);
             this.Controls.Add(this.Student_Data_Btn);
             this.Controls.Add(this.Attendance_Btn);
