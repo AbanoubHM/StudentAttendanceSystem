@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test : DbMigration
+    public partial class Migration2 : DbMigration
     {
         public override void Up()
         {
@@ -28,7 +28,7 @@
                 c => new
                     {
                         DailyAttendID = c.Int(nullable: false, identity: true),
-                        ADate = c.DateTime(nullable: false),
+                        ADate = c.DateTime(nullable: false, storeType: "date"),
                     })
                 .PrimaryKey(t => t.DailyAttendID);
             
@@ -40,7 +40,8 @@
                         Name = c.String(),
                         NameAR = c.String(),
                         EnrollmentID = c.Int(nullable: false),
-                        NID = c.Long(nullable: false),
+                        Gender = c.String(),
+                        NID = c.String(),
                         City = c.String(),
                         Address = c.String(),
                         Moblie = c.String(),
