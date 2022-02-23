@@ -30,6 +30,8 @@ namespace StudentAttendanceSystem {
             Active(Attended);
 
             dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+
+
         }
 
         private void position(Button b) {
@@ -77,10 +79,10 @@ namespace StudentAttendanceSystem {
             foreach (Control ctr in panel1.Controls) {
                 if (ctr.GetType() == typeof(Button)) {
                     if (ctr.Name == b.Name) {
-                        b.BackColor = Color.FromArgb(76, 76, 60);
-                        b.ForeColor = Color.FromArgb(242, 215, 213);
+                        b.BackColor = Color.FromArgb(2, 62, 138);
+                       // b.ForeColor = Color.FromArgb(173, 232, 244);
                     } else {
-                        ctr.BackColor = Color.FromArgb(77, 86, 86);
+                        ctr.BackColor = Color.FromArgb(3, 4, 94);
                         b.ForeColor = Color.White;
                     }
                 }
