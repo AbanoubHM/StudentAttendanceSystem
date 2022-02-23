@@ -17,6 +17,7 @@ namespace StudentAttendanceSystem
         Enrollment enrollment;
         DataContext db = new DataContext();
         BindingList<Models.Attend> displayList = new BindingList<Models.Attend>();
+        int dailyAttendId;
 
         public Attend_Student(DateTime date,Enrollment e1)
         {
@@ -45,16 +46,20 @@ namespace StudentAttendanceSystem
         private void Attend_Student_Load(object sender, EventArgs e)
         {
             dateTimePicker1.Value = AttendDate;
-            
-            
-            
-            //if (db.DailyAttends.Find(AttendDate) != null){
-            //    MessageBox.Show("Founddddd");
-            //}
-            
-            
-            
-            
+
+            var l1 = db.DailyAttends.Where(x => x.ADate == AttendDate).ToList();
+
+            if (l1.Count>0)
+            {
+                dailyAttendId = l1[0].DailyAttendID;
+                var l2 = db.Attends.Where(x=>x.DailyAttendID==dailyAttendId).ToList();
+                
+                MessageBox.Show("Founddddd");
+            }
+
+
+
+
             //dataGridView1.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
         }
     }
