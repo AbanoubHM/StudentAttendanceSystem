@@ -77,6 +77,7 @@ namespace StudentAttendanceSystem
             this.Back_Btn.TabIndex = 74;
             this.Back_Btn.Text = "Back";
             this.Back_Btn.UseVisualStyleBackColor = true;
+            this.Back_Btn.Click += new System.EventHandler(this.Back_Btn_Click);
             // 
             // Add_Btn
             // 
@@ -474,6 +475,7 @@ namespace StudentAttendanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(967, 749);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Add_Btn);
@@ -514,6 +516,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.dataGridView1);
             this.Name = "Add_Students";
             this.Text = "Add_Students";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

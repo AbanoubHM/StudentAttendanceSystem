@@ -21,12 +21,15 @@ namespace StudentAttendanceSystem
         {
             Report_Attendance_save s6 = new Report_Attendance_save();
             s6.ShowDialog();
+            this.Close();
         }
 
         private void Student_Data_Btn_Click(object sender, EventArgs e)
         {
             Report_Student_Data_save r3 = new Report_Student_Data_save();
             r3.ShowDialog();
+            this.Close();
+
         }
     }
 }
