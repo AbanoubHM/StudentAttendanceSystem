@@ -37,5 +37,10 @@ namespace StudentAttendanceSystem
 
         public ICollection<Attend> Attends { get; set; }
         public Enrollment Enrollment { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Name}";
+        }
     }
 }

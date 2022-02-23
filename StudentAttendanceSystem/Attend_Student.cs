@@ -54,6 +54,11 @@ namespace StudentAttendanceSystem
                 dailyAttendId = l1[0].DailyAttendID;
                 var l2 = db.Attends.Where(x=>x.DailyAttendID==dailyAttendId).ToList();
                 
+                dataGridView1.DataSource= l2;
+                foreach (var item in l2)
+                {
+
+                }
                 MessageBox.Show("Founddddd");
             }
 
