@@ -522,7 +522,6 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.NameLbl);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Name";
             this.Text = "StudentData";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
