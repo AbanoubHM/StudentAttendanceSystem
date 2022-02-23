@@ -24,11 +24,6 @@ namespace StudentAttendanceSystem {
 
         }
 
-
-        private void Close_btn_Click(object sender, EventArgs e) {
-            this.Close();
-        }
-
         private void Open_btn_Click(object sender, EventArgs e) {
 
 

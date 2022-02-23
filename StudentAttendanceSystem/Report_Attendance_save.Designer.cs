@@ -1,7 +1,7 @@
 ﻿
 namespace StudentAttendanceSystem
 {
-    partial class Test
+    partial class Report_Attendance_save
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,33 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Test
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(861, 426);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // Report_Attendance_save
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 576);
-            this.Name = "Test";
-            this.Text = "Test";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(877, 444);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "Report_Attendance_save";
+            this.Text = "Report_Attendance_save";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

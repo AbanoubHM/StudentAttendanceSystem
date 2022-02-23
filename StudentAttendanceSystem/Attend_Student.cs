@@ -24,6 +24,8 @@ namespace StudentAttendanceSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //GroupInformation g1 = new GroupInformation();
+            //g1.Show();
             this.Close();
         }
 
