@@ -65,10 +65,8 @@ namespace StudentAttendanceSystem
             this.NameARLbl = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.NameLbl = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Back_Btn
@@ -464,22 +462,17 @@ namespace StudentAttendanceSystem
             this.NameLbl.Text = "Name :";
             this.NameLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // panel1
+            // dataGridView
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(386, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(569, 691);
-            this.panel1.TabIndex = 75;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(778, 691);
-            this.dataGridView1.TabIndex = 39;
+            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(384, 12);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(746, 703);
+            this.dataGridView.TabIndex = 75;
             // 
             // Add_Students
             // 
@@ -487,7 +480,7 @@ namespace StudentAttendanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1157, 741);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Add_Btn);
             this.Controls.Add(this.textBox1);
@@ -527,8 +520,7 @@ namespace StudentAttendanceSystem
             this.Name = "Add_Students";
             this.Text = "Add_Students";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,7 +564,6 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.Label NameARLbl;
         private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.Label NameLbl;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
     }
 }
