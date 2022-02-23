@@ -77,7 +77,6 @@ namespace StudentAttendanceSystem
             this.Back_Btn.TabIndex = 74;
             this.Back_Btn.Text = "Back";
             this.Back_Btn.UseVisualStyleBackColor = true;
-           
             // 
             // Add_Btn
             // 
@@ -175,7 +174,6 @@ namespace StudentAttendanceSystem
             this.GradeLbl.TabIndex = 65;
             this.GradeLbl.Text = "Grade :";
             this.GradeLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-          
             // 
             // GradYeartextBox
             // 
@@ -251,7 +249,6 @@ namespace StudentAttendanceSystem
             this.UniversitytextBox.Name = "UniversitytextBox";
             this.UniversitytextBox.Size = new System.Drawing.Size(250, 34);
             this.UniversitytextBox.TabIndex = 58;
-           
             // 
             // UniversityLbl
             // 
@@ -318,7 +315,6 @@ namespace StudentAttendanceSystem
             this.MobiletextBox.Name = "MobiletextBox";
             this.MobiletextBox.Size = new System.Drawing.Size(250, 34);
             this.MobiletextBox.TabIndex = 52;
-            
             // 
             // MobileLbl
             // 
@@ -341,7 +337,6 @@ namespace StudentAttendanceSystem
             this.AddresstextBox.Name = "AddresstextBox";
             this.AddresstextBox.Size = new System.Drawing.Size(250, 34);
             this.AddresstextBox.TabIndex = 50;
-            
             // 
             // AddressLbl
             // 
@@ -517,10 +512,8 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.NameLbl);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Add_Students";
             this.Text = "Add_Students";
-           
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
