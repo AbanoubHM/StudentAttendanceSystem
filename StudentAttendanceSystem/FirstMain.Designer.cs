@@ -42,7 +42,7 @@ namespace StudentAttendanceSystem
             // AddTrackBtn
             // 
             this.AddTrackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddTrackBtn.Location = new System.Drawing.Point(85, 212);
+            this.AddTrackBtn.Location = new System.Drawing.Point(58, 191);
             this.AddTrackBtn.Name = "AddTrackBtn";
             this.AddTrackBtn.Size = new System.Drawing.Size(401, 33);
             this.AddTrackBtn.TabIndex = 2;
@@ -106,7 +106,7 @@ namespace StudentAttendanceSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 83);
+            this.label3.Location = new System.Drawing.Point(12, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 25);
             this.label3.TabIndex = 7;
@@ -137,7 +137,7 @@ namespace StudentAttendanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 257);
+            this.ClientSize = new System.Drawing.Size(535, 230);
             this.Controls.Add(this.yearLbl);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
@@ -146,6 +146,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddTrackBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FirstMain";
             this.Text = "Add Enrollment";
             this.Load += new System.EventHandler(this.FirstMain_Load);
