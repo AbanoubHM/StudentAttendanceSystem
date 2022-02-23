@@ -49,7 +49,7 @@ namespace StudentAttendanceSystem
             // 
             // Student_Data_Btn
             // 
-            this.Student_Data_Btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Student_Data_Btn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Student_Data_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Student_Data_Btn.Location = new System.Drawing.Point(336, 100);
             this.Student_Data_Btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
