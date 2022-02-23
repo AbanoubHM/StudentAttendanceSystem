@@ -30,8 +30,8 @@ namespace StudentAttendanceSystem
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport11 = new StudentAttendanceSystem.CrystalReport1();
             this.CrystalReport21 = new StudentAttendanceSystem.CrystalReport2();
+            this.CrystalReport11 = new StudentAttendanceSystem.CrystalReport1();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -43,8 +43,11 @@ namespace StudentAttendanceSystem
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.CrystalReport21;
+            this.crystalReportViewer1.ShowCloseButton = false;
+            this.crystalReportViewer1.ShowLogo = false;
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // ShowReport
             // 
