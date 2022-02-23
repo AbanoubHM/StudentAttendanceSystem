@@ -14,6 +14,7 @@ namespace StudentAttendanceSystem {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new ShowReport());
             Application.Run(new Main());
         }
 
