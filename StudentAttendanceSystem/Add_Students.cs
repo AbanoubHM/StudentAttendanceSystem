@@ -17,6 +17,9 @@ namespace StudentAttendanceSystem
             InitializeComponent();
         }
 
-       
+        private void Back_Btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

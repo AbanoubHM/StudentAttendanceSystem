@@ -73,9 +73,9 @@ namespace StudentAttendanceSystem {
             this.AddStudent_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddStudent_Btn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddStudent_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddStudent_Btn.Location = new System.Drawing.Point(0, 250);
+            this.AddStudent_Btn.Location = new System.Drawing.Point(3, 250);
             this.AddStudent_Btn.Name = "AddStudent_Btn";
-            this.AddStudent_Btn.Size = new System.Drawing.Size(193, 62);
+            this.AddStudent_Btn.Size = new System.Drawing.Size(190, 62);
             this.AddStudent_Btn.TabIndex = 8;
             this.AddStudent_Btn.Text = "Add Student";
             this.AddStudent_Btn.UseVisualStyleBackColor = false;

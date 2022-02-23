@@ -35,8 +35,7 @@ namespace StudentAttendanceSystem
 
         private void Back_Btn_Click(object sender, EventArgs e)
         {
-            //GroupInformation b3 = new GroupInformation();
-            //b3.ShowDialog();
+            this.Close();
         }
 
         private void Save_Btn_Click(object sender, EventArgs e)

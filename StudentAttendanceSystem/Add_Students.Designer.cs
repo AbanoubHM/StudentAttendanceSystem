@@ -77,6 +77,7 @@ namespace StudentAttendanceSystem
             this.Back_Btn.TabIndex = 74;
             this.Back_Btn.Text = "Back";
             this.Back_Btn.UseVisualStyleBackColor = true;
+            this.Back_Btn.Click += new System.EventHandler(this.Back_Btn_Click);
             // 
             // Add_Btn
             // 
