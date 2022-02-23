@@ -457,22 +457,26 @@ namespace StudentAttendanceSystem
             // 
             // Save_Btn
             // 
+            this.Save_Btn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Save_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_Btn.Location = new System.Drawing.Point(20, 717);
             this.Save_Btn.Name = "Save_Btn";
             this.Save_Btn.Size = new System.Drawing.Size(175, 32);
             this.Save_Btn.TabIndex = 36;
             this.Save_Btn.Text = "Save";
-            this.Save_Btn.UseVisualStyleBackColor = true;
+            this.Save_Btn.UseVisualStyleBackColor = false;
             this.Save_Btn.Click += new System.EventHandler(this.Save_Btn_Click);
             // 
             // Back_Btn
             // 
+            this.Back_Btn.BackColor = System.Drawing.Color.Gray;
+            this.Back_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_Btn.Location = new System.Drawing.Point(201, 717);
             this.Back_Btn.Name = "Back_Btn";
             this.Back_Btn.Size = new System.Drawing.Size(199, 32);
             this.Back_Btn.TabIndex = 37;
             this.Back_Btn.Text = "Back";
-            this.Back_Btn.UseVisualStyleBackColor = true;
+            this.Back_Btn.UseVisualStyleBackColor = false;
             this.Back_Btn.Click += new System.EventHandler(this.Back_Btn_Click);
             // 
             // Name
