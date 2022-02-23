@@ -2,7 +2,7 @@
 using System;
 
 namespace StudentAttendanceSystem {
-   public partial class GroupInformation {
+    public partial class GroupInformation {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,16 +29,16 @@ namespace StudentAttendanceSystem {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupInformation));
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Report_Btn = new System.Windows.Forms.Button();
             this.EditStudent_Btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.Panel();
-            this.AddStudent_Btn = new System.Windows.Forms.Button();
             this.Enrollment_Btn = new System.Windows.Forms.Button();
             this.Attended = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Report_Btn = new System.Windows.Forms.Button();
+            this.AddStudent_Btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,11 +58,11 @@ namespace StudentAttendanceSystem {
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.AddStudent_Btn);
             this.panel1.Controls.Add(this.Report_Btn);
             this.panel1.Controls.Add(this.EditStudent_Btn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.p1);
-            this.panel1.Controls.Add(this.AddStudent_Btn);
             this.panel1.Controls.Add(this.Enrollment_Btn);
             this.panel1.Controls.Add(this.Attended);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -70,6 +70,21 @@ namespace StudentAttendanceSystem {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 645);
             this.panel1.TabIndex = 8;
+            // 
+            // Report_Btn
+            // 
+            this.Report_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.Report_Btn.FlatAppearance.BorderSize = 0;
+            this.Report_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Report_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Report_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Report_Btn.Location = new System.Drawing.Point(3, 458);
+            this.Report_Btn.Name = "Report_Btn";
+            this.Report_Btn.Size = new System.Drawing.Size(214, 65);
+            this.Report_Btn.TabIndex = 7;
+            this.Report_Btn.Text = "Report";
+            this.Report_Btn.UseVisualStyleBackColor = false;
+            this.Report_Btn.Click += new System.EventHandler(this.Report_Btn_Click);
             // 
             // EditStudent_Btn
             // 
@@ -103,21 +118,6 @@ namespace StudentAttendanceSystem {
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(17, 65);
             this.p1.TabIndex = 4;
-            // 
-            // AddStudent_Btn
-            // 
-            this.AddStudent_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.AddStudent_Btn.FlatAppearance.BorderSize = 0;
-            this.AddStudent_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddStudent_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddStudent_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddStudent_Btn.Location = new System.Drawing.Point(3, 247);
-            this.AddStudent_Btn.Name = "AddStudent_Btn";
-            this.AddStudent_Btn.Size = new System.Drawing.Size(214, 65);
-            this.AddStudent_Btn.TabIndex = 3;
-            this.AddStudent_Btn.Text = "Add Students";
-            this.AddStudent_Btn.UseVisualStyleBackColor = false;
-            this.AddStudent_Btn.Click += new System.EventHandler(this.Reports_Click);
             // 
             // Enrollment_Btn
             // 
@@ -190,20 +190,16 @@ namespace StudentAttendanceSystem {
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Report_Btn
+            // AddStudent_Btn
             // 
-            this.Report_Btn.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.Report_Btn.FlatAppearance.BorderSize = 0;
-            this.Report_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Report_Btn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Report_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Report_Btn.Location = new System.Drawing.Point(3, 458);
-            this.Report_Btn.Name = "Report_Btn";
-            this.Report_Btn.Size = new System.Drawing.Size(214, 65);
-            this.Report_Btn.TabIndex = 7;
-            this.Report_Btn.Text = "Report";
-            this.Report_Btn.UseVisualStyleBackColor = false;
-            this.Report_Btn.Click += new System.EventHandler(this.Report_Btn_Click);
+            this.AddStudent_Btn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStudent_Btn.Location = new System.Drawing.Point(3, 250);
+            this.AddStudent_Btn.Name = "AddStudent_Btn";
+            this.AddStudent_Btn.Size = new System.Drawing.Size(214, 62);
+            this.AddStudent_Btn.TabIndex = 8;
+            this.AddStudent_Btn.Text = "Add Student";
+            this.AddStudent_Btn.UseVisualStyleBackColor = true;
+            this.AddStudent_Btn.Click += new System.EventHandler(this.AddStudent_Btn_Click_1);
             // 
             // GroupInformation
             // 
@@ -227,12 +223,11 @@ namespace StudentAttendanceSystem {
 
         }
 
-       
+
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button AddStudent_Btn;
         private System.Windows.Forms.Button Enrollment_Btn;
         private System.Windows.Forms.Button Attended;
         private System.Windows.Forms.Panel p1;
@@ -242,5 +237,6 @@ namespace StudentAttendanceSystem {
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button EditStudent_Btn;
         private System.Windows.Forms.Button Report_Btn;
+        private System.Windows.Forms.Button AddStudent_Btn;
     }
 }
