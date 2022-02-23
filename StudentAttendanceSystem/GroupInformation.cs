@@ -20,18 +20,22 @@ namespace StudentAttendanceSystem {
             enrollment = e1;
             
         }
-        private void GroupInformation_Load(object sender, EventArgs e)
-        {
+
+
+
+
+        private void GroupInformation_Load(object sender, EventArgs e) {
             position(Attended);
             p1.Height = Attended.Height;
             Active(Attended);
 
             dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
         }
-        private void position(Button b)
-        {
+
+        private void position(Button b) {
             p1.Location = new Point(b.Location.X - p1.Width, b.Location.Y);
         }
+
         private void Attended_Click(object sender, EventArgs e) {
 
             Attended a = new Attended();
@@ -39,18 +43,22 @@ namespace StudentAttendanceSystem {
             position(Attended);
             Active(Attended);
         }
-        private void Enrollment_Btn_Click(object sender, EventArgs e)
-        {
+
+
+
+        private void Enrollment_Btn_Click(object sender, EventArgs e) {
             position(Enrollment_Btn);
             Active(Enrollment_Btn);
             FirstMain firstMain = new FirstMain();
             firstMain.ShowDialog();
            
         }
-        private void Reports_Click(object sender, EventArgs e)
-        {
-            position(Report_Btn);
-            Active(Report_Btn);
+
+        private void Reports_Click(object sender, EventArgs e) {
+            position(AddStudent_Btn);
+            Active(AddStudent_Btn);
+            Report_Details r4 = new Report_Details();
+            r4.ShowDialog();
         }
         private void Active(Button b) {
             foreach (Control ctr in panel1.Controls) {
@@ -65,19 +73,21 @@ namespace StudentAttendanceSystem {
                 }
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
+
+        private void button1_Click(object sender, EventArgs e) {
             this.Close();
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
+
+        private void button2_Click(object sender, EventArgs e) {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void EditStudent_Btn_Click(object sender, EventArgs e)
-        {
+
+        private void EditStudent_Btn_Click(object sender, EventArgs e) {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
         }
+
+
         private void EditStudent_Btn_Click_1(object sender, EventArgs e)
         {
             position(EditStudent_Btn);
@@ -85,6 +95,22 @@ namespace StudentAttendanceSystem {
             Name s1 = new Name();
             s1.ShowDialog();
 
+        }
+        private void AddStudent_Btn_Click(object sender, EventArgs e)
+        {
+            position(AddStudent_Btn);
+            Active(AddStudent_Btn);
+    
+          
+
+        }
+
+        private void Report_Btn_Click(object sender, EventArgs e)
+        {
+            position(Report_Btn);
+            Active(Report_Btn);
+            Report_Details r4 = new Report_Details();
+            r4.ShowDialog();
         }
     }
 }
