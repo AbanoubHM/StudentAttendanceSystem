@@ -35,6 +35,8 @@ namespace StudentAttendanceSystem
             this.Track_Combo = new System.Windows.Forms.ComboBox();
             this.Open_btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // ITI_Quarter
@@ -104,6 +106,16 @@ namespace StudentAttendanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._0ae66dfa_27e5_4a95_84df_473cb94e787a;
+            this.pictureBox3.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(141, 72);
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,6 +124,7 @@ namespace StudentAttendanceSystem
             this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.hand_painted_watercolor_background_with_sky_clouds_shape;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(521, 247);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Open_btn);
             this.Controls.Add(this.Track_Combo);
@@ -123,6 +136,7 @@ namespace StudentAttendanceSystem
             this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +150,6 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.ComboBox Track_Combo;
         private System.Windows.Forms.Button Open_btn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -65,13 +65,15 @@ namespace StudentAttendanceSystem
             this.NameARLbl = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.NameLbl = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Back_Btn
             // 
-            this.Back_Btn.Location = new System.Drawing.Point(194, 717);
+            this.Back_Btn.Location = new System.Drawing.Point(195, 683);
             this.Back_Btn.Name = "Back_Btn";
             this.Back_Btn.Size = new System.Drawing.Size(141, 32);
             this.Back_Btn.TabIndex = 74;
@@ -81,9 +83,9 @@ namespace StudentAttendanceSystem
             // 
             // Add_Btn
             // 
-            this.Add_Btn.Location = new System.Drawing.Point(39, 717);
+            this.Add_Btn.Location = new System.Drawing.Point(45, 683);
             this.Add_Btn.Name = "Add_Btn";
-            this.Add_Btn.Size = new System.Drawing.Size(106, 32);
+            this.Add_Btn.Size = new System.Drawing.Size(144, 32);
             this.Add_Btn.TabIndex = 73;
             this.Add_Btn.Text = "Add";
             this.Add_Btn.UseVisualStyleBackColor = true;
@@ -91,7 +93,7 @@ namespace StudentAttendanceSystem
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(121, 677);
+            this.textBox1.Location = new System.Drawing.Point(119, 643);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 34);
@@ -103,7 +105,7 @@ namespace StudentAttendanceSystem
             this.NotesLbl.BackColor = System.Drawing.Color.Transparent;
             this.NotesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotesLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NotesLbl.Location = new System.Drawing.Point(17, 683);
+            this.NotesLbl.Location = new System.Drawing.Point(17, 661);
             this.NotesLbl.Name = "NotesLbl";
             this.NotesLbl.Size = new System.Drawing.Size(50, 16);
             this.NotesLbl.TabIndex = 71;
@@ -113,7 +115,7 @@ namespace StudentAttendanceSystem
             // MaterialStatetextBox
             // 
             this.MaterialStatetextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaterialStatetextBox.Location = new System.Drawing.Point(121, 637);
+            this.MaterialStatetextBox.Location = new System.Drawing.Point(119, 603);
             this.MaterialStatetextBox.Multiline = true;
             this.MaterialStatetextBox.Name = "MaterialStatetextBox";
             this.MaterialStatetextBox.Size = new System.Drawing.Size(248, 34);
@@ -125,7 +127,7 @@ namespace StudentAttendanceSystem
             this.MaterialStateLbl.BackColor = System.Drawing.Color.Transparent;
             this.MaterialStateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaterialStateLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.MaterialStateLbl.Location = new System.Drawing.Point(17, 640);
+            this.MaterialStateLbl.Location = new System.Drawing.Point(17, 621);
             this.MaterialStateLbl.Name = "MaterialStateLbl";
             this.MaterialStateLbl.Size = new System.Drawing.Size(93, 16);
             this.MaterialStateLbl.TabIndex = 69;
@@ -135,7 +137,7 @@ namespace StudentAttendanceSystem
             // MilitaryStatetextBox
             // 
             this.MilitaryStatetextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MilitaryStatetextBox.Location = new System.Drawing.Point(121, 597);
+            this.MilitaryStatetextBox.Location = new System.Drawing.Point(119, 563);
             this.MilitaryStatetextBox.Multiline = true;
             this.MilitaryStatetextBox.Name = "MilitaryStatetextBox";
             this.MilitaryStatetextBox.Size = new System.Drawing.Size(248, 34);
@@ -147,7 +149,7 @@ namespace StudentAttendanceSystem
             this.MilitaryStateLbl.BackColor = System.Drawing.Color.Transparent;
             this.MilitaryStateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MilitaryStateLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.MilitaryStateLbl.Location = new System.Drawing.Point(17, 600);
+            this.MilitaryStateLbl.Location = new System.Drawing.Point(17, 581);
             this.MilitaryStateLbl.Name = "MilitaryStateLbl";
             this.MilitaryStateLbl.Size = new System.Drawing.Size(87, 16);
             this.MilitaryStateLbl.TabIndex = 67;
@@ -157,7 +159,7 @@ namespace StudentAttendanceSystem
             // GradetextBox
             // 
             this.GradetextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GradetextBox.Location = new System.Drawing.Point(121, 552);
+            this.GradetextBox.Location = new System.Drawing.Point(119, 522);
             this.GradetextBox.Multiline = true;
             this.GradetextBox.Name = "GradetextBox";
             this.GradetextBox.Size = new System.Drawing.Size(248, 35);
@@ -169,7 +171,7 @@ namespace StudentAttendanceSystem
             this.GradeLbl.BackColor = System.Drawing.Color.Transparent;
             this.GradeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GradeLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GradeLbl.Location = new System.Drawing.Point(17, 560);
+            this.GradeLbl.Location = new System.Drawing.Point(19, 541);
             this.GradeLbl.Name = "GradeLbl";
             this.GradeLbl.Size = new System.Drawing.Size(52, 16);
             this.GradeLbl.TabIndex = 65;
@@ -179,7 +181,7 @@ namespace StudentAttendanceSystem
             // GradYeartextBox
             // 
             this.GradYeartextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GradYeartextBox.Location = new System.Drawing.Point(121, 512);
+            this.GradYeartextBox.Location = new System.Drawing.Point(119, 482);
             this.GradYeartextBox.Multiline = true;
             this.GradYeartextBox.Name = "GradYeartextBox";
             this.GradYeartextBox.Size = new System.Drawing.Size(248, 34);
@@ -191,7 +193,7 @@ namespace StudentAttendanceSystem
             this.GradYearLbl.BackColor = System.Drawing.Color.Transparent;
             this.GradYearLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GradYearLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GradYearLbl.Location = new System.Drawing.Point(17, 519);
+            this.GradYearLbl.Location = new System.Drawing.Point(17, 500);
             this.GradYearLbl.Name = "GradYearLbl";
             this.GradYearLbl.Size = new System.Drawing.Size(73, 16);
             this.GradYearLbl.TabIndex = 63;
@@ -201,10 +203,10 @@ namespace StudentAttendanceSystem
             // SpecializationtextBox
             // 
             this.SpecializationtextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpecializationtextBox.Location = new System.Drawing.Point(121, 472);
+            this.SpecializationtextBox.Location = new System.Drawing.Point(119, 442);
             this.SpecializationtextBox.Multiline = true;
             this.SpecializationtextBox.Name = "SpecializationtextBox";
-            this.SpecializationtextBox.Size = new System.Drawing.Size(248, 34);
+            this.SpecializationtextBox.Size = new System.Drawing.Size(250, 34);
             this.SpecializationtextBox.TabIndex = 62;
             // 
             // SpecializationLbl
@@ -213,7 +215,7 @@ namespace StudentAttendanceSystem
             this.SpecializationLbl.BackColor = System.Drawing.Color.Transparent;
             this.SpecializationLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpecializationLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SpecializationLbl.Location = new System.Drawing.Point(17, 478);
+            this.SpecializationLbl.Location = new System.Drawing.Point(15, 460);
             this.SpecializationLbl.Name = "SpecializationLbl";
             this.SpecializationLbl.Size = new System.Drawing.Size(98, 16);
             this.SpecializationLbl.TabIndex = 61;
@@ -223,7 +225,7 @@ namespace StudentAttendanceSystem
             // FacultytextBox
             // 
             this.FacultytextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacultytextBox.Location = new System.Drawing.Point(119, 430);
+            this.FacultytextBox.Location = new System.Drawing.Point(119, 402);
             this.FacultytextBox.Multiline = true;
             this.FacultytextBox.Name = "FacultytextBox";
             this.FacultytextBox.Size = new System.Drawing.Size(250, 34);
@@ -235,7 +237,7 @@ namespace StudentAttendanceSystem
             this.FacultyLbl.BackColor = System.Drawing.Color.Transparent;
             this.FacultyLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FacultyLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FacultyLbl.Location = new System.Drawing.Point(17, 436);
+            this.FacultyLbl.Location = new System.Drawing.Point(17, 420);
             this.FacultyLbl.Name = "FacultyLbl";
             this.FacultyLbl.Size = new System.Drawing.Size(57, 16);
             this.FacultyLbl.TabIndex = 59;
@@ -245,7 +247,7 @@ namespace StudentAttendanceSystem
             // UniversitytextBox
             // 
             this.UniversitytextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UniversitytextBox.Location = new System.Drawing.Point(121, 388);
+            this.UniversitytextBox.Location = new System.Drawing.Point(119, 362);
             this.UniversitytextBox.Multiline = true;
             this.UniversitytextBox.Name = "UniversitytextBox";
             this.UniversitytextBox.Size = new System.Drawing.Size(250, 34);
@@ -257,7 +259,7 @@ namespace StudentAttendanceSystem
             this.UniversityLbl.BackColor = System.Drawing.Color.Transparent;
             this.UniversityLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UniversityLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.UniversityLbl.Location = new System.Drawing.Point(17, 394);
+            this.UniversityLbl.Location = new System.Drawing.Point(16, 380);
             this.UniversityLbl.Name = "UniversityLbl";
             this.UniversityLbl.Size = new System.Drawing.Size(73, 16);
             this.UniversityLbl.TabIndex = 57;
@@ -267,7 +269,7 @@ namespace StudentAttendanceSystem
             // EmailtextBox
             // 
             this.EmailtextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailtextBox.Location = new System.Drawing.Point(121, 342);
+            this.EmailtextBox.Location = new System.Drawing.Point(119, 322);
             this.EmailtextBox.Multiline = true;
             this.EmailtextBox.Name = "EmailtextBox";
             this.EmailtextBox.Size = new System.Drawing.Size(250, 34);
@@ -279,7 +281,7 @@ namespace StudentAttendanceSystem
             this.EmailLbl.BackColor = System.Drawing.Color.Transparent;
             this.EmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.EmailLbl.Location = new System.Drawing.Point(17, 350);
+            this.EmailLbl.Location = new System.Drawing.Point(16, 340);
             this.EmailLbl.Name = "EmailLbl";
             this.EmailLbl.Size = new System.Drawing.Size(48, 16);
             this.EmailLbl.TabIndex = 55;
@@ -289,7 +291,7 @@ namespace StudentAttendanceSystem
             // PhonetextBox
             // 
             this.PhonetextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhonetextBox.Location = new System.Drawing.Point(121, 302);
+            this.PhonetextBox.Location = new System.Drawing.Point(119, 282);
             this.PhonetextBox.Multiline = true;
             this.PhonetextBox.Name = "PhonetextBox";
             this.PhonetextBox.Size = new System.Drawing.Size(250, 34);
@@ -301,7 +303,7 @@ namespace StudentAttendanceSystem
             this.PhoneLbl.BackColor = System.Drawing.Color.Transparent;
             this.PhoneLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PhoneLbl.Location = new System.Drawing.Point(17, 308);
+            this.PhoneLbl.Location = new System.Drawing.Point(17, 300);
             this.PhoneLbl.Name = "PhoneLbl";
             this.PhoneLbl.Size = new System.Drawing.Size(53, 16);
             this.PhoneLbl.TabIndex = 53;
@@ -311,7 +313,7 @@ namespace StudentAttendanceSystem
             // MobiletextBox
             // 
             this.MobiletextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MobiletextBox.Location = new System.Drawing.Point(121, 262);
+            this.MobiletextBox.Location = new System.Drawing.Point(119, 242);
             this.MobiletextBox.Multiline = true;
             this.MobiletextBox.Name = "MobiletextBox";
             this.MobiletextBox.Size = new System.Drawing.Size(250, 34);
@@ -323,7 +325,7 @@ namespace StudentAttendanceSystem
             this.MobileLbl.BackColor = System.Drawing.Color.Transparent;
             this.MobileLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MobileLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.MobileLbl.Location = new System.Drawing.Point(17, 265);
+            this.MobileLbl.Location = new System.Drawing.Point(17, 260);
             this.MobileLbl.Name = "MobileLbl";
             this.MobileLbl.Size = new System.Drawing.Size(55, 16);
             this.MobileLbl.TabIndex = 51;
@@ -333,7 +335,7 @@ namespace StudentAttendanceSystem
             // AddresstextBox
             // 
             this.AddresstextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddresstextBox.Location = new System.Drawing.Point(121, 218);
+            this.AddresstextBox.Location = new System.Drawing.Point(119, 202);
             this.AddresstextBox.Multiline = true;
             this.AddresstextBox.Name = "AddresstextBox";
             this.AddresstextBox.Size = new System.Drawing.Size(250, 34);
@@ -345,7 +347,7 @@ namespace StudentAttendanceSystem
             this.AddressLbl.BackColor = System.Drawing.Color.Transparent;
             this.AddressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddressLbl.Location = new System.Drawing.Point(17, 218);
+            this.AddressLbl.Location = new System.Drawing.Point(17, 220);
             this.AddressLbl.Name = "AddressLbl";
             this.AddressLbl.Size = new System.Drawing.Size(65, 16);
             this.AddressLbl.TabIndex = 49;
@@ -355,7 +357,7 @@ namespace StudentAttendanceSystem
             // CitytextBox
             // 
             this.CitytextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitytextBox.Location = new System.Drawing.Point(119, 172);
+            this.CitytextBox.Location = new System.Drawing.Point(119, 162);
             this.CitytextBox.Multiline = true;
             this.CitytextBox.Name = "CitytextBox";
             this.CitytextBox.Size = new System.Drawing.Size(250, 34);
@@ -367,7 +369,7 @@ namespace StudentAttendanceSystem
             this.CityLbl.BackColor = System.Drawing.Color.Transparent;
             this.CityLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CityLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CityLbl.Location = new System.Drawing.Point(17, 172);
+            this.CityLbl.Location = new System.Drawing.Point(16, 180);
             this.CityLbl.Name = "CityLbl";
             this.CityLbl.Size = new System.Drawing.Size(36, 16);
             this.CityLbl.TabIndex = 47;
@@ -377,7 +379,7 @@ namespace StudentAttendanceSystem
             // NIDtextBox
             // 
             this.NIDtextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NIDtextBox.Location = new System.Drawing.Point(119, 132);
+            this.NIDtextBox.Location = new System.Drawing.Point(119, 122);
             this.NIDtextBox.Multiline = true;
             this.NIDtextBox.Name = "NIDtextBox";
             this.NIDtextBox.Size = new System.Drawing.Size(250, 34);
@@ -389,7 +391,7 @@ namespace StudentAttendanceSystem
             this.NIDLbl.BackColor = System.Drawing.Color.Transparent;
             this.NIDLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NIDLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NIDLbl.Location = new System.Drawing.Point(17, 132);
+            this.NIDLbl.Location = new System.Drawing.Point(16, 140);
             this.NIDLbl.Name = "NIDLbl";
             this.NIDLbl.Size = new System.Drawing.Size(37, 16);
             this.NIDLbl.TabIndex = 45;
@@ -399,7 +401,7 @@ namespace StudentAttendanceSystem
             // GendertextBox
             // 
             this.GendertextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GendertextBox.Location = new System.Drawing.Point(119, 88);
+            this.GendertextBox.Location = new System.Drawing.Point(119, 82);
             this.GendertextBox.Multiline = true;
             this.GendertextBox.Name = "GendertextBox";
             this.GendertextBox.Size = new System.Drawing.Size(250, 34);
@@ -411,7 +413,7 @@ namespace StudentAttendanceSystem
             this.GenderLbl.BackColor = System.Drawing.Color.Transparent;
             this.GenderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GenderLbl.Location = new System.Drawing.Point(17, 89);
+            this.GenderLbl.Location = new System.Drawing.Point(17, 100);
             this.GenderLbl.Name = "GenderLbl";
             this.GenderLbl.Size = new System.Drawing.Size(59, 16);
             this.GenderLbl.TabIndex = 43;
@@ -421,7 +423,7 @@ namespace StudentAttendanceSystem
             // NameARtextBox
             // 
             this.NameARtextBox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameARtextBox.Location = new System.Drawing.Point(121, 48);
+            this.NameARtextBox.Location = new System.Drawing.Point(119, 42);
             this.NameARtextBox.Multiline = true;
             this.NameARtextBox.Name = "NameARtextBox";
             this.NameARtextBox.Size = new System.Drawing.Size(250, 34);
@@ -433,7 +435,7 @@ namespace StudentAttendanceSystem
             this.NameARLbl.BackColor = System.Drawing.Color.Transparent;
             this.NameARLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameARLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameARLbl.Location = new System.Drawing.Point(17, 48);
+            this.NameARLbl.Location = new System.Drawing.Point(17, 60);
             this.NameARLbl.Name = "NameARLbl";
             this.NameARLbl.Size = new System.Drawing.Size(70, 16);
             this.NameARLbl.TabIndex = 41;
@@ -455,28 +457,37 @@ namespace StudentAttendanceSystem
             this.NameLbl.BackColor = System.Drawing.Color.Transparent;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameLbl.Location = new System.Drawing.Point(17, 10);
+            this.NameLbl.Location = new System.Drawing.Point(19, 22);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(51, 16);
             this.NameLbl.TabIndex = 39;
             this.NameLbl.Text = "Name :";
             this.NameLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Location = new System.Drawing.Point(386, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(569, 691);
+            this.panel1.TabIndex = 75;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridView1.Location = new System.Drawing.Point(377, 0);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(590, 749);
-            this.dataGridView1.TabIndex = 38;
+            this.dataGridView1.Size = new System.Drawing.Size(778, 691);
+            this.dataGridView1.TabIndex = 39;
             // 
             // Add_Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(967, 749);
+            this.ClientSize = new System.Drawing.Size(1157, 741);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Add_Btn);
             this.Controls.Add(this.textBox1);
@@ -513,10 +524,10 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.NameARLbl);
             this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.NameLbl);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Add_Students";
             this.Text = "Add_Students";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -561,6 +572,7 @@ namespace StudentAttendanceSystem
         private System.Windows.Forms.Label NameARLbl;
         private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.Label NameLbl;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

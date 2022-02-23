@@ -128,5 +128,10 @@ namespace StudentAttendanceSystem {
             Add_Students a4 = new Add_Students();
             a4.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

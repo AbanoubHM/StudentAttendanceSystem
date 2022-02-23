@@ -63,9 +63,29 @@ namespace StudentAttendanceSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0ae66dfa_27e5_4a95_84df_473cb94e787a {
+            get {
+                object obj = ResourceManager.GetObject("0ae66dfa-27e5-4a95-84df-473cb94e787a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hand_painted_watercolor_background_with_sky_clouds_shape {
             get {
                 object obj = ResourceManager.GetObject("hand-painted-watercolor-background-with-sky-clouds-shape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images_iti {
+            get {
+                object obj = ResourceManager.GetObject("images iti", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

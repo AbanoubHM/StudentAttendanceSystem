@@ -73,7 +73,7 @@ namespace StudentAttendanceSystem
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridView1.Location = new System.Drawing.Point(423, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(406, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 749);
             this.dataGridView1.TabIndex = 0;
@@ -484,7 +484,7 @@ namespace StudentAttendanceSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(866, 749);
+            this.ClientSize = new System.Drawing.Size(866, 748);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Save_Btn);
             this.Controls.Add(this.textBox1);
