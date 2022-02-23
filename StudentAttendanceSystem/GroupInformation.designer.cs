@@ -33,9 +33,9 @@ namespace StudentAttendanceSystem {
             this.Report_Btn = new System.Windows.Forms.Button();
             this.EditStudent_Btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.p1 = new System.Windows.Forms.Panel();
             this.Enrollment_Btn = new System.Windows.Forms.Button();
             this.Attended = new System.Windows.Forms.Button();
-            this.p1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,7 +45,6 @@ namespace StudentAttendanceSystem {
             // 
             this.dataGridView.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Right;
             this.dataGridView.Location = new System.Drawing.Point(191, 0);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(746, 645);
@@ -122,6 +121,14 @@ namespace StudentAttendanceSystem {
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // p1
+            // 
+            this.p1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.p1.Location = new System.Drawing.Point(3, 179);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(10, 65);
+            this.p1.TabIndex = 4;
+            // 
             // Enrollment_Btn
             // 
             this.Enrollment_Btn.BackColor = System.Drawing.Color.Transparent;
@@ -152,14 +159,6 @@ namespace StudentAttendanceSystem {
             this.Attended.UseVisualStyleBackColor = false;
             this.Attended.Click += new System.EventHandler(this.Attended_Click);
             // 
-            // p1
-            // 
-            this.p1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.p1.Location = new System.Drawing.Point(3, 179);
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(10, 65);
-            this.p1.TabIndex = 4;
-            // 
             // GroupInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +170,7 @@ namespace StudentAttendanceSystem {
             this.IsMdiContainer = true;
             this.Name = "GroupInformation";
             this.Text = "GroupInformation";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GroupInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
