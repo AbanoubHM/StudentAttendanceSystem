@@ -35,8 +35,7 @@ namespace StudentAttendanceSystem
 
         private void Back_Btn_Click(object sender, EventArgs e)
         {
-            //GroupInformation b3 = new GroupInformation();
-            //b3.ShowDialog();
+            this.Close();
         }
 
         private void Save_Btn_Click(object sender, EventArgs e)
@@ -45,6 +44,16 @@ namespace StudentAttendanceSystem
             //gridData[rowIndex].Phone = int.Parse(PhoneTextBox.Text);
             //gridData[rowIndex].BirthDate = dateTimePicker1.Value;
             //dataGridView1.Invalidate();
+        }
+
+        private void CityLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NotesLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,8 +29,8 @@ namespace StudentAttendanceSystem {
             Attend_Student s = new Attend_Student();
             
             s.ShowDialog();
-           
-            
+
+            this.Close();
 
         }
         //private void Add_Click(object sender, EventArgs e) {
