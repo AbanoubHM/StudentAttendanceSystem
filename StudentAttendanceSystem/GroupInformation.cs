@@ -22,6 +22,7 @@ namespace StudentAttendanceSystem {
         }
         public GroupInformation()
         {
+            InitializeComponent();
 
         }
 
@@ -44,7 +45,7 @@ namespace StudentAttendanceSystem {
         private void Attended_Click(object sender, EventArgs e) {
             position(Attended);
             Active(Attended);
-            Attended a = new Attended();
+            Attended a = new Attended(enrollment);
             a.ShowDialog();
             
         }

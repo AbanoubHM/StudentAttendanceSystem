@@ -63,7 +63,6 @@ namespace StudentAttendanceSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.colorful_abstract_textured_background_design;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(417, 114);
             this.Controls.Add(this.Next);
@@ -72,7 +71,6 @@ namespace StudentAttendanceSystem {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Attended";
             this.Text = "Attended";
-            this.Load += new System.EventHandler(this.Attended_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,23 +10,22 @@ using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
     public partial class Attended : Form {
-        int index;
-        public Attended() {
+
+        Enrollment enrollment;
+
+        public Attended(Enrollment e1) {
             InitializeComponent();
+            enrollment = e1;
         }
 
-        private void Attended_Load(object sender, EventArgs e)
-        {
-            //dataGridView1.ColumnCount = 3;
-            //dataGridView1.Columns[0].HeaderText = "Name";
-            //dataGridView1.Columns[1].HeaderText = "Attend";
-            //dataGridView1.Columns[2].HeaderText = "Date";
-        }
+      
 
         private void Next_Click(object sender, EventArgs e)
         {
-          
-            Attend_Student s = new Attend_Student();
+
+            DateTime attendDate = dateTimePicker1.Value.Date;
+
+            Attend_Student s = new Attend_Student(attendDate,enrollment);
             
             s.ShowDialog();
 

@@ -12,9 +12,16 @@ namespace StudentAttendanceSystem
 {
     public partial class Attend_Student : Form
     {
-        public Attend_Student()
+        DateTime AttendDate;
+        Enrollment enrollment;
+        DataContext db = new DataContext();
+        BindingList<Models.Attend> displayList = new BindingList<Models.Attend>();
+
+        public Attend_Student(DateTime date,Enrollment e1)
         {
             InitializeComponent();
+            AttendDate = date;
+            enrollment = e1;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,16 +31,25 @@ namespace StudentAttendanceSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //GroupInformation g1 = new GroupInformation();
-            //g1.Show();
+            
             this.Close();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-           var x= DateTime.UtcNow;
-            dateTimePicker1.Value = x;
+           
 
+        }
+
+        private void Attend_Student_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = AttendDate;
+            
+            
+            
+            
+            
+            //dataGridView1.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
         }
     }
 }
