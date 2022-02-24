@@ -44,10 +44,8 @@ namespace StudentAttendanceSystem
 
         private void Save_Btn_Click(object sender, EventArgs e)
         {
-            //gridData[rowIndex].Name = NameTextBox.Text;
-            //gridData[rowIndex].Phone = int.Parse(PhoneTextBox.Text);
-            //gridData[rowIndex].BirthDate = dateTimePicker1.Value;
-            //dataGridView1.Invalidate();
+            
+            //asdfsadf;
         }
 
         private void CityLbl_Click(object sender, EventArgs e)
@@ -75,7 +73,6 @@ namespace StudentAttendanceSystem
             index = e.RowIndex;
             NametextBox.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();//1
             NameARtextBox.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();//3
-
             GendertextBox.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();//11
             NIDtextBox.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();//12
             CitytextBox.Text = dataGridView1.Rows[index].Cells[6].Value.ToString();//9
@@ -92,6 +89,7 @@ namespace StudentAttendanceSystem
             MilitaryStatetextBox.Text = dataGridView1.Rows[index].Cells[16].Value.ToString();//4
             MaterialStatetextBox.Text = dataGridView1.Rows[index].Cells[17].Value.ToString();//7
             textBox1.Text = dataGridView1.Rows[index].Cells[18].Value.ToString();//10
+
 
 
 
