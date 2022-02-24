@@ -49,27 +49,68 @@ namespace StudentAttendanceSystem
             dateTimePicker1.Value = AttendDate;
             quarterLbl.Text = enrollment.Quarter;
             trackLbl.Text = enrollment.Track;
+            List<Student> students = new List<Student>();
+            var atends1 = db.Attends.Select(x => x.StudentID).Distinct().ToList();
+            for (int i = 0; i < atends1.Count; i++)
+            {
+                Student s1 = db.Students.ToList().Where(w => w.StudentID == (atends1[i])).FirstOrDefault();
+                if (s1.EnrollmentID != enrollment.EnrollmentID)
+                {
+                    atends1.Remove(atends1[i--]);
+                }
+                else { students.Add(s1); }
+            }
+
             var l1 = db.DailyAttends.Where(x => x.ADate == AttendDate).ToList();
 
             if (l1.Count > 0)
-            {
+            {   
                 dailyAttendId = l1[0].DailyAttendID;
-                var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
 
-
-                //foreach (var item in l2)
-                for (int i = 0; i < l2.Count; i++)
+                if (db.Attends.ToList().Where(x => x.DailyAttendID == dailyAttendId && x.StudentID == students[0].StudentID).Count() > 0)
                 {
-                    Student s1 = db.Students.ToList().Where(w => w.StudentID == (l2[i].StudentID)).FirstOrDefault();
-                    if (s1.EnrollmentID != enrollment.EnrollmentID)
+
+
+                    var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
+
+
+
+
+                    //foreach (var item in l2)
+                    for (int i = 0; i < l2.Count; i++)
                     {
-                        l2.Remove(l2[i--]);
+                        Student s1 = db.Students.ToList().Where(w => w.StudentID == (l2[i].StudentID)).FirstOrDefault();
+                        if (s1.EnrollmentID != enrollment.EnrollmentID)
+                        {
+                            l2.Remove(l2[i--]);
+                        }
                     }
+
+                    BindingList<Models.Attend> l3 = new BindingList<Models.Attend>(l2);
+                    dataGridView1.DataSource = l3;
                 }
+                else {
+                    foreach (var item in students)
+                    {
+                        db.Attends.Add(new Models.Attend() { StudentID = item.StudentID, DailyAttendID = dailyAttendId, Presence = false });
+                    }
+                    db.SaveChanges();
+                    var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
 
-                BindingList<Models.Attend> l3 = new BindingList<Models.Attend>(l2);
-                dataGridView1.DataSource = l3;
 
+                    //foreach (var item in l2)
+                    for (int i = 0; i < l2.Count; i++)
+                    {
+                        Student s1 = db.Students.ToList().Where(w => w.StudentID == (l2[i].StudentID)).FirstOrDefault();
+                        if (s1.EnrollmentID != enrollment.EnrollmentID)
+                        {
+                            l2.Remove(l2[i--]);
+                        }
+                    }
+                    BindingList<Models.Attend> l4 = new BindingList<Models.Attend>(l2);
+                    dataGridView1.DataSource = l4;
+
+                }
             }
             else
             {
