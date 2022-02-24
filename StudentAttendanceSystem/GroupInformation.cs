@@ -14,25 +14,22 @@ namespace StudentAttendanceSystem {
 
         Enrollment enrollment;
         DataContext db = new DataContext();
+        BindingList<Student> students;
 
         public GroupInformation(Enrollment e1) {
             InitializeComponent();
             enrollment = e1;
 
         }
-        public GroupInformation()
-        {
-
-        }
-
+       
 
 
         private void GroupInformation_Load(object sender, EventArgs e) {
             position(Attended);
             p1.Height = Attended.Height;
             Active(Attended);
-
-            dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+            students = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
+            dataGridView.DataSource = students;
 
 
         }
@@ -100,16 +97,13 @@ namespace StudentAttendanceSystem {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void EditStudent_Btn_Click(object sender, EventArgs e) {
-            position(EditStudent_Btn);
-            Active(EditStudent_Btn);
-        }
+        
 
 
         private void EditStudent_Btn_Click_1(object sender, EventArgs e) {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
-            Name s1 = new Name();
+            Name s1 = new Name(students);
             s1.ShowDialog();
 
         }
