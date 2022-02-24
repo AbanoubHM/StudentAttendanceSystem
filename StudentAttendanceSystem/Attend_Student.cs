@@ -71,6 +71,38 @@ namespace StudentAttendanceSystem
             }
             else
             {
+                DailyAttend newDate = new DailyAttend() { ADate = AttendDate};
+                db.DailyAttends.Add(newDate);
+                db.SaveChanges();
+                l1 = db.DailyAttends.Where(x => x.ADate == AttendDate).ToList();
+
+                dailyAttendId = l1[0].DailyAttendID;
+
+                var l2 = db.Students.Where(x => x.EnrollmentID == enrollment.EnrollmentID);
+                foreach (var item in l2)
+                {
+                    db.Attends.Add(new Models.Attend() { StudentID = item.StudentID, DailyAttendID = dailyAttendId, Presence = false });
+                }
+                //var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
+
+                db.SaveChanges();
+
+                var l3 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
+
+
+                //foreach (var item in l2)
+                for (int i = 0; i < l3.Count; i++)
+                {
+                    Student s1 = db.Students.ToList().Where(w => w.StudentID == (l3[i].StudentID)).FirstOrDefault();
+                    if (s1.EnrollmentID != enrollment.EnrollmentID)
+                    {
+                        l3.Remove(l3[i--]);
+                    }
+                }
+
+                BindingList<Models.Attend> l4 = new BindingList<Models.Attend>(l3);
+                dataGridView1.DataSource = l4;
+
 
             }
 
