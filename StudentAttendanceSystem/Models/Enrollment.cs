@@ -14,5 +14,10 @@ namespace StudentAttendanceSystem
         public string Quarter { get; set; }
         public string Track { get; set; }
         public ICollection<Student> Students { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Quarter} {Track}";
+        }
     }
 }
