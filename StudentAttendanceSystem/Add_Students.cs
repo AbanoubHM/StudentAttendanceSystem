@@ -59,7 +59,25 @@ namespace StudentAttendanceSystem
                 student.EnrollmentID = enrollmentt.EnrollmentID;
                 dataContext.Students.Add(student);
                 dataContext.SaveChanges();
-                this.Close();
+                //this.Close();
+                NametextBox.Text="";//1
+                EmailtextBox.Text="";//2
+                NameARtextBox.Text="";//3
+                MilitaryStatetextBox.Text="";//4
+                GradetextBox.Text="";//5
+                 GradYeartextBox.Text="";//6
+                MaterialStatetextBox.Text="";//7
+                 AddresstextBox.Text="";//8
+                CitytextBox.Text="";//9
+                 textBox1.Text="";//10
+                GendertextBox.Text="";//11
+                 NIDtextBox.Text="";//12
+                 MobiletextBox.Text = "";//13
+                 PhonetextBox.Text = "";//14
+                 UniversitytextBox.Text = "";//15
+                 FacultytextBox.Text = "";//16
+                SpecializationtextBox.Text = "";
+                MessageBox.Show("Student Added");
 
 
 
