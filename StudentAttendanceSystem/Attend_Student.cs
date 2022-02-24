@@ -16,10 +16,10 @@ namespace StudentAttendanceSystem
         DateTime AttendDate;
         Enrollment enrollment;
         DataContext db = new DataContext();
-        BindingList<Models.Attend> displayList = new BindingList<Models.Attend>();
+        //BindingList<Models.Attend> displayList = new BindingList<Models.Attend>();
         int dailyAttendId;
 
-        public Attend_Student(DateTime date,Enrollment e1)
+        public Attend_Student(DateTime date, Enrollment e1)
         {
             InitializeComponent();
             AttendDate = date;
@@ -28,18 +28,18 @@ namespace StudentAttendanceSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            db.SaveChanges();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             this.Close();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -49,17 +49,29 @@ namespace StudentAttendanceSystem
 
             var l1 = db.DailyAttends.Where(x => x.ADate == AttendDate).ToList();
 
-            if (l1.Count>0)
+            if (l1.Count > 0)
             {
                 dailyAttendId = l1[0].DailyAttendID;
-                var l2 = db.Attends.Where(x=>x.DailyAttendID==dailyAttendId).ToList();
-                
-                dataGridView1.DataSource= l2;
-                foreach (var item in l2)
-                {
+                var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
 
+
+                //foreach (var item in l2)
+                for (int i = 0; i < l2.Count; i++)
+                {
+                    Student s1 = db.Students.ToList().Where(w => w.StudentID == (l2[i].StudentID)).FirstOrDefault();
+                    if (s1.EnrollmentID != enrollment.EnrollmentID)
+                    {
+                        l2.Remove(l2[i--]);
+                    }
                 }
-                MessageBox.Show("Founddddd");
+
+                BindingList<Models.Attend> l3 = new BindingList<Models.Attend>(l2);
+                dataGridView1.DataSource = l3;
+
+            }
+            else
+            {
+
             }
 
 
