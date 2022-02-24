@@ -109,7 +109,7 @@ namespace StudentAttendanceSystem {
         private void EditStudent_Btn_Click_1(object sender, EventArgs e) {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
-            Name s1 = new Name();
+            Name s1 = new Name(enrollment);
             s1.ShowDialog();
 
         }
@@ -132,6 +132,11 @@ namespace StudentAttendanceSystem {
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
