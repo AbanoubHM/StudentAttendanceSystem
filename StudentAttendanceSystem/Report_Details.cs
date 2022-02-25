@@ -18,9 +18,14 @@ namespace StudentAttendanceSystem
             InitializeComponent();
             enrollment = e1;
         }
+        //public Report_Details()
+        //{
+        //    InitializeComponent();
+        //}
+
         private void Attendance_Btn_Click(object sender, EventArgs e)
         {
-            Report_Attendance_save s6 = new Report_Attendance_save(enrollment);
+            Report_Attendance_save s6 = new Report_Attendance_save();
             s6.ShowDialog();
             this.Close();
         }
