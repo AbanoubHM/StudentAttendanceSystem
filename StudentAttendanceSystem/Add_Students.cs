@@ -35,23 +35,33 @@ namespace StudentAttendanceSystem
             student.Email = EmailtextBox.Text;//2
             student.NameAR = NameARtextBox.Text;//3
             student.MilitaryState = MilitaryStatetextBox.Text;//4
-            student.Grade = GradetextBox.Text;//5
-            bool res;
-            int a=1;
-            
-            res = int.TryParse(GradYeartextBox.Text, out a);
-            student.GradYear = a;//6
+            student.Grade = GradetextBox.Text;//5        
+            bool yes = true;
+            int a;
+            if (int.TryParse(GradYeartextBox.Text, out a))
+            {
+                student.GradYear = a;
+
+            }
+            else
+            { MessageBox.Show("You Entered invalid Year");yes = false; }
+            //6
             student.MaterialState = MaterialStatetextBox.Text;//7
             student.Address = AddresstextBox.Text;//8
             student.City = CitytextBox.Text;//9
             student.Notes = textBox1.Text;//10
-            char ch = 'M';
-            res = char.TryParse(GendertextBox.Text,out ch);//11
-            student.Gender=ch;
+            char ch ;
+            if( char.TryParse(GendertextBox.Text,out ch)) student.Gender = ch;
+            else {MessageBox.Show("You should Enter (M) or (F)"); yes = false;
+        }//11
 
-            long L = 12345678910;
-            res = long.TryParse(NIDtextBox.Text,out L);//12
+
+        long L;
+            if( long.TryParse(NIDtextBox.Text,out L))//12
             student.NID = L;
+            else { 
+                MessageBox.Show("You should Enter Valid NId"); yes = false;
+            }
             student.Moblie = MobiletextBox.Text;//13
             student.Phone = PhonetextBox.Text;//14
             student.University = UniversitytextBox.Text;//15
@@ -64,7 +74,8 @@ namespace StudentAttendanceSystem
             {
                 MessageBox.Show("Duplicate National ID");
             }
-            else
+
+            else if (yes)
             {
                 student.EnrollmentID = enrollmentt.EnrollmentID;
                 dataContext.Students.Add(student);
@@ -85,6 +96,7 @@ namespace StudentAttendanceSystem
 
 
             }
+            else { MessageBox.Show("Please fixed Error Data "); }
 
             dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
 
