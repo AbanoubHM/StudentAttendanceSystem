@@ -55,7 +55,7 @@ namespace StudentAttendanceSystem
             this.Back_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_Btn.Location = new System.Drawing.Point(414, 593);
             this.Back_Btn.Name = "Back_Btn";
-            this.Back_Btn.Size = new System.Drawing.Size(199, 32);
+            this.Back_Btn.Size = new System.Drawing.Size(175, 32);
             this.Back_Btn.TabIndex = 37;
             this.Back_Btn.Text = "Back";
             this.Back_Btn.UseVisualStyleBackColor = false;

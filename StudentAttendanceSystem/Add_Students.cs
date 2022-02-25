@@ -62,37 +62,47 @@ namespace StudentAttendanceSystem
                 dataContext.Students.Add(student);
                 dataContext.SaveChanges();
                 //this.Close();
-                NametextBox.Text="";//1
-                EmailtextBox.Text="";//2
-                NameARtextBox.Text="";//3
-                MilitaryStatetextBox.Text="";//4
-                GradetextBox.Text="";//5
-                 GradYeartextBox.Text="";//6
-                MaterialStatetextBox.Text="";//7
-                 AddresstextBox.Text="";//8
-                CitytextBox.Text="";//9
-                 textBox1.Text="";//10
-                GendertextBox.Text="";//11
-                 NIDtextBox.Text="";//12
-                 MobiletextBox.Text = "";//13
-                 PhonetextBox.Text = "";//14
-                 UniversitytextBox.Text = "";//15
-                 FacultytextBox.Text = "";//16
-                SpecializationtextBox.Text = "";
+                foreach (var ctr in this.Controls)
+                {
+                    if(ctr.GetType() == typeof(TextBox))
+                    {
+                        TextBox txt = (TextBox)ctr;
+                        txt.Clear();
+                    }
+
+                }
+                
+                //NametextBox.Clear();//1
+                //EmailtextBox.Clear();//2
+                //NameARtextBox.Clear();//3
+                //MilitaryStatetextBox.Clear();//4
+                //GradetextBox.Clear();//5
+                // GradYeartextBox.Clear();//6
+                //MaterialStatetextBox.Clear();//7
+                // AddresstextBox.Clear();//8
+                //CitytextBox.Clear();//9
+                // textBox1.Clear();//10
+                //GendertextBox.Clear();//11
+                // NIDtextBox.Clear();//12
+                // MobiletextBox.Clear();//13
+                // PhonetextBox.Clear();//14
+                // UniversitytextBox.Clear();//15
+                // FacultytextBox.Clear();//16
+                //SpecializationtextBox.Clear();
                 MessageBox.Show("Student Added");
 
 
 
             }
-            students = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
-            dataGridView.DataSource = students;
+
+            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
 
 
         }
 
         private void Add_Students_Load(object sender, EventArgs e)
         {
-            dataGridView.DataSource = students;
+            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
         }
     }
 }

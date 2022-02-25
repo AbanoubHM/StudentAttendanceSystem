@@ -6,7 +6,6 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
@@ -14,7 +13,6 @@ namespace StudentAttendanceSystem {
 
         Enrollment enrollment;
         DataContext db = new DataContext();
-        BindingList<Student> students;
 
         public GroupInformation(Enrollment e1) {
             InitializeComponent();
@@ -28,9 +26,8 @@ namespace StudentAttendanceSystem {
             position(Attended);
             p1.Height = Attended.Height;
             Active(Attended);
-            students = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
-            dataGridView.DataSource = students;
-
+            
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
 
         }
 
@@ -96,6 +93,9 @@ namespace StudentAttendanceSystem {
             Name s1 = new Name(enrollment);
             s1.ShowDialog();
 
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
+
+
         }
 
 
@@ -111,7 +111,8 @@ namespace StudentAttendanceSystem {
             Active(AddStudent_Btn);
             Add_Students a4 = new Add_Students(enrollment);
             a4.ShowDialog();
-            dataGridView.DataSource = students;
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
+
 
 
             //dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();

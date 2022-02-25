@@ -29,7 +29,9 @@ namespace StudentAttendanceSystem
 
         private void StudentData_Resize(object sender, EventArgs e)
         {
-            dataGridView1.Size = new System.Drawing.Size((int)(this.Width*.6), this.Height);
+            panel1.Size = new System.Drawing.Size(this.Width,(int)(this.Height*0.7));
+            Save_Btn.Location = new System.Drawing.Point(Width / 2 - 200, Height - 100);
+            Back_Btn.Location = new System.Drawing.Point(Width / 2 + 50, Height - 100);
             this.Invalidate();
         }
 
@@ -66,6 +68,10 @@ namespace StudentAttendanceSystem
 
         private void Name_Load(object sender, EventArgs e)
         {
+            panel1.Size = new System.Drawing.Size(this.Width, (int)(this.Height * 0.7));
+            Save_Btn.Location = new System.Drawing.Point((Width / 2 )- 200, Height - 100);
+            Back_Btn.Location = new System.Drawing.Point((Width / 2 )+ 50, Height - 100);
+
             BindingList<Student> students = new BindingList<Student>(context.Students.Where(w=>w.EnrollmentID==enrollment.EnrollmentID).ToList());
             dataGridView1.DataSource = students;
         }
