@@ -24,6 +24,7 @@ namespace StudentAttendanceSystem {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attended));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Date = new System.Windows.Forms.Label();
             this.Next = new System.Windows.Forms.Button();
@@ -63,13 +64,13 @@ namespace StudentAttendanceSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::StudentAttendanceSystem.Properties.Resources.colorful_abstract_textured_background_design;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(417, 114);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Date);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Attended";
             this.Text = "Attended";
             this.Load += new System.EventHandler(this.Attended_Load);

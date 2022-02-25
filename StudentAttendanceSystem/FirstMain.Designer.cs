@@ -29,6 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirstMain));
             this.AddTrackBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -148,6 +149,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddTrackBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FirstMain";
             this.Text = "Add Enrollment";
             this.Load += new System.EventHandler(this.FirstMain_Load);
