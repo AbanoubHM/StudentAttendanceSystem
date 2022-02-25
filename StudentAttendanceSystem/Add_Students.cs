@@ -14,10 +14,12 @@ namespace StudentAttendanceSystem
     {
         public Enrollment enrollmentt { get; set; }
         DataContext dataContext = new DataContext();
+        BindingList<Student> students;
         public Add_Students(Enrollment enrollment)
         {
             InitializeComponent();
             enrollmentt = enrollment;
+            
         }
 
         private void Back_Btn_Click(object sender, EventArgs e)
@@ -82,12 +84,15 @@ namespace StudentAttendanceSystem
 
 
             }
+            students = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
+            dataGridView.DataSource = students;
 
 
+        }
 
-
-
-
+        private void Add_Students_Load(object sender, EventArgs e)
+        {
+            dataGridView.DataSource = students;
         }
     }
 }

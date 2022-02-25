@@ -15,6 +15,7 @@ namespace StudentAttendanceSystem
         Enrollment enrollment;
         int index;
         DataContext context=new DataContext();
+        //BindingList<Student> students;
         public Name(Enrollment e1)
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace StudentAttendanceSystem
 
         private void Save_Btn_Click(object sender, EventArgs e)
         {
-            
+            context.SaveChanges();
             //asdfsadf;
         }
 
@@ -65,30 +66,31 @@ namespace StudentAttendanceSystem
 
         private void Name_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = context.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+            BindingList<Student> students = new BindingList<Student>(context.Students.Where(w=>w.EnrollmentID==enrollment.EnrollmentID).ToList());
+            dataGridView1.DataSource = students;
         }
         
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             index = e.RowIndex;
-            NametextBox.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();//1
-            NameARtextBox.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();//3
-            GendertextBox.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();//11
-            NIDtextBox.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();//12
-            CitytextBox.Text = dataGridView1.Rows[index].Cells[6].Value.ToString();//9
-            AddresstextBox.Text = dataGridView1.Rows[index].Cells[7].Value.ToString();//8
-            MobiletextBox.Text = dataGridView1.Rows[index].Cells[8].Value.ToString();//13
-            PhonetextBox.Text = dataGridView1.Rows[index].Cells[9].Value.ToString();//14
-            EmailtextBox.Text = dataGridView1.Rows[index].Cells[10].Value.ToString();
-            UniversitytextBox.Text = dataGridView1.Rows[index].Cells[11].Value.ToString();//15
-            FacultytextBox.Text = dataGridView1.Rows[index].Cells[12].Value.ToString();//16
-            SpecializationtextBox.Text = dataGridView1.Rows[index].Cells[13].Value.ToString();
-            GradYeartextBox.Text = dataGridView1.Rows[index].Cells[14].Value.ToString();//6
-            GradetextBox.Text = dataGridView1.Rows[index].Cells[15].Value.ToString();
+            //NametextBox.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();//1
+            //NameARtextBox.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();//3
+            //GendertextBox.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();//11
+            //NIDtextBox.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();//12
+            //CitytextBox.Text = dataGridView1.Rows[index].Cells[6].Value.ToString();//9
+            //AddresstextBox.Text = dataGridView1.Rows[index].Cells[7].Value.ToString();//8
+            //MobiletextBox.Text = dataGridView1.Rows[index].Cells[8].Value.ToString();//13
+            //PhonetextBox.Text = dataGridView1.Rows[index].Cells[9].Value.ToString();//14
+            //EmailtextBox.Text = dataGridView1.Rows[index].Cells[10].Value.ToString();
+            //UniversitytextBox.Text = dataGridView1.Rows[index].Cells[11].Value.ToString();//15
+            //FacultytextBox.Text = dataGridView1.Rows[index].Cells[12].Value.ToString();//16
+            //SpecializationtextBox.Text = dataGridView1.Rows[index].Cells[13].Value.ToString();
+            //GradYeartextBox.Text = dataGridView1.Rows[index].Cells[14].Value.ToString();//6
+            //GradetextBox.Text = dataGridView1.Rows[index].Cells[15].Value.ToString();
 
-            MilitaryStatetextBox.Text = dataGridView1.Rows[index].Cells[16].Value.ToString();//4
-            MaterialStatetextBox.Text = dataGridView1.Rows[index].Cells[17].Value.ToString();//7
-            textBox1.Text = dataGridView1.Rows[index].Cells[18].Value.ToString();//10
+            //MilitaryStatetextBox.Text = dataGridView1.Rows[index].Cells[16].Value.ToString();//4
+            //MaterialStatetextBox.Text = dataGridView1.Rows[index].Cells[17].Value.ToString();//7
+            //textBox1.Text = dataGridView1.Rows[index].Cells[18].Value.ToString();//10
 
 
 

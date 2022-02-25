@@ -59,16 +59,6 @@ namespace StudentAttendanceSystem {
 
 
 
-
-
-
-
-
-
-
-
-
-
         private void Reports_Click(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
@@ -103,7 +93,7 @@ namespace StudentAttendanceSystem {
         private void EditStudent_Btn_Click_1(object sender, EventArgs e) {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
-            Name s1 = new Name();
+            Name s1 = new Name(enrollment);
             s1.ShowDialog();
 
         }
@@ -121,7 +111,10 @@ namespace StudentAttendanceSystem {
             Active(AddStudent_Btn);
             Add_Students a4 = new Add_Students(enrollment);
             a4.ShowDialog();
-            dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+            dataGridView.DataSource = students;
+
+
+            //dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
 
         }
 
