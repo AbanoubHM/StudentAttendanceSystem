@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
-    public partial class Attended : Form {
-
+    public partial class Attended : Form 
+    {
         Enrollment enrollment;
 
         public Attended(Enrollment e1) {

@@ -20,11 +20,11 @@ namespace StudentAttendanceSystem {
             enrollment = e1;
 
         }
-        public GroupInformation()
-        {
-            InitializeComponent();
+        //public GroupInformation()
+        //{
+        //    InitializeComponent();
 
-        }
+        //}
 
 
 
@@ -76,7 +76,7 @@ namespace StudentAttendanceSystem {
         private void Reports_Click(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
-            Report_Details r4 = new Report_Details();
+            Report_Details r4 = new Report_Details(enrollment);
             r4.ShowDialog();
         }
         private void Active(Button b) {
@@ -119,7 +119,7 @@ namespace StudentAttendanceSystem {
         private void Report_Btn_Click(object sender, EventArgs e) {
             position(Report_Btn);
             Active(Report_Btn);
-            Report_Details r4 = new Report_Details();
+            Report_Details r4 = new Report_Details(enrollment);
             r4.ShowDialog();
         }
 

@@ -12,10 +12,16 @@ namespace StudentAttendanceSystem
 {
     public partial class Report_Details : Form
     {
-        public Report_Details()
+        Enrollment enrollment;
+        public Report_Details(Enrollment e1)
         {
             InitializeComponent();
+            enrollment = e1;
         }
+        //public Report_Details()
+        //{
+        //    InitializeComponent();
+        //}
 
         private void Attendance_Btn_Click(object sender, EventArgs e)
         {
@@ -26,7 +32,7 @@ namespace StudentAttendanceSystem
 
         private void Student_Data_Btn_Click(object sender, EventArgs e)
         {
-            Report_Student_Data_save r3 = new Report_Student_Data_save();
+            Report_Student_Data_save r3 = new Report_Student_Data_save(enrollment);
             r3.ShowDialog();
             this.Close();
 

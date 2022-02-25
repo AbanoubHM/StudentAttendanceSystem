@@ -11,10 +11,19 @@ using System.Windows.Forms;
 namespace StudentAttendanceSystem
 {
     public partial class Form2 : Form
+
     {
+        Enrollment enrollment;
+        DataContext db = new DataContext();
         public Form2()
         {
             InitializeComponent();
+        }
+        public Form2(Enrollment e1)
+        {
+            InitializeComponent();
+            enrollment = e1;
+
         }
     }
 }

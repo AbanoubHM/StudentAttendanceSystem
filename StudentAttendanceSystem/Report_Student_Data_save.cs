@@ -9,12 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using StudentAttendanceSystem.Reports;
+using System.Data.Entity;
 
 namespace StudentAttendanceSystem
 {
     public partial class Report_Student_Data_save : Form
     {
+        Enrollment enrollment;
+        DataContext db = new DataContext();
+
         SqlConnection con = new SqlConnection("server =.;initial catalog=MyAttendanceDB;integrated security=True;MultipleActiveResultSets=True");
+
+        public Report_Student_Data_save(Enrollment e1)
+        {
+            InitializeComponent();
+            enrollment = e1;
+
+        }
         public Report_Student_Data_save()
         {
             InitializeComponent();
@@ -23,7 +34,7 @@ namespace StudentAttendanceSystem
         private void Report_Student_Data_save_Load(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("Select * From Students", con);
+            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, e.Track from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
             DataTable dt = new DataTable();
             dt.Load(cmd.ExecuteReader());
             dataGridView1.DataSource = dt;
@@ -38,7 +49,7 @@ namespace StudentAttendanceSystem
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand("Select * From Students", con);
+            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, e.Track from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
             SqlDataAdapter adap = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             adap.Fill(ds, "Students");
