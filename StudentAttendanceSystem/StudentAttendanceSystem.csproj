@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0"
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -57,16 +58,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Migrations\202202232108168_Migration2.cs" />
+    <Compile Include="Migrations\202202232108168_Migration2.designer.cs">
+      <DependentUpon>202202232108168_Migration2.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Add_Students.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_Students.Designer.cs">
       <DependentUpon>Add_Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202212346591_test.cs" />
-    <Compile Include="Migrations\202202212346591_test.designer.cs">
-      <DependentUpon>202202212346591_test.cs</DependentUpon>
-    </Compile>
+
+
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attend.cs" />
     <Compile Include="Models\DailyAttend.cs" />
@@ -153,8 +158,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202212346591_test.resx">
-      <DependentUpon>202202212346591_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202232108168_Migration2.resx">
+      <DependentUpon>202202232108168_Migration2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,14 +10,14 @@ namespace StudentAttendanceSystem
 {
     public class Student
     {
-        public int StudentID { get; set; } 
+        public int StudentID { get; set; }
         //Main Student Data
         public string Name { get; set; }
-        public string NameAR { get; set; }        
+        public string NameAR { get; set; }
         [ForeignKey("Enrollment")]
         public int EnrollmentID { get; set; }
-        public char Gender { get; set; }
-        public long NID { get; set; }
+        public string Gender { get; set; }
+        public string NID { get; set; }
         public string City { get; set; }
         public string Address { get; set; }
         public string Moblie { get; set; }
