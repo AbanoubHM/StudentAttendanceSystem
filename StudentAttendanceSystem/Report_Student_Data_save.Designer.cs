@@ -29,7 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.StudentsData1 = new StudentAttendanceSystem.Reports.StudentsData();
+            //this.StudentsData1 = new StudentAttendanceSystem.Reports.StudentsData(); When un comment error occured
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,7 +71,7 @@ namespace StudentAttendanceSystem
         }
 
         #endregion
-        private Reports.StudentsData StudentsData1;
+        //private Reports.StudentsData StudentsData1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
