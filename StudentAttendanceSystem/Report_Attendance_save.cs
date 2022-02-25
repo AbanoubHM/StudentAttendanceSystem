@@ -12,9 +12,16 @@ namespace StudentAttendanceSystem
 {
     public partial class Report_Attendance_save : Form
     {
-        public Report_Attendance_save()
+        Enrollment enrollment;
+        public Report_Attendance_save(Enrollment e1)
         {
             InitializeComponent();
+            enrollment = e1;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
