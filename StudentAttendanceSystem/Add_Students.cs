@@ -36,13 +36,22 @@ namespace StudentAttendanceSystem
             student.NameAR = NameARtextBox.Text;//3
             student.MilitaryState = MilitaryStatetextBox.Text;//4
             student.Grade = GradetextBox.Text;//5
-            student.GradYear = int.Parse(GradYeartextBox.Text);//6
+            bool res;
+            int a=1;
+            
+            res = int.TryParse(GradYeartextBox.Text, out a);
+            student.GradYear = a;//6
             student.MaterialState = MaterialStatetextBox.Text;//7
             student.Address = AddresstextBox.Text;//8
             student.City = CitytextBox.Text;//9
             student.Notes = textBox1.Text;//10
-            student.Gender = char.Parse(GendertextBox.Text);//11
-            student.NID = long.Parse(NIDtextBox.Text);//12
+            char ch = 'M';
+            res = char.TryParse(GendertextBox.Text,out ch);//11
+            student.Gender=ch;
+
+            long L = 12345678910;
+            res = long.TryParse(NIDtextBox.Text,out L);//12
+            student.NID = L;
             student.Moblie = MobiletextBox.Text;//13
             student.Phone = PhonetextBox.Text;//14
             student.University = UniversitytextBox.Text;//15
