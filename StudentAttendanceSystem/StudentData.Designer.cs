@@ -29,6 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Name));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NameLbl = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
@@ -522,6 +523,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.NameLbl);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Name";
             this.Text = "StudentData";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
