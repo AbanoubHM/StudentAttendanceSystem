@@ -55,8 +55,12 @@ namespace StudentAttendanceSystem
             DataSet ds = new DataSet();
             adap.Fill(ds, "Students");
             CrystalReport1 cr1 = new CrystalReport1();
-            TextObject text = (TextObject)cr1.ReportDefinition.Sections["Section1"].ReportObjects["ReportTrackText"];
-            text.Text = enrollment.Track;
+            TextObject text1 = (TextObject)cr1.ReportDefinition.Sections["Section1"].ReportObjects["ReportBranchText"];
+            TextObject text2 = (TextObject)cr1.ReportDefinition.Sections["Section1"].ReportObjects["ReportQuarterText"];
+            TextObject text3 = (TextObject)cr1.ReportDefinition.Sections["Section1"].ReportObjects["ReportTrackText"];
+            text1.Text = enrollment.Branch;
+            text2.Text = enrollment.Quarter;
+            text3.Text = enrollment.Track;
             cr1.SetDataSource(ds);
             f2.crystalReportViewer1.ReportSource = cr1;
             f2.crystalReportViewer1.Refresh();
