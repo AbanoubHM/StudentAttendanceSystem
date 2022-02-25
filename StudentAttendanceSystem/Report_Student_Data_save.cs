@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using StudentAttendanceSystem.Reports;
 using System.Data.Entity;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace StudentAttendanceSystem
 {
@@ -49,11 +50,13 @@ namespace StudentAttendanceSystem
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, s.NID, s.Email, s.Phone, e.Track from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
+            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, s.NID, s.Email, s.Moblie, e.Track from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
             SqlDataAdapter adap = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             adap.Fill(ds, "Students");
             CrystalReport1 cr1 = new CrystalReport1();
+            TextObject text = (TextObject)cr1.ReportDefinition.Sections["Section1"].ReportObjects["ReportTrackText"];
+            text.Text = enrollment.Track;
             cr1.SetDataSource(ds);
             f2.crystalReportViewer1.ReportSource = cr1;
             f2.crystalReportViewer1.Refresh();
