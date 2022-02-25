@@ -50,7 +50,7 @@ namespace StudentAttendanceSystem
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, s.NID, s.Email, s.Moblie, e.Track from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
+            SqlCommand cmd = new SqlCommand($"select s.NameAR, s.Name, s.NID, s.Email, s.Moblie, e.Track, s.City, s.MaterialState from [dbo].[Students] s inner join [dbo].[Enrollments] e on s.EnrollmentID = e.EnrollmentID where e.EnrollmentID={enrollment.EnrollmentID}", con);
             SqlDataAdapter adap = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             adap.Fill(ds, "Students");
