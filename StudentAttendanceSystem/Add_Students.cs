@@ -14,12 +14,12 @@ namespace StudentAttendanceSystem
     {
         public Enrollment enrollmentt { get; set; }
         DataContext dataContext = new DataContext();
-        BindingList<Student> students;
+        //BindingList<Student> students;
         public Add_Students(Enrollment enrollment)
         {
             InitializeComponent();
             enrollmentt = enrollment;
-            
+
         }
 
         private void Back_Btn_Click(object sender, EventArgs e)
@@ -49,14 +49,14 @@ namespace StudentAttendanceSystem
             student.Faculty = FacultytextBox.Text;//16
             student.Specialization = SpecializationtextBox.Text;
 
-            long nid=long.Parse(NIDtextBox.Text);
+            long nid = long.Parse(NIDtextBox.Text);
             var Nid = dataContext.Students.Where(x => x.NID == nid).ToList();
 
-            if (Nid.Count() >0)
+            if (Nid.Count() > 0)
             {
                 MessageBox.Show("Duplicate National ID");
             }
-            else 
+            else
             {
                 student.EnrollmentID = enrollmentt.EnrollmentID;
                 dataContext.Students.Add(student);
@@ -64,31 +64,14 @@ namespace StudentAttendanceSystem
                 //this.Close();
                 foreach (var ctr in this.Controls)
                 {
-                    if(ctr.GetType() == typeof(TextBox))
+                    if (ctr.GetType() == typeof(TextBox))
                     {
                         TextBox txt = (TextBox)ctr;
                         txt.Clear();
                     }
 
                 }
-                
-                //NametextBox.Clear();//1
-                //EmailtextBox.Clear();//2
-                //NameARtextBox.Clear();//3
-                //MilitaryStatetextBox.Clear();//4
-                //GradetextBox.Clear();//5
-                // GradYeartextBox.Clear();//6
-                //MaterialStatetextBox.Clear();//7
-                // AddresstextBox.Clear();//8
-                //CitytextBox.Clear();//9
-                // textBox1.Clear();//10
-                //GendertextBox.Clear();//11
-                // NIDtextBox.Clear();//12
-                // MobiletextBox.Clear();//13
-                // PhonetextBox.Clear();//14
-                // UniversitytextBox.Clear();//15
-                // FacultytextBox.Clear();//16
-                //SpecializationtextBox.Clear();
+
                 MessageBox.Show("Student Added");
 
 
