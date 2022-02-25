@@ -49,8 +49,7 @@ namespace StudentAttendanceSystem
             student.Faculty = FacultytextBox.Text;//16
             student.Specialization = SpecializationtextBox.Text;
 
-            long nid = long.Parse(NIDtextBox.Text);
-            var Nid = dataContext.Students.Where(x => x.NID == nid).ToList();
+            var Nid = dataContext.Students.Where(x => x.NID == student.NID).ToList();
 
             if (Nid.Count() > 0)
             {
