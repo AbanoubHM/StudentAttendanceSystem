@@ -29,7 +29,6 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
-
             this.Save_Btn = new System.Windows.Forms.Button();
             this.Back_Btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -84,6 +83,7 @@ namespace StudentAttendanceSystem
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(866, 576);
             this.dataGridView1.TabIndex = 39;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
             // 
             // Name
             // 
@@ -94,7 +94,6 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Save_Btn);
-
             this.Name = "Name";
             this.Text = "StudentData";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
