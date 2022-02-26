@@ -44,7 +44,6 @@ namespace StudentAttendanceSystem
             this.crystalReportViewer1.ReportSource = this.AttendanceReport1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(877, 444);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // Report_Attendance_save
             // 
@@ -55,6 +54,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "Report_Attendance_save";
             this.Text = "Report_Attendance_save";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
