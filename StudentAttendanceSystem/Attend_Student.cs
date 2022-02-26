@@ -46,7 +46,7 @@ namespace StudentAttendanceSystem
             trackLbl.Text = enrollment.Track;
             List<Student> students = new List<Student>();
             var atends1 = db.Attends.Select(x => x.StudentID).Distinct().ToList();
-            for (int i = 0; i < atends1.Count; i++)
+            for (int i = 0; i < atends1.Count(); i++)
             {
                 Student s1 = db.Students.ToList().Where(w => w.StudentID == (atends1[i])).FirstOrDefault();
                 if (s1.EnrollmentID != enrollment.EnrollmentID)
@@ -65,10 +65,7 @@ namespace StudentAttendanceSystem
                 if (db.Attends.ToList().Where(x => x.DailyAttendID == dailyAttendId && x.StudentID == students[0].StudentID).Count() > 0)
                 {
 
-
                     var l2 = db.Attends.Where(x => x.DailyAttendID == dailyAttendId).ToList();
-
-
 
 
                     //foreach (var item in l2)
@@ -81,8 +78,8 @@ namespace StudentAttendanceSystem
                         }
                     }
 
-                    BindingList<Models.Attend> l3 = new BindingList<Models.Attend>(l2);
-                    dataGridView1.DataSource = l3;
+                    dataGridView1.DataSource  = new BindingList<Models.Attend>(l2);
+                    
                 }
                 else {
                     foreach (var item in students)
@@ -102,8 +99,8 @@ namespace StudentAttendanceSystem
                             l2.Remove(l2[i--]);
                         }
                     }
-                    BindingList<Models.Attend> l4 = new BindingList<Models.Attend>(l2);
-                    dataGridView1.DataSource = l4;
+                    dataGridView1.DataSource = new BindingList<Models.Attend>(l2);
+                    
 
                 }
             }
@@ -138,8 +135,8 @@ namespace StudentAttendanceSystem
                     }
                 }
 
-                BindingList<Models.Attend> l4 = new BindingList<Models.Attend>(l3);
-                dataGridView1.DataSource = l4;
+                dataGridView1.DataSource = new BindingList<Models.Attend>(l3);
+                
 
 
             }
