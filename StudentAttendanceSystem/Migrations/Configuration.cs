@@ -21,16 +21,13 @@
                 new Enrollment {Track="Fullstack Web Development Using .Net", Branch="Minya", Quarter= "2021 2022 Q2"},
                 new Enrollment { Track = "Fullstack Web Development Using MEARN", Branch = "Minya", Quarter = "2021 2022 Q2"},
                 new Enrollment { Track = "GIS", Branch = "Minya", Quarter = "2021 2022 Q3" },
-                new Enrollment { Track = "Cyber Security", Branch = "Minya", Quarter = "2021 2022 Q1" }
-        
-               , new Enrollment { Track = "UI\\UX Design", Branch = "Minya", Quarter = "2020 2021 Q4" }
+                new Enrollment { Track = "Cyber Security", Branch = "Minya", Quarter = "2021 2022 Q1" },
+                new Enrollment { Track = "UI\\UX Design", Branch = "Minya", Quarter = "2020 2021 Q4" }
             };
             enrollments.ForEach(s => context.Enrollments.Add(s));
             context.SaveChanges();
-
             var students = new List<Student>
                 {
-
                 new Student{Name = "Azza Dawoud",NameAR = "عزة داود",Address = "Shalaby",Gender = "Female",City = "Mnoufia",Email = "Azza.Dawoud@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2020 ,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381928123429",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
                 new Student{Name = "Ahmed Shalaby",NameAR = "احمد شلبى",Address = "Brket El-Sabaa",Gender = "Male",City = "Mnoufia",Email = "Ahmed.Shalaby@gmail.com",Faculty = "CS",Grade = "Very Good",GradYear=2022,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381345676527",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
                 new Student{Name = "Ahmed Ali",NameAR = "احمد علي",Address = "Brket El-Sabaa",Gender = "Male",City = "Mnoufia",Email = "Ahmed.Shalaby@gmail.com",Faculty = "CS",Grade = "Very Good",GradYear=2022,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381928371234",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
@@ -71,14 +68,9 @@
                 new Student{Name = "Eman Harby",NameAR = "ايمان حربى",Address = "Mataria",Gender = "Female",City = "Assuit",Email = "Abanoub.harby@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2019,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381928344446",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=4},
                 new Student{Name = "Zein Mohammed",NameAR = "زين محمد",Address = "Brket El-Sabaa",Gender = "Male",City = "Mnoufia",Email = "Elhussien@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2021,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381925555525",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=4},
                 new Student{Name = "Hager soltan",NameAR = "هاجر سلطان",Address = "Shobra",Gender = "Female",City = "Cairo",Email = "Fady.Shafeek.com",Faculty = "CS",Grade = "Good",GradYear=2020,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = "20381921116524",Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=4}
-
-
-
-
                 };
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
-
             var dailyAttends = new List<DailyAttend> 
             { 
                 new DailyAttend{ ADate= DateTime.Parse("2022-01-01")},
@@ -101,8 +93,8 @@
                 new Attend{ DailyAttendID=1, StudentID=7, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=8, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=9, Presence=true },
-                 new Attend{ DailyAttendID=1, StudentID=10, Presence=true },
-                 new Attend{ DailyAttendID=1, StudentID=11, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=10, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=11, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=12, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=13, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=14, Presence=true },
@@ -111,9 +103,8 @@
                 new Attend{ DailyAttendID=1, StudentID=17, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=18, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=19, Presence=true },
-                 new Attend{ DailyAttendID=1, StudentID=20, Presence=true },
-
-                 new Attend{ DailyAttendID=1, StudentID=21, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=20, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=21, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=22, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=23, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=24, Presence=true },
@@ -122,9 +113,8 @@
                 new Attend{ DailyAttendID=1, StudentID=27, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=28, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=29, Presence=true },
-                 new Attend{ DailyAttendID=1, StudentID=30, Presence=true },
-
-                 new Attend{ DailyAttendID=1, StudentID=31, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=30, Presence=true },
+                new Attend{ DailyAttendID=1, StudentID=31, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=32, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=33, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=34, Presence=true },
@@ -133,12 +123,7 @@
                 new Attend{ DailyAttendID=1, StudentID=37, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=1, StudentID=38, Presence=true },
                 new Attend{ DailyAttendID=1, StudentID=39, Presence=true },
-                 new Attend{ DailyAttendID=1, StudentID=40, Presence=true },
-
-                 
-
-
-
+                new Attend{ DailyAttendID=1, StudentID=40, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=1, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=2, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=3, Presence=true },
@@ -148,7 +133,7 @@
                 new Attend{ DailyAttendID=2, StudentID=7, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=8, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=9, Presence=true }, new Attend{ DailyAttendID=1, StudentID=10, Presence=true },
-                 new Attend{ DailyAttendID=2, StudentID=11, Presence=true },
+                new Attend{ DailyAttendID=2, StudentID=11, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=12, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=13, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=14, Presence=true },
@@ -157,9 +142,8 @@
                 new Attend{ DailyAttendID=2, StudentID=17, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=18, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=19, Presence=true },
-                 new Attend{ DailyAttendID=2, StudentID=20, Presence=true },
-
-                 new Attend{ DailyAttendID=2, StudentID=21, Presence=true },
+                new Attend{ DailyAttendID=2, StudentID=20, Presence=true },
+                new Attend{ DailyAttendID=2, StudentID=21, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=22, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=23, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=24, Presence=true },
@@ -168,9 +152,8 @@
                 new Attend{ DailyAttendID=2, StudentID=27, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=28, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=29, Presence=true },
-                 new Attend{ DailyAttendID=2, StudentID=30, Presence=true },
-
-                 new Attend{ DailyAttendID=2, StudentID=31, Presence=true },
+                new Attend{ DailyAttendID=2, StudentID=30, Presence=true },
+                new Attend{ DailyAttendID=2, StudentID=31, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=32, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=33, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=34, Presence=true },
@@ -179,10 +162,7 @@
                 new Attend{ DailyAttendID=2, StudentID=37, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=2, StudentID=38, Presence=true },
                 new Attend{ DailyAttendID=2, StudentID=39, Presence=true },
-                 new Attend{ DailyAttendID=2, StudentID=40, Presence=true },
-
-
-
+                new Attend{ DailyAttendID=2, StudentID=40, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=1, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=2, Presence=true},
                 new Attend{ DailyAttendID=3, StudentID=3, Presence=false, Excuse="Sick" },
@@ -192,8 +172,8 @@
                 new Attend{ DailyAttendID=3, StudentID=7, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=8, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=9, Presence=true },
-                 new Attend{ DailyAttendID=3, StudentID=10, Presence=true },
-                 new Attend{ DailyAttendID=3, StudentID=11, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=10, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=11, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=12, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=13, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=14, Presence=true },
@@ -202,9 +182,8 @@
                 new Attend{ DailyAttendID=3, StudentID=17, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=18, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=19, Presence=true },
-                 new Attend{ DailyAttendID=3, StudentID=20, Presence=true },
-
-                 new Attend{ DailyAttendID=3, StudentID=21, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=20, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=21, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=22, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=23, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=24, Presence=true },
@@ -213,19 +192,17 @@
                 new Attend{ DailyAttendID=3, StudentID=27, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=28, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=29, Presence=true },
-                 new Attend{ DailyAttendID=3, StudentID=30, Presence=true },
-
-                 new Attend{ DailyAttendID=3, StudentID=31, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=30, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=31, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=32, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=3, StudentID=33, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=34, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=35, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=36, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=37, Presence=false, Excuse="Sick" },
-                new Attend{ DailyAttendID=1, StudentID=38, Presence=true },
+                new Attend{ DailyAttendID=3, StudentID=38, Presence=true },
                 new Attend{ DailyAttendID=3, StudentID=39, Presence=true },
-                 new Attend{ DailyAttendID=3, StudentID=40, Presence=true },
-
+                new Attend{ DailyAttendID=3, StudentID=40, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=1, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=2, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=3, Presence=true },
@@ -235,8 +212,8 @@
                 new Attend{ DailyAttendID=4, StudentID=7, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=8, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=9, Presence=false, Excuse="Sick" },
-                 new Attend{ DailyAttendID=4, StudentID=10, Presence=true },
-                 new Attend{ DailyAttendID=4, StudentID=11, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=10, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=11, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=12, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=13, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=14, Presence=true },
@@ -245,9 +222,8 @@
                 new Attend{ DailyAttendID=4, StudentID=17, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=18, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=19, Presence=true },
-                 new Attend{ DailyAttendID=4, StudentID=20, Presence=true },
-
-                 new Attend{ DailyAttendID=4, StudentID=21, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=20, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=21, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=22, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=23, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=24, Presence=true },
@@ -256,9 +232,8 @@
                 new Attend{ DailyAttendID=4, StudentID=27, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=28, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=29, Presence=true },
-                 new Attend{ DailyAttendID=4, StudentID=30, Presence=true },
-
-                 new Attend{ DailyAttendID=4, StudentID=31, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=30, Presence=true },
+                new Attend{ DailyAttendID=4, StudentID=31, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=32, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=33, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=34, Presence=true },
@@ -267,10 +242,7 @@
                 new Attend{ DailyAttendID=4, StudentID=37, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=4, StudentID=38, Presence=true },
                 new Attend{ DailyAttendID=4, StudentID=39, Presence=true },
-                 new Attend{ DailyAttendID=4, StudentID=40, Presence=true },
-
-
-
+                new Attend{ DailyAttendID=4, StudentID=40, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=1, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=2, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=3, Presence=true },
@@ -280,8 +252,8 @@
                 new Attend{ DailyAttendID=5, StudentID=7, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=8, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=9, Presence=true },
-                 new Attend{ DailyAttendID=5, StudentID=10, Presence=true },
-                 new Attend{ DailyAttendID=5, StudentID=11, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=10, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=11, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=12, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=13, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=14, Presence=true },
@@ -290,9 +262,8 @@
                 new Attend{ DailyAttendID=5, StudentID=17, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=18, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=19, Presence=true },
-                 new Attend{ DailyAttendID=5, StudentID=20, Presence=true },
-
-                 new Attend{ DailyAttendID=5, StudentID=21, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=20, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=21, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=22, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=23, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=24, Presence=true },
@@ -301,9 +272,8 @@
                 new Attend{ DailyAttendID=5, StudentID=27, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=28, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=29, Presence=true },
-                 new Attend{ DailyAttendID=5, StudentID=30, Presence=true },
-
-                 new Attend{ DailyAttendID=5, StudentID=31, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=30, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=31, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=32, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=33, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=34, Presence=true },
@@ -312,11 +282,10 @@
                 new Attend{ DailyAttendID=5, StudentID=37, Presence=false, Excuse="Sick" },
                 new Attend{ DailyAttendID=5, StudentID=38, Presence=true },
                 new Attend{ DailyAttendID=5, StudentID=39, Presence=true },
-                 new Attend{ DailyAttendID=5, StudentID=40, Presence=true },
+                new Attend{ DailyAttendID=5, StudentID=40, Presence=true },
             };
             attends.ForEach(s => context.Attends.Add(s));
             context.SaveChanges();
-
         }
     }
 }
