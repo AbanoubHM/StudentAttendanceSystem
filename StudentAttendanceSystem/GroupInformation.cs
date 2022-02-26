@@ -6,7 +6,6 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
@@ -20,20 +19,15 @@ namespace StudentAttendanceSystem {
             enrollment = e1;
 
         }
-        public GroupInformation()
-        {
-
-        }
-
+       
 
 
         private void GroupInformation_Load(object sender, EventArgs e) {
             position(Attended);
             p1.Height = Attended.Height;
             Active(Attended);
-
-            dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
-
+            
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
 
         }
 
@@ -58,16 +52,6 @@ namespace StudentAttendanceSystem {
             firstMain.ShowDialog();
 
         }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -100,17 +84,17 @@ namespace StudentAttendanceSystem {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void EditStudent_Btn_Click(object sender, EventArgs e) {
-            position(EditStudent_Btn);
-            Active(EditStudent_Btn);
-        }
+        
 
 
         private void EditStudent_Btn_Click_1(object sender, EventArgs e) {
             position(EditStudent_Btn);
             Active(EditStudent_Btn);
-            Name s1 = new Name();
+            Name s1 = new Name(enrollment);
             s1.ShowDialog();
+
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
+
 
         }
 
@@ -125,11 +109,22 @@ namespace StudentAttendanceSystem {
         private void AddStudent_Btn_Click_1(object sender, EventArgs e) {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
-            Add_Students a4 = new Add_Students();
-            a4.Show();
+            Add_Students a4 = new Add_Students(enrollment);
+            a4.ShowDialog();
+            dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
+
+
+
+            //dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

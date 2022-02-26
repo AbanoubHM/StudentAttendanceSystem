@@ -45,6 +45,8 @@ namespace StudentAttendanceSystem {
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -52,8 +54,11 @@ namespace StudentAttendanceSystem {
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(191, 0);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.Size = new System.Drawing.Size(746, 645);
             this.dataGridView.TabIndex = 6;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // panel1
             // 
@@ -76,7 +81,9 @@ namespace StudentAttendanceSystem {
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._new;
+
             this.pictureBox3.Location = new System.Drawing.Point(-16, 469);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(209, 173);

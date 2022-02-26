@@ -87,6 +87,7 @@ namespace StudentAttendanceSystem
             this.Add_Btn.TabIndex = 73;
             this.Add_Btn.Text = "Add";
             this.Add_Btn.UseVisualStyleBackColor = true;
+            this.Add_Btn.Click += new System.EventHandler(this.Add_Btn_Click);
             // 
             // textBox1
             // 
@@ -105,7 +106,7 @@ namespace StudentAttendanceSystem
             this.NotesLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NotesLbl.Location = new System.Drawing.Point(17, 661);
             this.NotesLbl.Name = "NotesLbl";
-            this.NotesLbl.Size = new System.Drawing.Size(50, 16);
+            this.NotesLbl.Size = new System.Drawing.Size(49, 16);
             this.NotesLbl.TabIndex = 71;
             this.NotesLbl.Text = "Notes :";
             this.NotesLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -127,7 +128,7 @@ namespace StudentAttendanceSystem
             this.MaterialStateLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MaterialStateLbl.Location = new System.Drawing.Point(17, 621);
             this.MaterialStateLbl.Name = "MaterialStateLbl";
-            this.MaterialStateLbl.Size = new System.Drawing.Size(93, 16);
+            this.MaterialStateLbl.Size = new System.Drawing.Size(92, 16);
             this.MaterialStateLbl.TabIndex = 69;
             this.MaterialStateLbl.Text = "MaterialState :";
             this.MaterialStateLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -149,7 +150,7 @@ namespace StudentAttendanceSystem
             this.MilitaryStateLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MilitaryStateLbl.Location = new System.Drawing.Point(17, 581);
             this.MilitaryStateLbl.Name = "MilitaryStateLbl";
-            this.MilitaryStateLbl.Size = new System.Drawing.Size(87, 16);
+            this.MilitaryStateLbl.Size = new System.Drawing.Size(86, 16);
             this.MilitaryStateLbl.TabIndex = 67;
             this.MilitaryStateLbl.Text = "MilitaryState :";
             this.MilitaryStateLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -171,7 +172,7 @@ namespace StudentAttendanceSystem
             this.GradeLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GradeLbl.Location = new System.Drawing.Point(19, 541);
             this.GradeLbl.Name = "GradeLbl";
-            this.GradeLbl.Size = new System.Drawing.Size(52, 16);
+            this.GradeLbl.Size = new System.Drawing.Size(51, 16);
             this.GradeLbl.TabIndex = 65;
             this.GradeLbl.Text = "Grade :";
             this.GradeLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -193,7 +194,7 @@ namespace StudentAttendanceSystem
             this.GradYearLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GradYearLbl.Location = new System.Drawing.Point(17, 500);
             this.GradYearLbl.Name = "GradYearLbl";
-            this.GradYearLbl.Size = new System.Drawing.Size(73, 16);
+            this.GradYearLbl.Size = new System.Drawing.Size(72, 16);
             this.GradYearLbl.TabIndex = 63;
             this.GradYearLbl.Text = "GradYear :";
             this.GradYearLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -215,7 +216,7 @@ namespace StudentAttendanceSystem
             this.SpecializationLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SpecializationLbl.Location = new System.Drawing.Point(15, 460);
             this.SpecializationLbl.Name = "SpecializationLbl";
-            this.SpecializationLbl.Size = new System.Drawing.Size(98, 16);
+            this.SpecializationLbl.Size = new System.Drawing.Size(97, 16);
             this.SpecializationLbl.TabIndex = 61;
             this.SpecializationLbl.Text = "Specialization :";
             this.SpecializationLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -237,7 +238,7 @@ namespace StudentAttendanceSystem
             this.FacultyLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FacultyLbl.Location = new System.Drawing.Point(17, 420);
             this.FacultyLbl.Name = "FacultyLbl";
-            this.FacultyLbl.Size = new System.Drawing.Size(57, 16);
+            this.FacultyLbl.Size = new System.Drawing.Size(56, 16);
             this.FacultyLbl.TabIndex = 59;
             this.FacultyLbl.Text = "Faculty :";
             this.FacultyLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -259,7 +260,7 @@ namespace StudentAttendanceSystem
             this.UniversityLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UniversityLbl.Location = new System.Drawing.Point(16, 380);
             this.UniversityLbl.Name = "UniversityLbl";
-            this.UniversityLbl.Size = new System.Drawing.Size(73, 16);
+            this.UniversityLbl.Size = new System.Drawing.Size(72, 16);
             this.UniversityLbl.TabIndex = 57;
             this.UniversityLbl.Text = "University :";
             this.UniversityLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -281,7 +282,7 @@ namespace StudentAttendanceSystem
             this.EmailLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmailLbl.Location = new System.Drawing.Point(16, 340);
             this.EmailLbl.Name = "EmailLbl";
-            this.EmailLbl.Size = new System.Drawing.Size(48, 16);
+            this.EmailLbl.Size = new System.Drawing.Size(47, 16);
             this.EmailLbl.TabIndex = 55;
             this.EmailLbl.Text = "Email :";
             this.EmailLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -303,7 +304,7 @@ namespace StudentAttendanceSystem
             this.PhoneLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PhoneLbl.Location = new System.Drawing.Point(17, 300);
             this.PhoneLbl.Name = "PhoneLbl";
-            this.PhoneLbl.Size = new System.Drawing.Size(53, 16);
+            this.PhoneLbl.Size = new System.Drawing.Size(52, 16);
             this.PhoneLbl.TabIndex = 53;
             this.PhoneLbl.Text = "Phone :";
             this.PhoneLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -325,7 +326,7 @@ namespace StudentAttendanceSystem
             this.MobileLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MobileLbl.Location = new System.Drawing.Point(17, 260);
             this.MobileLbl.Name = "MobileLbl";
-            this.MobileLbl.Size = new System.Drawing.Size(55, 16);
+            this.MobileLbl.Size = new System.Drawing.Size(54, 16);
             this.MobileLbl.TabIndex = 51;
             this.MobileLbl.Text = "Mobile :";
             this.MobileLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -347,7 +348,7 @@ namespace StudentAttendanceSystem
             this.AddressLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AddressLbl.Location = new System.Drawing.Point(17, 220);
             this.AddressLbl.Name = "AddressLbl";
-            this.AddressLbl.Size = new System.Drawing.Size(65, 16);
+            this.AddressLbl.Size = new System.Drawing.Size(64, 16);
             this.AddressLbl.TabIndex = 49;
             this.AddressLbl.Text = "Address :";
             this.AddressLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -369,7 +370,7 @@ namespace StudentAttendanceSystem
             this.CityLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CityLbl.Location = new System.Drawing.Point(16, 180);
             this.CityLbl.Name = "CityLbl";
-            this.CityLbl.Size = new System.Drawing.Size(36, 16);
+            this.CityLbl.Size = new System.Drawing.Size(35, 16);
             this.CityLbl.TabIndex = 47;
             this.CityLbl.Text = "City :";
             this.CityLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -391,7 +392,7 @@ namespace StudentAttendanceSystem
             this.NIDLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NIDLbl.Location = new System.Drawing.Point(16, 140);
             this.NIDLbl.Name = "NIDLbl";
-            this.NIDLbl.Size = new System.Drawing.Size(37, 16);
+            this.NIDLbl.Size = new System.Drawing.Size(36, 16);
             this.NIDLbl.TabIndex = 45;
             this.NIDLbl.Text = "NID :";
             this.NIDLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -413,7 +414,7 @@ namespace StudentAttendanceSystem
             this.GenderLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GenderLbl.Location = new System.Drawing.Point(17, 100);
             this.GenderLbl.Name = "GenderLbl";
-            this.GenderLbl.Size = new System.Drawing.Size(59, 16);
+            this.GenderLbl.Size = new System.Drawing.Size(58, 16);
             this.GenderLbl.TabIndex = 43;
             this.GenderLbl.Text = "Gender :";
             this.GenderLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -435,7 +436,7 @@ namespace StudentAttendanceSystem
             this.NameARLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NameARLbl.Location = new System.Drawing.Point(17, 60);
             this.NameARLbl.Name = "NameARLbl";
-            this.NameARLbl.Size = new System.Drawing.Size(70, 16);
+            this.NameARLbl.Size = new System.Drawing.Size(69, 16);
             this.NameARLbl.TabIndex = 41;
             this.NameARLbl.Text = "NameAR :";
             this.NameARLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -457,13 +458,15 @@ namespace StudentAttendanceSystem
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NameLbl.Location = new System.Drawing.Point(19, 22);
             this.NameLbl.Name = "NameLbl";
-            this.NameLbl.Size = new System.Drawing.Size(51, 16);
+            this.NameLbl.Size = new System.Drawing.Size(50, 16);
             this.NameLbl.TabIndex = 39;
             this.NameLbl.Text = "Name :";
             this.NameLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -471,6 +474,8 @@ namespace StudentAttendanceSystem
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(384, 12);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.Size = new System.Drawing.Size(746, 703);
             this.dataGridView.TabIndex = 75;
             // 
@@ -520,6 +525,7 @@ namespace StudentAttendanceSystem
             this.Name = "Add_Students";
             this.Text = "Add_Students";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Add_Students_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
