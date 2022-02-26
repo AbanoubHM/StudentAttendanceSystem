@@ -29,36 +29,60 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+//<<<<<<< Test-Crystal-on-binding
+            this.button1 = new System.Windows.Forms.Button();
+//======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Student_Data_save));
+//>>>>>>> master
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(469, 517);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Print";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 15);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(895, 460);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(994, 476);
+            this.dataGridView1.TabIndex = 2;
             // 
             // Report_Student_Data_save
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(921, 487);
+            this.ClientSize = new System.Drawing.Size(994, 569);
             this.Controls.Add(this.dataGridView1);
+//<<<<<<< Test-Crystal-on-binding
+            this.Controls.Add(this.button1);
+//=======
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+//>>>>>>> master
             this.Name = "Report_Student_Data_save";
             this.Text = "Report_Student_Data_save";
+            this.Load += new System.EventHandler(this.Report_Student_Data_save_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        //private Reports.StudentsData StudentsData1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
