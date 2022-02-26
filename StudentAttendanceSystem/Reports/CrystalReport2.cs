@@ -16,14 +16,14 @@ namespace StudentAttendanceSystem.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class AttendanceReport : ReportClass {
+    public class CrystalReport2 : ReportClass {
         
-        public AttendanceReport() {
+        public CrystalReport2() {
         }
         
         public override string ResourceName {
             get {
-                return "AttendanceReport.rpt";
+                return "CrystalReport2.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace StudentAttendanceSystem.Reports {
         
         public override string FullResourceName {
             get {
-                return "StudentAttendanceSystem.Reports.AttendanceReport.rpt";
+                return "StudentAttendanceSystem.Reports.CrystalReport2.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace StudentAttendanceSystem.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedAttendanceReport : Component, ICachedReport {
+    public class CachedCrystalReport2 : Component, ICachedReport {
         
-        public CachedAttendanceReport() {
+        public CachedCrystalReport2() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace StudentAttendanceSystem.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            AttendanceReport rpt = new AttendanceReport();
+            CrystalReport2 rpt = new CrystalReport2();
             rpt.Site = this.Site;
             return rpt;
         }
