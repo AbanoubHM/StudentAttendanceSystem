@@ -12,22 +12,14 @@ namespace StudentAttendanceSystem
 {
     public partial class Add_Students : Form
     {
-//<<<<<<< BindingList-Trials
+
+        DataContext dataContext = new DataContext();
         public Enrollment enrollment { get; set; }
         public Add_Students(Enrollment e1)
         {
             InitializeComponent();
             enrollment = e1;
-//=======
-        public Enrollment enrollmentt { get; set; }
-        DataContext dataContext = new DataContext();
-        //BindingList<Student> students;
-        public Add_Students(Enrollment enrollment)
-        {
-            InitializeComponent();
-            enrollmentt = enrollment;
 
-//>>>>>>> master
         }
 
         private void Back_Btn_Click(object sender, EventArgs e)
@@ -70,7 +62,7 @@ namespace StudentAttendanceSystem
             student.Faculty = FacultytextBox.Text;//16
             student.Specialization = SpecializationtextBox.Text;
 
-            var Nid = dataContext.Students.Where(x => x.NID == student.NID).ToList();
+            var Nid = dataContext.Students.Where(x => x.NID.Equals(student.NID)).ToList();
 
             if (Nid.Count() > 0)
             {
@@ -79,7 +71,7 @@ namespace StudentAttendanceSystem
 
             else if (yes)
             {
-                student.EnrollmentID = enrollmentt.EnrollmentID;
+                student.EnrollmentID = enrollment.EnrollmentID;
                 dataContext.Students.Add(student);
                 dataContext.SaveChanges();
                 //this.Close();
@@ -100,14 +92,14 @@ namespace StudentAttendanceSystem
             }
             else { MessageBox.Show("Please fixed Error Data "); }
 
-            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
+            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollment.EnrollmentID).ToList());
 
 
         }
 
         private void Add_Students_Load(object sender, EventArgs e)
         {
-            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollmentt.EnrollmentID).ToList());
+            dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollment.EnrollmentID).ToList());
         }
     }
 }
