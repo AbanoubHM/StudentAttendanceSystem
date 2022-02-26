@@ -29,8 +29,14 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+//<<<<<<< Test-Crystal-on-binding
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.CrystalReport21 = new StudentAttendanceSystem.Reports.CrystalReport2();
+//=======
+            //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Attendance_save));
+            //this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+//>>>>>>> master
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -52,7 +58,12 @@ namespace StudentAttendanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(877, 444);
+//<<<<<<< Test-Crystal-on-binding
             this.Controls.Add(this.crystalReportViewer1);
+//=======
+            //this.Controls.Add(this.dataGridView1);
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+//>>>>>>> master
             this.Name = "Report_Attendance_save";
             this.Text = "Report_Attendance_save";
             this.ResumeLayout(false);

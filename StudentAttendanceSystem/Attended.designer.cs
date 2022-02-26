@@ -24,6 +24,7 @@ namespace StudentAttendanceSystem {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attended));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Date = new System.Windows.Forms.Label();
             this.Next = new System.Windows.Forms.Button();
@@ -69,6 +70,7 @@ namespace StudentAttendanceSystem {
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Date);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Attended";
             this.Text = "Attended";
             this.ResumeLayout(false);

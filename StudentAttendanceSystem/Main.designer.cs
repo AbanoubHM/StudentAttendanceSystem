@@ -29,6 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.ITI_Quarter = new System.Windows.Forms.Label();
             this.ITIQuarter_Combo = new System.Windows.Forms.ComboBox();
             this.Track = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@ namespace StudentAttendanceSystem
             // 
             // ITIQuarter_Combo
             // 
+            this.ITIQuarter_Combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ITIQuarter_Combo.FormattingEnabled = true;
             this.ITIQuarter_Combo.Location = new System.Drawing.Point(160, 100);
             this.ITIQuarter_Combo.Name = "ITIQuarter_Combo";
@@ -76,6 +78,7 @@ namespace StudentAttendanceSystem
             // 
             // Track_Combo
             // 
+            this.Track_Combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Track_Combo.FormattingEnabled = true;
             this.Track_Combo.Location = new System.Drawing.Point(160, 157);
             this.Track_Combo.Name = "Track_Combo";
@@ -96,23 +99,26 @@ namespace StudentAttendanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(448, 12);
+            this.button1.Location = new System.Drawing.Point(460, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 59);
+            this.button1.Size = new System.Drawing.Size(49, 48);
             this.button1.TabIndex = 9;
+            this.button1.TabStop = false;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._0ae66dfa_27e5_4a95_84df_473cb94e787a;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources.iti1;
+            this.pictureBox3.Location = new System.Drawing.Point(-6, 12);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(141, 72);
+            this.pictureBox3.Size = new System.Drawing.Size(125, 72);
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
@@ -132,6 +138,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.ITIQuarter_Combo);
             this.Controls.Add(this.ITI_Quarter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";

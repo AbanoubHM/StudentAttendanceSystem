@@ -70,15 +70,19 @@
     <Compile Include="Add_Students.Designer.cs">
       <DependentUpon>Add_Students.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202212346591_test.cs" />
-    <Compile Include="Migrations\202202212346591_test.designer.cs">
-      <DependentUpon>202202212346591_test.cs</DependentUpon>
+
+
+    <Compile Include="Migrations\202202260018281_LastMig.cs" />
+    <Compile Include="Migrations\202202260018281_LastMig.designer.cs">
+      <DependentUpon>202202260018281_LastMig.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attend.cs" />
@@ -181,8 +185,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202212346591_test.resx">
-      <DependentUpon>202202212346591_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202260018281_LastMig.resx">
+      <DependentUpon>202202260018281_LastMig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -243,9 +247,18 @@
   <ItemGroup>
     <None Include="Resources\0ae66dfa-27e5-4a95-84df-473cb94e787a.jpg" />
   </ItemGroup>
+
   <ItemGroup />
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources\iti1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

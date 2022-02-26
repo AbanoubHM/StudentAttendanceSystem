@@ -29,7 +29,11 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+//<<<<<<< Test-Crystal-on-binding
             this.button1 = new System.Windows.Forms.Button();
+//======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Student_Data_save));
+//>>>>>>> master
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +67,11 @@ namespace StudentAttendanceSystem
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(994, 569);
             this.Controls.Add(this.dataGridView1);
+//<<<<<<< Test-Crystal-on-binding
             this.Controls.Add(this.button1);
+//=======
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+//>>>>>>> master
             this.Name = "Report_Student_Data_save";
             this.Text = "Report_Student_Data_save";
             this.Load += new System.EventHandler(this.Report_Student_Data_save_Load);

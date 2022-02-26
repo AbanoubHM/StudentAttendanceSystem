@@ -1,10 +1,8 @@
 ﻿using StudentAttendanceSystem.Models;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace StudentAttendanceSystem
@@ -12,6 +10,7 @@ namespace StudentAttendanceSystem
     public class DailyAttend
     {
         public int DailyAttendID { get; set; }
+        [Column(TypeName = "date")]
         public DateTime ADate { get; set; }
         public ICollection<Attend> Attends { get; set; }
 
