@@ -50,18 +50,12 @@ namespace StudentAttendanceSystem
             student.Address = AddresstextBox.Text;//8
             student.City = CitytextBox.Text;//9
             student.Notes = textBox1.Text;//10
-            char ch ;
-            if( char.TryParse(GendertextBox.Text,out ch)) student.Gender = ch;
-            else {MessageBox.Show("You should Enter (M) or (F)"); yes = false;
-        }//11
+            student.Gender = GendertextBox.Text;
 
 
-        long L;
-            if( long.TryParse(NIDtextBox.Text,out L))//12
-            student.NID = L;
-            else { 
-                MessageBox.Show("You should Enter Valid NId"); yes = false;
-            }
+
+
+            student.NID = NIDtextBox.Text;
             student.Moblie = MobiletextBox.Text;//13
             student.Phone = PhonetextBox.Text;//14
             student.University = UniversitytextBox.Text;//15

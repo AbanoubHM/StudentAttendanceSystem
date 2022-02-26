@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
     public partial class Attended : Form {
-        int index;
+        
         public Attended() {
             InitializeComponent();
         }
