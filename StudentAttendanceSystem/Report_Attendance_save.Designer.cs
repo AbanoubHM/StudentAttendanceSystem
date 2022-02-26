@@ -29,14 +29,8 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
-//<<<<<<< Test-Crystal-on-binding
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport21 = new StudentAttendanceSystem.Reports.CrystalReport2();
-//=======
-            //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Attendance_save));
-            //this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-//>>>>>>> master
+            this.AttendanceReport1 = new StudentAttendanceSystem.Reports.AttendanceReport();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -47,7 +41,7 @@ namespace StudentAttendanceSystem
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport21;
+            this.crystalReportViewer1.ReportSource = this.AttendanceReport1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(877, 444);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
@@ -58,12 +52,7 @@ namespace StudentAttendanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(877, 444);
-//<<<<<<< Test-Crystal-on-binding
             this.Controls.Add(this.crystalReportViewer1);
-//=======
-            //this.Controls.Add(this.dataGridView1);
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-//>>>>>>> master
             this.Name = "Report_Attendance_save";
             this.Text = "Report_Attendance_save";
             this.ResumeLayout(false);
@@ -73,6 +62,6 @@ namespace StudentAttendanceSystem
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Reports.CrystalReport2 CrystalReport21;
+        private Reports.AttendanceReport AttendanceReport1;
     }
 }
