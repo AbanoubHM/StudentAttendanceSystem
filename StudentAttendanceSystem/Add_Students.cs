@@ -93,13 +93,20 @@ namespace StudentAttendanceSystem
             else { MessageBox.Show("Please fixed Error Data "); }
 
             dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollment.EnrollmentID).ToList());
-
+            dataGridView.Columns[0].Visible = false;
+            dataGridView.Columns[3].Visible = false;
+            dataGridView.Columns[19].Visible = false;
+            dataGridView.Columns[20].Visible = false;
 
         }
 
         private void Add_Students_Load(object sender, EventArgs e)
         {
             dataGridView.DataSource = new BindingList<Student>(dataContext.Students.Where((x) => x.EnrollmentID == enrollment.EnrollmentID).ToList());
+            dataGridView.Columns[0].Visible = false;
+            dataGridView.Columns[3].Visible = false;
+            dataGridView.Columns[19].Visible = false;
+            dataGridView.Columns[20].Visible = false;
         }
     }
 }

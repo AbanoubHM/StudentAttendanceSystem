@@ -37,6 +37,7 @@ namespace StudentAttendanceSystem {
             this.p1 = new System.Windows.Forms.Panel();
             this.Enrollment_Btn = new System.Windows.Forms.Button();
             this.Attended = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -56,9 +57,8 @@ namespace StudentAttendanceSystem {
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
-            this.dataGridView.Size = new System.Drawing.Size(746, 645);
+            this.dataGridView.Size = new System.Drawing.Size(746, 485);
             this.dataGridView.TabIndex = 6;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // panel1
             // 
@@ -81,15 +81,12 @@ namespace StudentAttendanceSystem {
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
             this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._new;
-
             this.pictureBox3.Location = new System.Drawing.Point(-16, 469);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(209, 173);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // AddStudent_Btn
             // 
@@ -184,11 +181,23 @@ namespace StudentAttendanceSystem {
             this.Attended.UseVisualStyleBackColor = false;
             this.Attended.Click += new System.EventHandler(this.Attended_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(378, 544);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
             // GroupInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 645);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -198,11 +207,13 @@ namespace StudentAttendanceSystem {
             this.Text = "GroupInformation";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GroupInformation_Load);
+            this.Resize += new System.EventHandler(this.GroupInformation_ResizeEnd);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -219,5 +230,6 @@ namespace StudentAttendanceSystem {
         private System.Windows.Forms.Button AddStudent_Btn;
         private System.Windows.Forms.Panel p1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }

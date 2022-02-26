@@ -84,7 +84,6 @@ namespace StudentAttendanceSystem
             this.QTxtBox.Name = "QTxtBox";
             this.QTxtBox.Size = new System.Drawing.Size(390, 32);
             this.QTxtBox.TabIndex = 5;
-            this.QTxtBox.SelectedIndexChanged += new System.EventHandler(this.QTxtBox_SelectedIndexChanged);
             // 
             // TrackTxtBox
             // 

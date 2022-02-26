@@ -38,15 +38,10 @@ namespace StudentAttendanceSystem
             this.Close();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void Attend_Student_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.Value = AttendDate;
+            dataGridView1.Size = new System.Drawing.Size((int)(this.Width*0.9), (int)(this.Height * 0.5));
+            DateLbl.Text = AttendDate.ToString("dd-MM-yyyy");
             quarterLbl.Text = enrollment.Quarter;
             trackLbl.Text = enrollment.Track;
             List<Student> students = new List<Student>();
@@ -157,12 +152,6 @@ namespace StudentAttendanceSystem
             dataGridView1.Columns[6].HeaderText = "التاريخ";
             dataGridView1.Columns[5].DisplayIndex = 0;
 
-
-
-
-
-
-            //dataGridView1.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
         }
     }
 }

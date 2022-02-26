@@ -20,15 +20,8 @@ namespace StudentAttendanceSystem
             InitializeComponent();
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
+        
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -37,13 +30,10 @@ namespace StudentAttendanceSystem
 
         private void FirstMain_Load(object sender, EventArgs e)
         {
-
+            yearLbl.Text = "-  2023";
         }
 
-        private void QTxtBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void AddTrackBtn_Click(object sender, EventArgs e)
         {
@@ -54,7 +44,7 @@ namespace StudentAttendanceSystem
             String track = QTxtBox.SelectedItem.ToString();
              var cont =DB.Enrollments.Where(x=>x.Track== enrollment.Track && x.Quarter== enrollment.Quarter);
             if (cont.Count() != 0)
-                MessageBox.Show("This Track is in");
+                MessageBox.Show("Duplicate Track");
             else
             {
                 DB.Enrollments.Add(enrollment);
