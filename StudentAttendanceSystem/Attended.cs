@@ -10,10 +10,15 @@ using System.Windows.Forms;
 
 namespace StudentAttendanceSystem {
     public partial class Attended : Form {
+//<<<<<<< BindingList-Trials
 
         Enrollment enrollment;
 
         public Attended(Enrollment e1) {
+//=======
+        
+        public Attended() {
+//>>>>>>> master
             InitializeComponent();
             enrollment = e1;
         }

@@ -50,9 +50,18 @@ namespace StudentAttendanceSystem
             Enrollment enrollment = new Enrollment() { Quarter = (dateTimePicker1.Value.Year).ToString() +" "+ (dateTimePicker1.Value.Year + 1).ToString()+" "+QTxtBox.SelectedItem.ToString(),
                  Track = TrackTxtBox.SelectedItem.ToString(), Branch= "Minya"
             };
-            DB.Enrollments.Add(enrollment);
-            DB.SaveChanges();
-            this.Close();
+
+            String track = QTxtBox.SelectedItem.ToString();
+             var cont =DB.Enrollments.Where(x=>x.Track== enrollment.Track && x.Quarter== enrollment.Quarter);
+            if (cont.Count() != 0)
+                MessageBox.Show("This Track is in");
+            else
+            {
+                DB.Enrollments.Add(enrollment);
+                DB.SaveChanges();
+                this.Close();
+            }
+            
         }
     }
 }
