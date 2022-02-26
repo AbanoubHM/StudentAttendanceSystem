@@ -12,6 +12,13 @@ namespace StudentAttendanceSystem
 {
     public partial class Add_Students : Form
     {
+//<<<<<<< BindingList-Trials
+        public Enrollment enrollment { get; set; }
+        public Add_Students(Enrollment e1)
+        {
+            InitializeComponent();
+            enrollment = e1;
+//=======
         public Enrollment enrollmentt { get; set; }
         DataContext dataContext = new DataContext();
         //BindingList<Student> students;
@@ -20,6 +27,7 @@ namespace StudentAttendanceSystem
             InitializeComponent();
             enrollmentt = enrollment;
 
+//>>>>>>> master
         }
 
         private void Back_Btn_Click(object sender, EventArgs e)

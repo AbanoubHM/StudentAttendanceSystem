@@ -19,7 +19,7 @@ namespace StudentAttendanceSystem {
             enrollment = e1;
 
         }
-       
+
 
 
         private void GroupInformation_Load(object sender, EventArgs e) {
@@ -38,7 +38,7 @@ namespace StudentAttendanceSystem {
         private void Attended_Click(object sender, EventArgs e) {
             position(Attended);
             Active(Attended);
-            Attended a = new Attended();
+            Attended a = new Attended(enrollment);
             a.ShowDialog();
             
         }
@@ -110,12 +110,14 @@ namespace StudentAttendanceSystem {
             position(AddStudent_Btn);
             Active(AddStudent_Btn);
             Add_Students a4 = new Add_Students(enrollment);
+
             a4.ShowDialog();
             dataGridView.DataSource = new BindingList<Student>(db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList());
 
 
 
             //dataGridView.DataSource = db.Students.Where(a => a.EnrollmentID == enrollment.EnrollmentID).ToList();
+
 
         }
 

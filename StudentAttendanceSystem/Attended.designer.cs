@@ -73,7 +73,6 @@ namespace StudentAttendanceSystem {
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Attended";
             this.Text = "Attended";
-            this.Load += new System.EventHandler(this.Attended_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

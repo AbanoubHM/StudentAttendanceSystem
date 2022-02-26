@@ -29,13 +29,11 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.TrackGroup = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Track = new System.Windows.Forms.Label();
             this.ITI_Quarter = new System.Windows.Forms.Label();
             this.quarterLbl = new System.Windows.Forms.Label();
             this.trackLbl = new System.Windows.Forms.Label();
-            this.qroupLbl = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,20 +41,6 @@ namespace StudentAttendanceSystem
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TrackGroup
-            // 
-            this.TrackGroup.AutoSize = true;
-            this.TrackGroup.BackColor = System.Drawing.Color.Transparent;
-            this.TrackGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TrackGroup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TrackGroup.Location = new System.Drawing.Point(394, 19);
-            this.TrackGroup.Name = "TrackGroup";
-            this.TrackGroup.Size = new System.Drawing.Size(119, 33);
-            this.TrackGroup.TabIndex = 8;
-            this.TrackGroup.Text = "Group :";
-            this.TrackGroup.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Track
             // 
@@ -92,7 +76,7 @@ namespace StudentAttendanceSystem
             this.quarterLbl.BackColor = System.Drawing.Color.Transparent;
             this.quarterLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quarterLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.quarterLbl.Location = new System.Drawing.Point(212, 19);
+            this.quarterLbl.Location = new System.Drawing.Point(174, 19);
             this.quarterLbl.Name = "quarterLbl";
             this.quarterLbl.Size = new System.Drawing.Size(56, 33);
             this.quarterLbl.TabIndex = 9;
@@ -112,26 +96,14 @@ namespace StudentAttendanceSystem
             this.trackLbl.Text = "Track";
             this.trackLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // qroupLbl
-            // 
-            this.qroupLbl.AutoSize = true;
-            this.qroupLbl.BackColor = System.Drawing.Color.Transparent;
-            this.qroupLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qroupLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.qroupLbl.Location = new System.Drawing.Point(542, 19);
-            this.qroupLbl.Name = "qroupLbl";
-            this.qroupLbl.Size = new System.Drawing.Size(101, 33);
-            this.qroupLbl.TabIndex = 11;
-            this.qroupLbl.Text = "Group";
-            this.qroupLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(534, 88);
+            this.dateTimePicker1.Location = new System.Drawing.Point(539, 26);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(209, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(281, 24);
             this.dateTimePicker1.TabIndex = 26;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -142,7 +114,7 @@ namespace StudentAttendanceSystem
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(394, 81);
+            this.label4.Location = new System.Drawing.Point(399, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 33);
             this.label4.TabIndex = 27;
@@ -154,14 +126,14 @@ namespace StudentAttendanceSystem
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dataGridView1.Location = new System.Drawing.Point(18, 137);
             this.dataGridView1.Name = "dataGridView1";
@@ -184,7 +156,7 @@ namespace StudentAttendanceSystem
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(239, 52);
             this.button2.TabIndex = 30;
-            this.button2.Text = "Back";
+            this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -198,14 +170,13 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.qroupLbl);
             this.Controls.Add(this.trackLbl);
             this.Controls.Add(this.quarterLbl);
-            this.Controls.Add(this.TrackGroup);
             this.Controls.Add(this.Track);
             this.Controls.Add(this.ITI_Quarter);
             this.Name = "Attend_Student";
             this.Text = "Attend_Student";
+            this.Load += new System.EventHandler(this.Attend_Student_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,13 +184,10 @@ namespace StudentAttendanceSystem
         }
 
         #endregion
-
-        private System.Windows.Forms.Label TrackGroup;
         private System.Windows.Forms.Label Track;
         private System.Windows.Forms.Label ITI_Quarter;
         private System.Windows.Forms.Label quarterLbl;
         private System.Windows.Forms.Label trackLbl;
-        private System.Windows.Forms.Label qroupLbl;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
