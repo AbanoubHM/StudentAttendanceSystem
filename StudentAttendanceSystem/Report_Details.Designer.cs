@@ -29,6 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Details));
             this.Attendance_Btn = new System.Windows.Forms.Button();
             this.Student_Data_Btn = new System.Windows.Forms.Button();
             this.Advice_LBL = new System.Windows.Forms.Label();
@@ -80,6 +81,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.Attendance_Btn);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Report_Details";
             this.Text = "Report_Details";

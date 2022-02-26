@@ -30,6 +30,7 @@
 
             var students = new List<Student>
                 {
+
                 new Student{Name = "Azza Dawoud",NameAR = "عزة داود",Address = "Shalaby",Gender = 'F',City = "Mnoufia",Email = "Azza.Dawoud@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2020 ,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928123429,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
                 new Student{Name = "Ahmed Shalaby",NameAR = "احمد شلبى",Address = "Brket El-Sabaa",Gender = 'M',City = "Mnoufia",Email = "Ahmed.Shalaby@gmail.com",Faculty = "CS",Grade = "Very Good",GradYear=2022,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381345676527,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
                 new Student{Name = "Ahmed Ali",NameAR = "احمد علي",Address = "Brket El-Sabaa",Gender = 'M',City = "Mnoufia",Email = "Ahmed.Shalaby@gmail.com",Faculty = "CS",Grade = "Very Good",GradYear=2022,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928371234,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=1},
@@ -70,6 +71,7 @@
                 new Student{Name = "Eman Harby",NameAR = "ايمان حربى",Address = "Mataria",Gender = 'F',City = "Assuit",Email = "Abanoub.harby@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2019,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381928344446,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=2},
                 new Student{Name = "Zein Mohammed",NameAR = "زين محمد",Address = "Brket El-Sabaa",Gender = 'M',City = "Mnoufia",Email = "Elhussien@gmail.com",Faculty = "CS",Grade = "Good",GradYear=2021,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381925555525,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=2},
                 new Student{Name = "Hager soltan",NameAR = "هاجر سلطان",Address = "Shobra",Gender = 'F',City = "Cairo",Email = "Fady.Shafeek.com",Faculty = "CS",Grade = "Good",GradYear=2020,MaterialState = "Single",MilitaryState = "N/A",Moblie = "01288335671",NID = 20381921116524,Notes = "Smart",Phone = "02115625",Specialization = "CS",University = "Mnoufia", EnrollmentID=2},
+
 
 
 

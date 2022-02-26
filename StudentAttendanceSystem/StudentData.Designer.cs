@@ -29,6 +29,7 @@ namespace StudentAttendanceSystem
         /// </summary>
         private void InitializeComponent()
         {
+
             this.Save_Btn = new System.Windows.Forms.Button();
             this.Back_Btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -93,6 +94,7 @@ namespace StudentAttendanceSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Back_Btn);
             this.Controls.Add(this.Save_Btn);
+
             this.Name = "Name";
             this.Text = "StudentData";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

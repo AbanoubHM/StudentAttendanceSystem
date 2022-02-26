@@ -81,7 +81,9 @@ namespace StudentAttendanceSystem {
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._0ae66dfa_27e5_4a95_84df_473cb94e787a;
+
+            this.pictureBox3.Image = global::StudentAttendanceSystem.Properties.Resources._new;
+
             this.pictureBox3.Location = new System.Drawing.Point(-16, 469);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(209, 173);
@@ -190,6 +192,7 @@ namespace StudentAttendanceSystem {
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "GroupInformation";
             this.Text = "GroupInformation";
