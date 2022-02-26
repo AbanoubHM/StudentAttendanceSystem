@@ -140,23 +140,11 @@
     <Compile Include="Report_Details.Designer.cs">
       <DependentUpon>Report_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report_Student_Data_save.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Report_Student_Data_save.Designer.cs">
-      <DependentUpon>Report_Student_Data_save.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentData.Designer.cs">
       <DependentUpon>StudentData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add_Students.resx">
       <DependentUpon>Add_Students.cs</DependentUpon>
@@ -208,14 +196,8 @@
     <EmbeddedResource Include="Report_Details.resx">
       <DependentUpon>Report_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report_Student_Data_save.resx">
-      <DependentUpon>Report_Student_Data_save.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StudentData.resx">
       <DependentUpon>StudentData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
